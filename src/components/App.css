@@ -1,0 +1,28 @@
+/*
+RESETS ------------------------
+*/
+
+footer {
+  bottom: 25px;
+  position: absolute;
+}
+
+footer a.social {
+  text-decoration: none;
+  color: inherit;
+  border-bottom: solid 2px #fff;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.App {
+    background-color: white;
+    min-height: calc(100vh - 50px - 25px - 16px);
+    flex: 1;
+}
+
+
+
+
+
+
