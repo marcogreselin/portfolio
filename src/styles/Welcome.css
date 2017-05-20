@@ -13,7 +13,11 @@
 }
 
 .question {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.answer {
+    margin-top: 5px;
 }
 
 input.minutes {
@@ -25,6 +29,7 @@ input.minutes {
     background: transparent;
     color: #2f2f2f;
     border-radius: 0;
+    height: 40px;
 }
 
 input.minutes:focus{
@@ -34,11 +39,11 @@ input.minutes:focus{
 label {
     user-select: none;
     border-bottom: 3px transparent solid;
+    /*transition: border 0.2s ease;*/
 }
 
 input[type="checkbox"] {
     visibility: hidden;
-    
 }
 
 
@@ -47,12 +52,16 @@ input[type="checkbox"]:checked + label {
 }
 
 button {
-    /*background: linear-gradient(290deg, #E84A81, #00CAFF);*/
     border: 3px solid #2f2f2f;
     font-size: inherit;
     margin-top: 40px;
     color: inherit;
     background-color: white;
+    transition: background-color 0.1s ease;
+}
+button:hover,button:focus{
+    background: #2f2f2f;
+    color: white;
 }
 
 button:focus {

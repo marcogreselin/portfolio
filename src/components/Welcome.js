@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 import '../styles/Welcome.css';
 
-var hellos = ['Hola', 'Salut', 'Hallo', 'Ciao', 'Ahoj', 'Annyeong-haseyo', 'Aloha', 'Howdy', 'Ni Hao', 'Konnichiwa'];
-
+const hellos = ['Hola', 'Salut', 'Hallo', 'Ciao', 'Ahoj', 'Annyeong-haseyo', 'Aloha', 'Howdy', 'Ni Hao', 'Konnichiwa']
 
 class Welcome extends Component {
     sayHello = function() {
@@ -18,20 +18,21 @@ class Welcome extends Component {
                 </div>
                 <div className="question-box">
                     <div className="question"><span className="underline">What do you fancy?</span></div>
-                    <span className="choice">
-                        <input type="checkbox" id="business"/>
-                        <label htmlFor="business">Business</label>
-                    </span>
-                    <span className="choice">
-                        <input type="checkbox" id="code"/>
-                        <label htmlFor="code">Code</label>
-                    </span>
-                    <span className="choice">
-                        <input type="checkbox" id="design"/>
-                        <label htmlFor="design">Design</label>
-                    </span>
+                    <div className="answer">
+                        <span className="choice">
+                            <input type="checkbox" id="business"/>
+                            <label htmlFor="business">Business</label>
+                        </span>
+                        <span className="choice">
+                            <input type="checkbox" id="code"/>
+                            <label htmlFor="code">Code</label>
+                        </span>
+                        <span className="choice">
+                            <input type="checkbox" id="design"/>
+                            <label htmlFor="design">Design</label>
+                        </span>
+                    </div>{/* end of .answer*/}
                   </div>{/* end .question-box*/}
-                
                 <button>Show me magic</button>
 
             </div>
