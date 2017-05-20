@@ -1,17 +1,30 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
 import '../styles/Welcome.css';
+import { Link } from 'react-router-dom'
 
 const hellos = ['Hola', 'Salut', 'Hallo', 'Ciao', 'Ahoj', 'Annyeong-haseyo', 'Aloha', 'Howdy', 'Ni Hao', 'Konnichiwa']
 
 class Welcome extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            errors: []
+        };
+    }
+
     sayHello = function() {
         return hellos[Math.floor((Math.random()*hellos.length))];
     }
+
+    checkError = function() {
+        
+    }
+
     render() {
         return (
             <div className="Welcome">
-                <div className="hello">{ this.sayHello() } I'm <a href="">Marco</a>! Welcome to my hood.</div>
+                <div className="hello">{ this.sayHello() } I'm <Link to="/life">Marco</Link>! Welcome to my hood.</div>
                 <div className="question-box">
                     <div className="question"><span className="underline">How much time do you have?</span></div>
                     <input className="minutes" type="number"/> minutes. 

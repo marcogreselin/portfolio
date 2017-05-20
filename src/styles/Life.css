@@ -1,0 +1,25 @@
+.Life {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Life img {
+    height: 300px;
+    margin-right: 100px;
+}
+
+.Life .story {
+    width: 500px;
+}
+
+@media (max-width: 767px) {
+    .Life {
+        display: block;
+    }
+    .Life img {
+        margin-bottom: 50px;
+    }
+
+}

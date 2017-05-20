@@ -8,13 +8,13 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td {margin: 0;padding: 0;border: 0;outline: 0;font-size: 100%}
 
-html {
+body {
   background: linear-gradient(290deg, #60A4C6, #E84A81) fixed;
   font-family: 'Roboto', sans-serif;
   padding: 20px;
   display: flex;
   flex-direction: column;
-  font-size: 18px;
+  font-size: 16px;
   color: #2F2F2F;
 }
 
@@ -31,9 +31,6 @@ footer .social {
 }
 
 @media (max-width: 767px) {
-  html{
-    font-size: 0.8em;
-  }
   footer .social {
     border-bottom: solid 1px white;
   }
