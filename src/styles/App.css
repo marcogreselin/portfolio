@@ -1,0 +1,38 @@
+.App {
+    background-color: white;
+    min-height: calc(100vh - 40px - 20px - 20px - 30px);
+    flex: 1;
+    flex-direction: column;
+    padding:15px;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.centered-wrapper {
+    display: flex;
+    align-items: center;
+    min-height: calc(100vh - 40px - 20px - 20px - 30px - 40px);
+    /*flex: 1;*/
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 3px solid #2F2F2F;
+}
+
+.who {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.who a{
+  border-bottom: 0px;
+  color: #2f2f2f;
+}
+
+.who a:hover {
+  border-bottom: 2px solid #2F2F2F;
+}

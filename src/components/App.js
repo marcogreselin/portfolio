@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
-import './App.css';
+import '../styles/App.css';
 import Welcome from './Welcome';
+import '../styles/Roboto-Regular.ttf'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Welcome />
-        <footer>
-          <a href="https://www.github.com/marcogreselin" target="_blank" className="social" rel="noopener noreferrer">G.H.</a>
-          <a href="https://www.linkedin.com/in/marcogreselin/" target="_blank" className="social" rel="noopener noreferrer">L.I.</a>
-          <a href="mailto:marcogreselin@me.com?subject=Yoo" className="social" rel="noopener noreferrer">E.M.</a>
-          <a href="https://www.instagram.com/marcogreselin" target="_blank" className="social" rel="noopener noreferrer">I.G.</a>
-        </footer>
+
+        <div className="centered-wrapper">
+          <Welcome />
+        </div>                
+        <div className="who">[ <a href="">Who's Marco</a> ]</div>
       </div>
     );
   }
