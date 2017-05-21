@@ -1,25 +1,86 @@
 .Life {
-    display: flex;
-    flex-direction: row;
     margin-left: auto;
     margin-right: auto;
 }
 
+.Life .image-description {
+    display: flex;
+    flex-direction: row;
+}
+
+.Life .title {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
 .Life img {
     height: 300px;
-    margin-right: 100px;
+    margin-right: 50px;
 }
 
 .Life .story {
-    width: 500px;
+    width: 520px;
+    max-height: 400px;
+    overflow: scroll
 }
 
-@media (max-width: 767px) {
-    .Life {
+.Life a {
+    border-bottom: 0px;
+}
+
+.Life .story a {
+    border-bottom: 1px solid;
+}
+
+.Life p {
+    margin-bottom: 10px;
+}
+
+.row {
+    display: flex;
+}
+
+.take {
+    flex: 1;
+}
+
+.Life .row .title {
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 7px;
+    margin-top: 30px;
+}
+
+@media (max-width: 991px) {
+    .Life img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 860px) {
+    .Life>.title {
+        text-align: center;
+        font-size: 1.8em;
+    }
+    .Life .image-description {
         display: block;
     }
     .Life img {
-        margin-bottom: 50px;
+        height: 210px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-bottom: 20px;
+    }
+    .Life .story {
+        width: 100%;
+        max-height: none;
+        overflow: inherit;
+        font-size: 0.9em;
+        text-align: justify;
+    }
+    .row {
+        display: block;
     }
 
 }
