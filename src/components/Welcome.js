@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const hellos = ['Hola', 'Salut', 'Hallo', 'Ciao', 'Ahoj', 'Annyeong-haseyo', 'Aloha', 'Howdy', 'Ni Hao', 'Konnichiwa']
 
-class Welcome extends Component {
+export class Welcome extends Component {
 
     constructor(props) {
         super(props);
@@ -18,6 +18,14 @@ class Welcome extends Component {
     }
 
     checkError = function() {
+        
+    }
+
+    addMinutes = function() {
+
+    }
+    
+    addInterest = function() {
         
     }
 
@@ -47,10 +55,11 @@ class Welcome extends Component {
                     </div>{/* end of .answer*/}
                   </div>{/* end .question-box*/}
                 <button>Show me magic</button>
-
+                <div className="errors">
+                    No error. All good.
+                </div>
             </div>
         );
     }
 }
 
-export default Welcome;

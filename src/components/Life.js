@@ -3,7 +3,7 @@ import '../styles/Life.css'
 import profilePic from '../images/marco.jpg'
 // import App from './App'
 
-const Life = () => (
+export const Life = () => (
     <div className="Life">
         <div className="title">Make. Break. Repeat.</div>
         <div className="image-description">
@@ -41,8 +41,3 @@ const Life = () => (
         </div>
     </div>
 )
-
-
-
-
-export default Life

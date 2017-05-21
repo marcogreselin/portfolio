@@ -1,9 +1,10 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import '../styles/App.css';
 import '../styles/Roboto-Regular.ttf'
 import { Route, Switch, Link } from 'react-router-dom'
-import Welcome from './Welcome'
-import Life from './Life'
+import { Welcome } from './Welcome'
+import { Life } from './Life'
+import { Work } from './Work'
 
 class App extends Component {
   render() {    
@@ -13,7 +14,8 @@ class App extends Component {
           <div className="centered-wrapper">
             <Switch>
               <Route exact path="/" component={Welcome} />
-              <Route exact path="/life" component={Life} />
+              <Route path="/life" component={Life} />
+              <Route path="/Work" component={Work} />
               <Route path="*" component={Welcome}/>
             </Switch>
           </div>                

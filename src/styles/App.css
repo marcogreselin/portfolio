@@ -30,7 +30,7 @@ footer .social {
 .centered-wrapper {
     display: flex;
     align-items: center;
-    min-height: calc(100vh - 40px - 19px - 50px - 15px - 19px - 20px);
+    min-height: calc(100vh - 40px - 19px - 50px - 15px - 19px - 25px);
 }
 
 a {
@@ -41,7 +41,7 @@ a {
 
 .who, .back {
   text-align: right;
-  margin-top: 20px;
+  margin-top: 25px;
   user-select: none;
 }
 
@@ -52,4 +52,13 @@ a {
 
 .who a:hover, .back a:hover {
   border-bottom: 2px solid #2F2F2F;
+}
+
+@media (max-width: 767px) {
+  .who {
+    text-align: center;
+  }
+  .back {
+    text-align: center;
+  }
 }
