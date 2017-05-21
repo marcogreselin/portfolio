@@ -31,11 +31,11 @@ export class Welcome extends Component {
 
     render() {
         return (
-            <div className="Welcome">
+            <form className="Welcome">
                 <div className="hello">{ this.sayHello() } I'm <Link to="/life">Marco</Link>! Welcome to my hood.</div>
                 <div className="question-box">
-                    <div className="question"><span className="underline">How much time do you have?</span></div>
-                    <input className="minutes" type="number"/> minutes. 
+                    <div className="question"><span className="underline" >How much time do you have?</span></div>
+                    <input className="minutes" type="number" /> minutes. 
                 </div>
                 <div className="question-box">
                     <div className="question"><span className="underline">What do you fancy?</span></div>
@@ -58,7 +58,7 @@ export class Welcome extends Component {
                 <div className="errors">
                     No error. All good.
                 </div>
-            </div>
+            </form>
         );
     }
 }

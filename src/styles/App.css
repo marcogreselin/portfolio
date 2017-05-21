@@ -30,7 +30,7 @@ footer .social {
 .centered-wrapper {
     display: flex;
     align-items: center;
-    min-height: calc(100vh - 40px - 19px - 50px - 15px - 19px - 25px);
+    min-height: calc(100vh - 168px);
 }
 
 a {
@@ -61,4 +61,8 @@ a {
   .back {
     text-align: center;
   }
+  footer .social {
+    border-bottom: solid 1px white;
+  }
 }
+
