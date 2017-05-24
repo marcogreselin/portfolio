@@ -15,7 +15,7 @@ export class LongWork extends Component {
 
     render() {
         return(
-            <div>This is the long work</div>
+            <div className="LongWork">This is the long work</div>
         )
     }
 }

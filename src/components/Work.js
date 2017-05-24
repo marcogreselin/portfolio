@@ -38,9 +38,9 @@ export class Work extends Component {
         return(
             <div className="Work">
                 <SmallForm routeState={this.getRouteState()}/>
-                {this.getRouteState().minutes<5 ? 
-                    <ShortWork routeState={this.getRouteState()} /> :  
-                    <LongWork routeState={this.getRouteState()} /> }
+                {this.getRouteState().minutes<5 &&
+                    <ShortWork routeState={this.getRouteState()} />}
+                    <LongWork routeState={this.getRouteState()} />
                 
                 
             </div>

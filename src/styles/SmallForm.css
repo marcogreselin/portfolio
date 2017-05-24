@@ -2,6 +2,7 @@
     font-size: 1.3em;
     /*border-bottom: 3px solid #2f2f2f;*/
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .SmallForm input {
@@ -25,6 +26,7 @@
 
 .SmallForm .errors {
     text-align: center;
+
 }
 
 .SmallForm button {
@@ -53,15 +55,24 @@
         text-align: center;
         display: inline;
     }
+    .SmallForm button {
+    }
     .SmallForm .choice-wrapper {
         display: block;
         margin-top: 10px;
     }
     .SmallForm {
         text-align: center;
+        margin-bottom: 7px;
         /*line-height: 1.4;*/
     }
     #firstLabel {
         margin-top: 15px;
+    }
+}
+
+@media (max-width: 370px) {
+    .Work {
+        font-size: 0.9em
     }
 }

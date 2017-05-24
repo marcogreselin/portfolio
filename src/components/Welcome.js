@@ -5,12 +5,12 @@ import  WelcomeForm from './WelcomeForm'
 
 export class Welcome extends Component {
 
-    componentDidMount = () => document.title = "Marco's Page"
+    componentDidMount = () => document.title = "Marco's Home"
 
     render() {
         return(
             <div className="Welcome">
-                <div className="hello">{ this.props.sayHello() } I'm <Link to="/life">Marco</Link>! Welcome to my hood.</div>
+                <div className="hello">{ this.props.sayHello() } I'm <Link to="/life">Marco</Link>! <span className="dont-break">Welcome to my hood.</span></div>
                 <WelcomeForm />
             </div>
         )

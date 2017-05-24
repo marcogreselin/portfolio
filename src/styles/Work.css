@@ -1,13 +1,30 @@
 .Work {
     min-height: calc(100vh - 168px);
     display: block;
-    /*flex-direction: column;*/
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
-    /*align-items: center;*/
+}
+
+.Work a {
+    border-bottom: 1px solid #2f2f2f;
 }
 
 .ShortWork {
-
+    /*text-align: center;*/
 }
+
+.checkout {
+    border-left: 2px solid #2f2f2f;
+    margin: 20px auto 20px auto;
+    padding: 1px 10px 1px 10px;
+    /*max-width: 500px;*/
+    display: block;
+    text-align: justify
+}
+
+.LongWork {
+    margin-top: 20px;
+    border: 2px solid #2f2f2f;
+}
+

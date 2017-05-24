@@ -37,8 +37,9 @@ input.minutes {
     height: 40px;
 }
 
-input.minutes:focus{
+input[type=number]:focus{
     outline-width: 0;
+    outline:none;
 }
 
 label {
@@ -97,6 +98,10 @@ input[type=number]::-webkit-outer-spin-button {
     -moz-appearance: none;
     appearance: none;
     margin: 0; 
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
 }
 
 .errors {
