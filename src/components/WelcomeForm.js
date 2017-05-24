@@ -24,14 +24,14 @@ class WelcomeForm extends Component {
         if(this.state.minutes==="" || this.state.minutes <1 || this.state.minutes>120)
             _errors.push("Enter a reasonable amount of time")
         if(_errors.length===0){
-            this.setState({...this.state, errors: ""})
+            this.setState({errors: ""})
             return true
         }
         else{
             if(_errors.length===2){
-                this.setState({...this.state, errors: "Make your selection above"})
+                this.setState({errors: "Make your selection above"})
             } else {
-                 this.setState({...this.state, errors: _errors[0]})
+                 this.setState({errors: _errors[0]})
             }
             return false
         }
@@ -51,30 +51,34 @@ class WelcomeForm extends Component {
     handleSubmit = (e) => {
         e.preventDefault()
         
-        console.log(JSON.stringify(this.state))
         if(this.validateForm())
             this.props.history.push("/work?mins="+this.state.minutes+"&interest="+this.interestsInitials())
-        this.setState({...this.state, pressedEnter: true})
+        this.setState({pressedEnter: true})
     }
 
 
     handleChanges = (e, changeName) => {
         switch (changeName) {
             case "minutes": 
-                this.setState({...this.state, minutes: e.target.value})
+                this.setState({minutes: e.target.value}, this.checkErrorsAgain )
                 break
             case "business":
-                this.setState({...this.state, interests:{...this.state.interests, business: e.target.checked} })
+                this.setState({interests:{...this.state.interests, business: e.target.checked}}, this.checkErrorsAgain )
                 break
             case "code":
-                this.setState({...this.state, interests:{...this.state.interests, code: e.target.checked} })
+                this.setState({interests:{...this.state.interests, code: e.target.checked}}, this.checkErrorsAgain )
                 break
             case "design":
-                this.setState({...this.state, interests:{...this.state.interests, design: e.target.checked} })
+                this.setState({interests:{...this.state.interests, design: e.target.checked}}, this.checkErrorsAgain )
                 break     
             default:
                 console.log("Cannot identify the input")               
         }
+    }
+
+    checkErrorsAgain = () => {
+        if(this.state.pressedEnter)
+            this.validateForm()
     }
 
 

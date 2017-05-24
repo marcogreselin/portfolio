@@ -11,7 +11,7 @@ export class Work extends Component {
     render() {
         return(
             <div className="Work">
-                Yoo
+                {console.log(this.props.search)}
             </div>
         )
     }

@@ -18,7 +18,13 @@ export const App = (props) => (
         <Switch>
           <Route exact path="/" render={props => <Welcome sayHello = { sayHello } />} />
           <Route path="/life"render={props => (!props.location.search) ? <Life sayHello = { sayHello } />:<Redirect to="/" />} />
-          <Route path="/work" component={Work} />
+          <Route path="/work" render={props => {
+            var re = /^\?mins=([1-9]|[1-9][0-9]|1[0-1][0-9]|120)&interest=(b|c|d|bc|cb|bd|db|cd|dc|bcd|bdc|cbd|cdb|dcb|dbc)$/
+            if(re.test(props.location.search))
+              return <Work />
+            else 
+              return <Redirect to="/" />
+          }}  />
           <Route path="*" render={ props=> <Redirect to="/"/>} />
         </Switch>
       </div>                
