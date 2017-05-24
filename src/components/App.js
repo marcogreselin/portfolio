@@ -12,6 +12,20 @@ const sayHello = () => {
   return hellos[Math.floor((Math.random()*hellos.length))];
 }
 
+const arrayOfInterests = (interests) => {
+    let _interests = []
+    if(/b/.test(interests))
+        _interests.push("Business")
+    if(/c/.test(interests))
+        _interests.push("Coding")
+    if(/d/.test(interests))
+        _interests.push("Design")
+    return _interests
+}
+
+const minutes = search => parseInt(search.substring(6).split("&")[0],10)
+const interests = search => search.substring(6).split("&")[1].substring(9)
+
 export const App = (props) => (
   <div className="App">
       <div className="content">
@@ -20,13 +34,17 @@ export const App = (props) => (
           <Route exact path="/" render={props => <Welcome sayHello = { sayHello } />} />
           <Route path="/life"render={props => (!props.location.search) ? <Life sayHello = { sayHello } />:<Redirect to="/" />} />
           <Route path="/work" render={props => {
-            var re = /^\?mins=([1-9]|[1-9][0-9]|1[0-1][0-9]|120)(\.[1-9]*)?&interest=(b|c|d|bc|cb|bd|db|cd|dc|bcd|bdc|cbd|cdb|dcb|dbc)$/
-            var shortRe = /^\?mins=[1-4](\.[1-9]*)?&interest=(b|c|d|bc|cb|bd|db|cd|dc|bcd|bdc|cbd|cdb|dcb|dbc)$/
+            var re = /^\?mins=([1-9]|[1-9][0-9]|1[0-1][0-9]|120)(\.[0-9]*)?&interest=(b|c|d|bc|cb|bd|db|cd|dc|bcd|bdc|cbd|cdb|dcb|dbc)$/
+            var shortRe = /^\?mins=[1-4](\.[0-9]*)?&interest=(b|c|d|bc|cb|bd|db|cd|dc|bcd|bdc|cbd|cdb|dcb|dbc)$/
             if(re.test(props.location.search))
               if(shortRe.test(props.location.search))
-                return <ShortWork search={props.location.search} />
+                return <ShortWork minutes={minutes(props.location.search)} 
+                             interests={interests(props.location.search)} 
+                             arrayOfInterests={arrayOfInterests(interests(props.location.search))} />
               else
-                return <Work search={props.location.search} />
+                return <Work minutes={minutes(props.location.search)} 
+                             interests={interests(props.location.search)} 
+                             arrayOfInterests={arrayOfInterests(interests(props.location.search))} />
             else 
               return <Redirect to="/" />
           }}  />
