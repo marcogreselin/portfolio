@@ -79,7 +79,7 @@ button {
     user-select: none;
     cursor: pointer;
 }
-button:hover,button:focus{
+button:hover{
     background: #2f2f2f;
     color: white;
 }
@@ -98,11 +98,11 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .errors {
-    font-size: 0.5em;
-    margin-top: 7px;
+    font-size: 0.4em;
+    margin-top: 6px;
     font-weight: bold;
-    margin-bottom: 10px;
-    visibility: hidden;
+    /*margin-bottom: 10px;*/
+    height: 20px;
 }
 
 @media (max-width: 767px) {

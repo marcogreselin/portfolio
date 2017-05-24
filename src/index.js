@@ -5,11 +5,10 @@ import './styles/index.css'
 import {
   Route, Switch, BrowserRouter as Router
 } from 'react-router-dom'
-import App from './components/App'
+import {App} from './components/App'
 
 
 ReactDOM.render(
-    
     <Router>
         <Switch>
             <Route path="/" component={App} />
