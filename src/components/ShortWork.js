@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export class Work extends Component {
+export class ShortWork extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -11,7 +11,7 @@ export class Work extends Component {
     render() {
         return(
             <div className="Work">
-                Long Work
+                Short Work
                 {console.log(this.props.search)}
             </div>
         )

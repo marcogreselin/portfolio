@@ -5,6 +5,7 @@ import { Route, Switch, Link, Redirect } from 'react-router-dom'
 import { Welcome } from './Welcome'
 import { Life } from './Life'
 import { Work } from './Work'
+import { ShortWork } from './ShortWork'
 
 const sayHello = () => {
   const hellos = ['Hola', 'Salut', 'Hallo', 'Ciao', 'Ahoj', 'Annyeong-haseyo', 'Aloha', 'Howdy', 'Ni Hao', 'Konnichiwa']
@@ -19,9 +20,13 @@ export const App = (props) => (
           <Route exact path="/" render={props => <Welcome sayHello = { sayHello } />} />
           <Route path="/life"render={props => (!props.location.search) ? <Life sayHello = { sayHello } />:<Redirect to="/" />} />
           <Route path="/work" render={props => {
-            var re = /^\?mins=([1-9]|[1-9][0-9]|1[0-1][0-9]|120)&interest=(b|c|d|bc|cb|bd|db|cd|dc|bcd|bdc|cbd|cdb|dcb|dbc)$/
+            var re = /^\?mins=([1-9]|[1-9][0-9]|1[0-1][0-9]|120)(\.[1-9]*)?&interest=(b|c|d|bc|cb|bd|db|cd|dc|bcd|bdc|cbd|cdb|dcb|dbc)$/
+            var shortRe = /^\?mins=[1-4](\.[1-9]*)?&interest=(b|c|d|bc|cb|bd|db|cd|dc|bcd|bdc|cbd|cdb|dcb|dbc)$/
             if(re.test(props.location.search))
-              return <Work />
+              if(shortRe.test(props.location.search))
+                return <ShortWork search={props.location.search} />
+              else
+                return <Work search={props.location.search} />
             else 
               return <Redirect to="/" />
           }}  />
