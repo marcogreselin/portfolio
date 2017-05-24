@@ -5,7 +5,7 @@ import '../styles/SmallForm.css'
 
 class SmallForm extends Component {
     constructor(props) {
-        super(props);
+        super(props)
         this.state = {
             minutes: this.props.routeState.minutes,
             interests: {
@@ -20,7 +20,7 @@ class SmallForm extends Component {
     validateForm = () => {
         let _errors = []
         if(!this.state.interests.design && !this.state.interests.code && !this.state.interests.business)
-            _errors.push("You must have some interests")
+            _errors.push("You must have some interests :)")
         if(this.state.minutes==="" || this.state.minutes <1 || this.state.minutes>120)
             _errors.push("Enter a reasonable amount of time")
         if(_errors.length===0){

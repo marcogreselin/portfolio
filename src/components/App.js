@@ -19,8 +19,12 @@ export const App = (props) => (
           <Route exact path="/" render={props => <Welcome sayHello = { sayHello } />} />
           <Route path="/life"render={props => (!props.location.search) ? <Life sayHello = { sayHello } />:<Redirect to="/" />} />
           <Route path="/work" render={props => {
-            var re = /^\?mins=0*([1-9]|[1-9][0-9]|1[0-1][0-9]|120)(\.[0-9]*)?&interest=(b|c|d|bc|cb|bd|db|cd|dc|bcd|bdc|cbd|cdb|dcb|dbc)$/
+            let re = /^\?mins=0*([1-9]|[1-9][0-9]|1[0-1][0-9]|120)(\.[0-9]*)?&interest=(b|c|d|bc|cb|bd|db|cd|dc|bcd|bdc|cbd|cdb|dcb|dbc)$/
+            let dottedRe = /^\?mins=0*([1-9]|[1-9][0-9]|1[0-1][0-9]|120)\.[0-9]*&interest=(b|c|d|bc|cb|bd|db|cd|dc|bcd|bdc|cbd|cdb|dcb|dbc)$/
             if(re.test(props.location.search))
+              if(dottedRe.test(props.location.search))
+                return <Redirect to={"/work"+props.location.search.split('&')[0].split('.')[0]+'&'+props.location.search.split('&')[1]} />
+              else
                 return <Work search={props.location.search} />
             else 
               return <Redirect to="/" />
