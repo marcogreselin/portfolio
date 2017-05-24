@@ -1,0 +1,67 @@
+.SmallForm{
+    font-size: 1.3em;
+    /*border-bottom: 3px solid #2f2f2f;*/
+    margin-bottom: 20px;
+}
+
+.SmallForm input {
+    width: 40px;
+    border: none;
+    border-bottom: 2px solid #2f2f2f;
+    margin-left: 3px;
+    margin-right: 5px;
+    font-size: inherit;
+    outline-width: 0;
+    padding-left: 3px;
+    padding-right: 3px;
+    text-align: center;
+    /*margin: 5px;*/
+}
+
+.SmallForm label{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.SmallForm .errors {
+    text-align: center;
+}
+
+.SmallForm button {
+    font-size: .7em;
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    border: 2px solid #2f2f2f;
+    margin-right: auto;
+}
+
+.SmallForm .choice-wrapper {
+    display: inline;
+}
+
+.SmallForm input[type="checkbox"]:not(:checked) + label {
+    background: white;
+    color: #7D7E7E;
+}
+
+@media (max-width: 767px) {
+    .SmallForm input[type=number]{
+        margin-bottom: 5px;
+    }
+    .SmallForm .choice{
+        text-align: center;
+        display: inline;
+    }
+    .SmallForm .choice-wrapper {
+        display: block;
+        margin-top: 10px;
+    }
+    .SmallForm {
+        text-align: center;
+        /*line-height: 1.4;*/
+    }
+    #firstLabel {
+        margin-top: 15px;
+    }
+}

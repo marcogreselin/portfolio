@@ -5,26 +5,11 @@ import { Route, Switch, Link, Redirect } from 'react-router-dom'
 import { Welcome } from './Welcome'
 import { Life } from './Life'
 import { Work } from './Work'
-import { ShortWork } from './ShortWork'
 
 const sayHello = () => {
   const hellos = ['Hola', 'Salut', 'Hallo', 'Ciao', 'Ahoj', 'Annyeong-haseyo', 'Aloha', 'Howdy', 'Ni Hao', 'Konnichiwa']
   return hellos[Math.floor((Math.random()*hellos.length))];
 }
-
-const arrayOfInterests = (interests) => {
-    let _interests = []
-    if(/b/.test(interests))
-        _interests.push("Business")
-    if(/c/.test(interests))
-        _interests.push("Coding")
-    if(/d/.test(interests))
-        _interests.push("Design")
-    return _interests
-}
-
-const minutes = search => parseInt(search.substring(6).split("&")[0],10)
-const interests = search => search.substring(6).split("&")[1].substring(9)
 
 export const App = (props) => (
   <div className="App">
@@ -34,25 +19,18 @@ export const App = (props) => (
           <Route exact path="/" render={props => <Welcome sayHello = { sayHello } />} />
           <Route path="/life"render={props => (!props.location.search) ? <Life sayHello = { sayHello } />:<Redirect to="/" />} />
           <Route path="/work" render={props => {
-            var re = /^\?mins=([1-9]|[1-9][0-9]|1[0-1][0-9]|120)(\.[0-9]*)?&interest=(b|c|d|bc|cb|bd|db|cd|dc|bcd|bdc|cbd|cdb|dcb|dbc)$/
-            var shortRe = /^\?mins=[1-4](\.[0-9]*)?&interest=(b|c|d|bc|cb|bd|db|cd|dc|bcd|bdc|cbd|cdb|dcb|dbc)$/
+            var re = /^\?mins=0*([1-9]|[1-9][0-9]|1[0-1][0-9]|120)(\.[0-9]*)?&interest=(b|c|d|bc|cb|bd|db|cd|dc|bcd|bdc|cbd|cdb|dcb|dbc)$/
             if(re.test(props.location.search))
-              if(shortRe.test(props.location.search))
-                return <ShortWork minutes={minutes(props.location.search)} 
-                             interests={interests(props.location.search)} 
-                             arrayOfInterests={arrayOfInterests(interests(props.location.search))} />
-              else
-                return <Work minutes={minutes(props.location.search)} 
-                             interests={interests(props.location.search)} 
-                             arrayOfInterests={arrayOfInterests(interests(props.location.search))} />
+                return <Work search={props.location.search} />
             else 
               return <Redirect to="/" />
           }}  />
           <Route path="*" render={ props=> <Redirect to="/"/>} />
         </Switch>
       </div>                
-      { (props.location.pathname !== "/life") && (<div className="who">[ <Link to="/life">Who's Marco</Link> ]</div>)}
-      { (props.location.pathname === "/life") && (<div className="back">[ <Link to="/">Go Back Home</Link> ]</div>)}
+      { (props.location.pathname !== "/") ? (<div className="back">[ <Link to="/">Go Back Home</Link> ]</div>) 
+        : (<div className="who">[ <Link to="/life">Who's Marco</Link> ]</div>)}
+       
     </div>
     <footer>
       <a href="https://www.github.com/marcogreselin" target="_blank" className="social" rel="noopener noreferrer">G.H.</a>

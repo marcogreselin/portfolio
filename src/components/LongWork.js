@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export class ShortWork extends Component {
+export class LongWork extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -15,7 +15,7 @@ export class ShortWork extends Component {
 
     render() {
         return(
-            <div>This is the short work</div>
+            <div>This is the long work</div>
         )
     }
 }

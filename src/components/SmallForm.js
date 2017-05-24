@@ -1,26 +1,26 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
+import '../styles/SmallForm.css'
 
 
-class WelcomeForm extends Component {
+class SmallForm extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            minutes: "",
-                interests: {
-                business: false,
-                code: false,
-                design: false
-                },
+            minutes: this.props.routeState.minutes,
+            interests: {
+                business: this.props.routeState.interests.business,
+                code: this.props.routeState.interests.code,
+                design: this.props.routeState.interests.design
+            },
             errors: "",
             pressedEnter: false
         }
     }
-
     validateForm = () => {
         let _errors = []
         if(!this.state.interests.design && !this.state.interests.code && !this.state.interests.business)
-            _errors.push("Select something you fancy")
+            _errors.push("You must have some interests")
         if(this.state.minutes==="" || this.state.minutes <1 || this.state.minutes>120)
             _errors.push("Enter a reasonable amount of time")
         if(_errors.length===0){
@@ -83,40 +83,38 @@ class WelcomeForm extends Component {
 
 
     render() {
-        return (
-            <form className="WelcomeForm" onSubmit={this.handleSubmit}>
-                <div className="question-box">
-                    <div className="question"><span className="underline">How much time do you have?</span></div>
-                    <input className="minutes" type="number" value={this.state.minutes}
-                           onChange={ (e) => this.handleChanges(e, "minutes")}/> minutes. 
-                </div>
-                <div className="question-box">
-                    <div className="question"><span className="underline">What do you fancy?</span></div>
-                    <div className="answer">
-                        <span className="choice">
+        return(
+            <div className="SmallForm">
+                <form onSubmit={this.handleSubmit}>
+                    I have 
+                    <input type="number" value={this.state.minutes} onChange={ (e) => this.handleChanges(e, "minutes")} /> 
+                    minutes and I am <span className="dont-break">interested in</span>
+                    <div className="choice-wrapper">
+                        <span className="choice" id="firstLabel" >
                             <input type="checkbox" id="business" checked={ this.state.interests.business }
-                                   onChange={ (e) => this.handleChanges(e, "business") }/>
+                                    onChange={ (e) => this.handleChanges(e, "business") }/>
                             <label htmlFor="business">Business</label>
                         </span>
                         <span className="choice">
                             <input type="checkbox" id="code" checked={ this.state.interests.code }
-                                   onChange={ (e) => this.handleChanges(e, "code") }/>
+                                    onChange={ (e) => this.handleChanges(e, "code") }/>
                             <label htmlFor="code">Code</label>
                         </span>
                         <span className="choice">
                             <input type="checkbox" id="design" checked={ this.state.interests.design } 
-                                   onChange={ (e) => this.handleChanges(e, "design") }/>
+                                    onChange={ (e) => this.handleChanges(e, "design") }/>
                             <label htmlFor="design">Design</label>
                         </span>
-                    </div>{/* end of .answer*/}
-                </div>{/* end .question-box*/}
-                <button>Show me magic</button>
+                    </div>
+
+                    <button>Update your magic</button>
+                </form>
                 <div className="errors">
                     {this.state.errors}
                 </div>
-            </form>  
+            </div>
         )
     }
 }
 
-export default withRouter(WelcomeForm);    
+export default withRouter(SmallForm);    

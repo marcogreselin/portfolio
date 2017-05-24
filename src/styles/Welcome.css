@@ -46,6 +46,8 @@ label {
     /*transition: border 0.2s ease;*/
     padding: 0 4px 0 4px;
     cursor: pointer;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 label:hover {
@@ -55,7 +57,7 @@ label:hover {
 }
 
 input[type="checkbox"] {
-    visibility: hidden;
+    display: none;
 }
 
 
