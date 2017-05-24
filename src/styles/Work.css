@@ -1,7 +1,7 @@
 .Work {
     min-height: calc(100vh - 168px);
     display: block;
-    max-width: 700px;
+    width: 650px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -18,13 +18,21 @@
     border-left: 2px solid #2f2f2f;
     margin: 20px auto 20px auto;
     padding: 1px 10px 1px 10px;
-    /*max-width: 500px;*/
     display: block;
     text-align: justify
 }
 
 .LongWork {
-    margin-top: 20px;
+    margin-top: 5px;
     border: 2px solid #2f2f2f;
 }
 
+.ShortWork+.LongWork{
+    margin-top: 20px
+}
+
+@media (max-width: 370px) {
+    .LongWork {
+        font-size: 0.9em;
+    }
+}

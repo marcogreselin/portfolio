@@ -24,6 +24,7 @@
     margin-right: 5px;
 }
 
+
 .SmallForm .errors {
     text-align: center;
 
@@ -71,8 +72,3 @@
     }
 }
 
-@media (max-width: 370px) {
-    .Work {
-        font-size: 0.9em
-    }
-}
