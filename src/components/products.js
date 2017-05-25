@@ -64,7 +64,7 @@ export const products =
         "content": [
             {
                 "type": "text",
-                "body": "At AKQA we partnered with Amazon and created an app that allows viewers to buy the ingredients of the recepies they are seeing with their Fire TV."
+                "body": "At AKQA we partnered with Amazon and created an app that allows viewers to buy the ingredients of the recipes they are seeing with their Fire TV."
             },
             {
                 "type": "emphasis",
@@ -149,7 +149,7 @@ export const products =
             },
             {
                 "type": "text",
-                "body": "Whist discovery is our first step to get Snicket out, the vision is to build the only app pop-up sotre managers need to run their shops: from finding a plcae, to being discovered to taking payments. We would be able to monetise via a revenue share on the paying services. Check out the report for more."
+                "body": "Whist discovery is our first step to get Snicket out, the vision is to build the only app pop-up store managers need to run their shops: from finding a place, to being discovered to taking payments. We would be able to monetise via a revenue share on the paying services. Check out the report for more."
             }
         ],
         "links": {
@@ -185,7 +185,7 @@ export const products =
             },
             {
                 "type": "text",
-                "body": "Leveraging the adata collected on a Microsoft Band, the immersive digital platform helped James raise money for a number of charities."
+                "body": "Leveraging the data collected on a Microsoft Band, the immersive digital platform helped James raise money for a number of charities."
             },
             {
                 "type": "video",
@@ -324,12 +324,12 @@ export const products =
                 "business": 3
             }
         },
-        "title": "An app to encourage philantropy",
+        "title": "An app to encourage philanthropy",
         "subtitle": "Envisioning philanthropy as a tool for good and networking",
         "content": [
             {
                 "type": "text",
-                "body": "Philantropy doesn't need to be a secret commitment. Consulting a leading UK private bank, we designed at AKQA a digital platform that allows the banks' clients to help charitable causes whilst networking in a close, exclusive environment."
+                "body": "Philanthropy doesn't need to be a secret commitment. Consulting a leading UK private bank, we designed at AKQA a digital platform that allows the banks' clients to help charitable causes whilst networking in a close, exclusive environment."
             },
             {
                 "type": "image",
@@ -375,11 +375,11 @@ export const products =
             }
         },
         "title": "The first end-to-end children app for flying",
-        "subtitle": "Mapping and solving all the painpoints",
+        "subtitle": "Mapping and solving all the pain points",
         "content": [
             {
                 "type": "text",
-                "body": "At AKQA we helped redefine the digital strategy of a British arlines. As part of this major strategy project, we were challenged to create the products that could deliver on the strategy."
+                "body": "At AKQA we helped redefine the digital strategy of a British airlines. As part of this major strategy project, we were challenged to create the products that could deliver on the strategy."
             },
             {
                 "type": "image",
@@ -442,7 +442,7 @@ export const products =
             },
             {
                 "type": "emphasis",
-                "body": "The challence"
+                "body": "The challenge"
             },
             {
                 "type": "text",
@@ -610,7 +610,7 @@ export const products =
             }
         },
         "title": "The first user-centric portfolio",
-        "subtitle": "Placing the user at the center of the experience",
+        "subtitle": "Placing the user at the centre of the experience",
         "content": [
             {
                 "type": "image",
