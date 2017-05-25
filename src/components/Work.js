@@ -20,11 +20,24 @@ export class Work extends Component {
     }
 
     componentDidMount = () => document.title = "Marco's Work"
+
+    orderedArray = ()=> {
+        let share
+        if(this.state.interests.design && this.state.interests.code && this.state.interests.business)
+            share = .33
+        else if((this.state.interests.design && this.state.interests.code) || 
+                (this.state.interests.design && this.state.interests.business) ||
+                (this.state.interests.business && this.state.interests.code))
+            share = .5
+        else 
+            share = 1
+        console.log(share)
+    }
   
     render() {
         return(
             <div className="Work">
-                <SmallForm routeState={this.getRouteState()}/>
+                <SmallForm routeState={this.getRouteState()} orderedArray={this.orderedArray}/>
                 {this.getRouteState().minutes<5 && <ShortWork routeState={this.getRouteState()} />}
                 <LongWork key="dasd" routeState={this.getRouteState()} />
             </div>

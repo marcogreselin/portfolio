@@ -51,8 +51,11 @@ class SmallForm extends Component {
     handleSubmit = (e) => {
         e.preventDefault()
         
-        if(this.validateForm())
+        if(this.validateForm()){
             this.props.history.push("/work?mins="+this.state.minutes+"&interest="+this.interestsInitials())
+            this.props.orderedArray()
+        }
+            
         this.setState({pressedEnter: true})
     }
 

@@ -317,11 +317,11 @@ export const products =
     {
         "name":"commit",
         "scores": {
-            "quality": 6,
+            "quality": 4,
             "relevancy": {
-                "design": 7,
+                "design": 5,
                 "code": 1,
-                "business": 5
+                "business": 3
             }
         },
         "title": "An app to encourage philantropy",
@@ -332,17 +332,26 @@ export const products =
                 "body": "Philantropy doesn't need to be a secret commitment. Consulting a leading UK private bank, we designed at AKQA a digital platform that allows the banks' clients to help charitable causes whilst networking in a close, exclusive environment."
             },
             {
-                "type": "video",
-                "body": "https://www.youtube.com/embed/lSKx0MBFRVU?rel=0&amp;showinfo=0",
-                "title": "AuctionBay"
+                "type": "image",
+                "url": "https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/bank_proto.jpg?alt=media&token=a7519939-1979-4f9c-aa57-f0e5c57516b6",
+                "title": "Paper Prototype"
+            },
+            {
+                "type": "emphasis",
+                "body": "The brief"
             },
             {
                 "type": "text",
-                "body": "I interviewed some of the most important personalities in Venice during my time there. Venezia in Campo was so well received counting more than 50k viewers that the broadcaser opened a full newsroom in Venice to better serve the area."
+                "body": "We were challenged to design a product that could be used for the celebration of the bank's anniversry. We studied the bank's history and found two main returning themes: a commitment to philantropic activities and a strong focus on networking activities to build relationships between their clients."
             },
             {
                 "type": "text",
-                "body": "Prior to launching Venezia in Campo I founded the first Web TV in Venice at the age of 15. Some videos are in the link below but be aware: they don't work on modern browsers!"
+                "body": "We talked to numerouns clients and discovered that the bank's philantropic efforts were mainly targeting the UHNI. We created a product that could cater for the rest of the elite clientele and that could leverage on our two key findings."
+            },
+            {
+                "type": "image",
+                "url": "https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/bank_UI.jpg?alt=media&token=cb4e6266-1117-4e88-b7b1-e63325a77872",
+                "title": "HiDef Prototype"
             }
         ],
         "links": {
@@ -351,6 +360,287 @@ export const products =
                 {
                     "title": "Report",
                     "url": "https://s3-eu-west-1.amazonaws.com/marcogreselin/commit.pdf"
+                }
+            ]
+        }
+    },
+    {
+        "name":"fly",
+        "scores": {
+            "quality": 6,
+            "relevancy": {
+                "design": 5,
+                "code": 1,
+                "business": 4
+            }
+        },
+        "title": "The first end-to-end children app for flying",
+        "subtitle": "Mapping and solving all the painpoints",
+        "content": [
+            {
+                "type": "text",
+                "body": "At AKQA we helped redefine the digital strategy of a British arlines. As part of this major strategy project, we were challenged to create the products that could deliver on the strategy."
+            },
+            {
+                "type": "image",
+                "url": "https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/fly.jpg?alt=media&token=9f29e09e-f7d6-4fd9-90e9-3bc14cef81bf",
+                "title": "Paper Prototype"
+            },
+            {
+                "type": "emphasis",
+                "body": "The idea"
+            },
+            {
+                "type": "text",
+                "body": "Looking ta the numbers, the airlines was very well known for its family oriented clientele. Flying with children is often seen as a stressful operation. We helped them define all key painpoints of the journey and designed the ultimate flying app for children."
+            },
+            {
+                "type": "text",
+                "body": "We created the prototype for the first end-to-end app for children. Children can log in ahead of the trip and choose a character that will follow them throughout the journey. Ahead of the trip they will access a personalised story announcing the key moments of the trip. Once at the airport they will be able to engage with a VR game giving life to the character in the digital book."
+            },
+            {
+                "type": "image",
+                "url": "https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/fly_pain.png?alt=media&token=496d747e-70a5-4c9e-b045-cbb106a57ad3",
+                "title": "HiDef Prototype"
+            },
+            {            
+                "type": "text",
+                "body": "The entertainment onboard is personalised with the chosen character and everything from the food to the selection of the in-flight videos is based on that. The child will be able to live those moments even after the trip is concluded allowing for a lasting experience with the airline and the brand."
+            }
+        ],
+        "links": {
+            "password": true,
+            "content": [
+                {
+                    "title": "Report",
+                    "url": "https://s3-eu-west-1.amazonaws.com/marcogreselin/fly.pdf"
+                }
+            ]
+        }
+    },
+    {
+        "name":"peerwise",
+        "scores": {
+            "quality": 4,
+            "relevancy": {
+                "design": 4,
+                "code": 1,
+                "business": 4
+            }
+        },
+        "title": "A complete app redesign",
+        "subtitle": "From static, desktop only to mobile first",
+        "content": [
+            {
+                "type": "text",
+                "body": "PeerWise is an e-learning platform developed by the University of Auckland and allows students to test each other and consolidate what they learn. However, it's only available on desktop."
+            },
+            {
+                "type": "video",
+                "body": "https://www.youtube.com/embed/Y4mFjjbwJWE?rel=0&amp;showinfo=0&amp",
+                "title": "Peerwise"
+            },
+            {
+                "type": "emphasis",
+                "body": "The challence"
+            },
+            {
+                "type": "text",
+                "body": "I decided to redesign the whole application starting with listing and defining its features and assigning them to the right moments of the mobile user journey. Peerwise is meant to be a fun way to make revisions hence the whole experience needed to be fun and fluid."
+            },
+            {
+                "type": "text",
+                "body": "The project included extensive testing and prototyping. All the outcomes are in the report below."
+            },
+            {
+                "type": "image",
+                "url": "https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/peerwise.jpg?alt=media&token=2af0a2df-eb54-4494-924a-bf5bcd19a4e9",
+                "title": "HiDef Prototype"
+            }
+        ],
+        "links": {
+            "password": false,
+            "content": [
+                {
+                    "title": "Report",
+                    "url": "https://s3-eu-west-1.amazonaws.com/marcogreselin/peerwise.pdf"
+                }
+            ]
+        }
+    },
+    {
+        "name":"uml",
+        "scores": {
+            "quality": 2,
+            "relevancy": {
+                "design": 1,
+                "code": 5,
+                "business": 3
+            }
+        },
+        "title": "Deep UML review",
+        "subtitle": "A review of all most important UML diagrams in practice",
+        "content": [
+            {
+                "type": "text",
+                "body": "Who doesn't love UML? You can deep dive into this report that uses the most obscure UML diagrams to show that yes, UMG approved them and someone is using them."
+            },
+            {
+                "type": "image",
+                "url": "https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/uml.jpg?alt=media&token=dabc3a65-a005-4c4d-be25-ee9fd3644034"
+            },
+            {
+                "type": "emphasis",
+                "body": "The context"
+            },
+            {
+                "type": "text",
+                "body": "The project was part of the software engineering course at UCL and it's built around the idea of developing a tutoring application."
+            },
+            {
+                "type": "text",
+                "body": "The report explains all the diagrams, the rationale behind them and offers a critical view on the need of each of them in the real world."
+            }
+        ],
+        "links": {
+            "password": false,
+            "content": [
+                {
+                    "title": "Report",
+                    "url": "https://s3-eu-west-1.amazonaws.com/marcogreselin/uml.pdf"
+                },
+                {
+                    "title": "Video",
+                    "url": "https://youtu.be/_uunC2Dbgb8"
+                }
+            ]
+        }
+    },
+    {
+        "name":"sanus",
+        "scores": {
+            "quality": 2,
+            "relevancy": {
+                "design": 1,
+                "code": 5,
+                "business": 1
+            }
+        },
+        "title": "Sanus: a patient management system in Java",
+        "subtitle": "My first Java programming project using the Swing UI library",
+        "content": [
+            {
+                "type": "video",
+                "body": "https://www.youtube.com/embed/bodC7oZ2Cnk?rel=0&amp;showinfo=0&amp",
+                "title": "Sanus"
+            },
+            {
+                "type": "text",
+                "body": "One of my first programming projects, Sanus is a patient management system developed in Java using the Swing library for the UI. It features an SQLite databse for storing patient and user data."
+            },
+            {
+                "type": "text",
+                "body": "The code is available on Github in the repo here below."
+            }
+        ],
+        "links": {
+            "password": false,
+            "content": [
+                {
+                    "title": "Github",
+                    "url": "https://github.com/marcogreselin/sanus"
+                }
+            ]
+        }
+    },
+    {
+        "name":"thinking",
+        "scores": {
+            "quality": 8,
+            "relevancy": {
+                "design": 7,
+                "code": 5,
+                "business": 10
+            }
+        },
+        "title": "Three languages of business",
+        "subtitle": "One phenomenon explained in three languages to account for today's business world",
+        "content": [
+            {
+                "type": "image",
+                "url": "https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/three_draw.jpg?alt=media&token=17f689ca-39d5-42d0-973f-54b77c473e87",
+                "title": "Drawing business"
+            },
+            {
+                "type": "text",
+                "body": "Today's business requires the use of multiple languages: from being able to articulate ideas and thoughts in writing to sketching relationships to talking to engineers and define implementations."
+            },
+            {
+                "type": "text",
+                "body": "I decided to engage in an exercise and describe one phenomenon - the growth of pop-up stores - in three languages. One page of writing, one page of drawing and one page of coding."
+            },
+            {
+                "type": "text",
+                "body": "This project is particularly meaningful to me because it uses all the skills I developed over the last few years in a simple yet meaningful way. Have a look and let me know!"
+            }
+        ],
+        "links": {
+            "password": false,
+            "content": [
+                {
+                    "title": "Report",
+                    "url": "https://s3-eu-west-1.amazonaws.com/marcogreselin/three_languages.pdf"
+                }
+            ]
+        }
+    },
+    {
+        "name":"portfolio",
+        "scores": {
+            "quality": 7,
+            "relevancy": {
+                "design": 8,
+                "code": 7,
+                "business": 7
+            }
+        },
+        "title": "The first user-centric portfolio",
+        "subtitle": "Placing the user at the center of the experience",
+        "content": [
+            {
+                "type": "image",
+                "url": "https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/three_draw.jpg?alt=media&token=17f689ca-39d5-42d0-973f-54b77c473e87",
+                "title": "Drawing business"
+            },
+            {
+                "type": "text",
+                "body": "A portfolio that becomes a product featured within. We can call this the first user centred portfolio: it builds around the user needs, not what the creator believes the user needs. This is fundamental for two reasons: different users have very different amount of times. Moreover, for product managers like me, there's a need to showcase many skills at the same time whilst users have their own interests."
+            },
+            {
+                "type": "image",
+                "url": "https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/three_draw.jpg?alt=media&token=17f689ca-39d5-42d0-973f-54b77c473e87",
+                "title": "Drawing business"
+            },
+            {
+                "type": "text",
+                "body": "To achieve this, I gave two scores to each product: an overall quality score and one for each of the three interests. The user makes a selection and the application will return a bespoke version of the portfolio."
+            },            
+            {
+                "type": "text",
+                "body": "It's built with React which makes it fast, and designed to look good on any platform and any browser. Have you ever seen a portfolio that talks about itself?"
+            },
+            {
+                "type": "video",
+                "body": "https://www.youtube.com/embed/bodC7oZ2Cnk?rel=0&amp;showinfo=0&amp",
+                "title": "Sanus"
+            }
+        ],
+        "links": {
+            "password": false,
+            "content": [
+                {
+                    "title": "Github",
+                    "url": "https://github.com/marcogreselin/portfolio"
                 }
             ]
         }
