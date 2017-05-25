@@ -81,7 +81,7 @@ export const products =
             },
             {
                 "type": "text",
-                "body": "The design sprint started by understanding our client, a UK celebrity chef, their revenue strams and how we could leverage on existing digital platforms to create a new revenue opportunity. It was clear the TV was still gathering most of ther audience reach but its potential was underutilised."
+                "body": "The design sprint started by understanding our client, a UK celebrity chef, their revenue streams and how we could leverage on existing digital platforms to create a new revenue opportunity. It was clear the TV was still gathering most of their audience reach but its potential was underutilises."
             },
             {
                 "type":"image",
@@ -140,7 +140,7 @@ export const products =
             },
             {
                 "type": "text",
-                "body": "Born at AKQA, we designed Snicket, an app that allows the discovery of local pop-ups. Merchants just need to link their Instagram account making the onboarding process quicker than ever! It was built around the behaviours and needs of pop-up stores: all of them had an instagram account."
+                "body": "Born at AKQA, we designed Snicket, an app that allows the discovery of local pop-ups. Merchants just need to link their Instagram account making the onboarding process quicker than ever! It was built around the behaviours and needs of pop-up stores: all of them had an Instagram account."
             },
             {
                 "type":"video",
@@ -207,7 +207,7 @@ export const products =
             },
             {
                 "type": "text",
-                "body": "From concept to delivery we helped Microsoft create a successful story out of this product. It was nomitaed for an internal accessibility global award. You can find all the details in the report below."
+                "body": "From concept to delivery we helped Microsoft create a successful story out of this product. It was nominated for an internal accessibility global award. You can find all the details in the report below."
             }
         ],
         "links": {
@@ -293,7 +293,7 @@ export const products =
             },
             {
                 "type": "text",
-                "body": "I interviewed some of the most important personalities in Venice during my time there. Venezia in Campo was so well received counting more than 50k viewers that the broadcaser opened a full newsroom in Venice to better serve the area."
+                "body": "I interviewed some of the most important personalities in Venice during my time there. Venezia in Campo was so well received counting more than 50k viewers that the broadcaster opened a full newsroom in Venice to better serve the area."
             },
             {
                 "type": "text",
@@ -325,7 +325,7 @@ export const products =
             }
         },
         "title": "An app to encourage philantropy",
-        "subtitle": "Envisioning philantropy as a tool for good and networking",
+        "subtitle": "Envisioning philanthropy as a tool for good and networking",
         "content": [
             {
                 "type": "text",
@@ -342,11 +342,11 @@ export const products =
             },
             {
                 "type": "text",
-                "body": "We were challenged to design a product that could be used for the celebration of the bank's anniversry. We studied the bank's history and found two main returning themes: a commitment to philantropic activities and a strong focus on networking activities to build relationships between their clients."
+                "body": "We were challenged to design a product that could be used for the celebration of the bank's anniversary. We studied the bank's history and found two main returning themes: a commitment to philanthropic activities and a strong focus on networking activities to build relationships between their clients."
             },
             {
                 "type": "text",
-                "body": "We talked to numerouns clients and discovered that the bank's philantropic efforts were mainly targeting the UHNI. We created a product that could cater for the rest of the elite clientele and that could leverage on our two key findings."
+                "body": "We talked to numerous clients and discovered that the bank's philanthropic efforts were mainly targeting the UHNI. We created a product that could cater for the rest of the elite clientele and that could leverage on our two key findings."
             },
             {
                 "type": "image",
@@ -392,7 +392,7 @@ export const products =
             },
             {
                 "type": "text",
-                "body": "Looking ta the numbers, the airlines was very well known for its family oriented clientele. Flying with children is often seen as a stressful operation. We helped them define all key painpoints of the journey and designed the ultimate flying app for children."
+                "body": "Looking ta the numbers, the airlines was very well known for its family oriented clientele. Flying with children is often seen as a stressful operation. We helped them define all key pain points of the journey and designed the ultimate flying app for children."
             },
             {
                 "type": "text",
@@ -536,7 +536,7 @@ export const products =
             },
             {
                 "type": "text",
-                "body": "One of my first programming projects, Sanus is a patient management system developed in Java using the Swing library for the UI. It features an SQLite databse for storing patient and user data."
+                "body": "One of my first programming projects, Sanus is a patient management system developed in Java using the Swing library for the UI. It features an SQLite database for storing patient and user data."
             },
             {
                 "type": "text",
