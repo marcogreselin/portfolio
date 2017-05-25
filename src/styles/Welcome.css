@@ -5,23 +5,23 @@
 }
 
 /*This is to balance the invisible error box.*/
-.hello {
+.Welcome .hello {
     border-top: 36px transparent solid;
 }
 
-.question-box {
+.Welcome .question-box {
     margin-top: 40px;
 }
 
-.question .underline {
+.Welcome .question .underline {
     border-bottom: 3px solid yellow;
 }
 
-.question {
+.Welcome .question {
     margin-bottom: 15px;
 }
 
-.answer {
+.Welcome .answer {
     margin-top: 5px;
 }
 
@@ -81,6 +81,8 @@ button {
     transition: background-color 0.1s ease;
     user-select: none;
     cursor: pointer;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
 button:hover{
     background: #2f2f2f;
@@ -116,14 +118,15 @@ input[type="number"] {
   .Welcome {
       font-size: 1.6em!important;
   }
-  .hello {
+  .Welcome .hello {
       border-top: 0px;
   }
-  a{
+  .Welcome a{
     border-bottom: 2px solid;
   }
   input.minutes {
     border-bottom: 2px solid;
+    padding-bottom: 2px;
   }
   button {
       border: 2px solid #2f2f2f;
@@ -136,7 +139,7 @@ input[type="number"] {
   input.minutes {
       width: 50px;
   }
-  .choice {
+  .Welcome .choice {
       display: block;
       margin-bottom: 8px;
   }

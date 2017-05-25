@@ -3,6 +3,7 @@ import SmallForm from './SmallForm'
 import { ShortWork } from './ShortWork'
 import { LongWork } from './LongWork'
 import '../styles/Work.css'
+// import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup'
 
 
 
@@ -25,7 +26,7 @@ export class Work extends Component {
             <div className="Work">
                 <SmallForm routeState={this.getRouteState()}/>
                 {this.getRouteState().minutes<5 && <ShortWork routeState={this.getRouteState()} />}
-                <LongWork routeState={this.getRouteState()} />              
+                <LongWork key="dasd" routeState={this.getRouteState()} />
             </div>
         )
     }

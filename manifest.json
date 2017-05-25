@@ -1,15 +1,20 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Marco's Portfolio",
+  "name": "Marco's Portgfolio",
   "icons": [
     {
       "src": "favicon.ico",
-      "sizes": "192x192",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "180x180",
       "type": "image/png"
     }
   ],
   "start_url": "./index.html",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#E84A81",
+  "background_color": "#60A4C6"
 }

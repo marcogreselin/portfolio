@@ -10,10 +10,6 @@
     border-bottom: 1px solid #2f2f2f;
 }
 
-.ShortWork {
-    /*text-align: center;*/
-}
-
 .checkout {
     border-left: 2px solid #2f2f2f;
     margin: 20px auto 20px auto;
@@ -24,13 +20,81 @@
 
 .LongWork {
     margin-top: 5px;
-    border: 2px solid #2f2f2f;
+
+}
+
+.LongWork .productText {
+    margin-bottom: 15px;
 }
 
 .ShortWork+.LongWork{
-    margin-top: 20px
+    margin-top: 50px
 }
 
+.LongWork .subtitle-span {
+    border-bottom: 2px solid yellow;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.LongWork .subtitle {
+    margin-bottom: 10px;
+}
+
+.LongWork .title {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+button.see-more {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #2f2f2f;
+    font-size: 1.5em;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.emphasisTitle {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.productImage{
+    width: 100%;
+    /*margin-top: 20px;*/
+    margin-bottom: 20px;
+}
+
+.productLinks li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.productVideo{
+    margin-bottom: 20px;
+}
+
+.passwordProtected {
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 480px) {
+    .LongWork .title {
+        font-size: 1.4em;
+    }
+    .LongWork .subtitle{
+        display: none;
+    }
+    button.see-more{
+        font-size: 1em;
+    }
+}
 @media (max-width: 370px) {
     .LongWork {
         font-size: 0.9em;

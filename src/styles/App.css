@@ -57,6 +57,7 @@ a {
 @media (max-width: 767px) {
   .who {
     text-align: center;
+    margin-top:15px;
   }
   .back {
     text-align: center;
@@ -64,5 +65,15 @@ a {
   footer .social {
     border-bottom: solid 1px white;
   }
+}
+
+@media (max-width: 370px) {
+    .content {
+        padding: 15px;
+    }
+
+    .App {
+      padding: 17px;
+    }
 }
 

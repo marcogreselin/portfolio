@@ -16,6 +16,7 @@
     padding-left: 3px;
     padding-right: 3px;
     text-align: center;
+    border-radius: 0;
     /*margin: 5px;*/
 }
 
@@ -36,6 +37,8 @@
     margin-left: auto;
     border: 2px solid #2f2f2f;
     margin-right: auto;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
 
 .SmallForm .choice-wrapper {
@@ -50,6 +53,7 @@
 @media (max-width: 767px) {
     .SmallForm input[type=number]{
         margin-bottom: 5px;
+        padding-bottom: 1px;
     }
     .SmallForm .choice{
         text-align: center;

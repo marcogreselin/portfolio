@@ -86,7 +86,7 @@ class WelcomeForm extends Component {
         return (
             <form className="WelcomeForm" onSubmit={this.handleSubmit}>
                 <div className="question-box">
-                    <div className="question"><span className="underline">How much time do you have?</span></div>
+                    <div className="question"><span className="underline">How much time <span className="dont-break">do you have?</span></span></div>
                     <input className="minutes" type="number" value={this.state.minutes}
                            onChange={ (e) => this.handleChanges(e, "minutes")}/> minutes. 
                 </div>
@@ -110,7 +110,7 @@ class WelcomeForm extends Component {
                         </span>
                     </div>{/* end of .answer*/}
                 </div>{/* end .question-box*/}
-                <button>Show me magic</button>
+                <button type="submit">Show me magic</button>
                 <div className="errors">
                     {this.state.errors}
                 </div>
