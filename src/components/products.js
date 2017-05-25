@@ -6,8 +6,8 @@ export const products =
             "quality": 8,
             "relevancy": {
                 "design": 3,
-                "code": 9,
-                "business": 5
+                "code": 8,
+                "business": 7
             }
         },
         "title": "AdCall: Bringing WebRTC to display ads",
@@ -118,7 +118,7 @@ export const products =
                 "business": 8
             }
         },
-        "title": "The first app to discover and live pop-up shops",
+        "title": "Snicket: an app to discover and live pop-up shops",
         "subtitle": "The future of retail is about temporary experiences",
         "content": [
             {
@@ -597,7 +597,7 @@ export const products =
     {
         "name":"portfolio",
         "scores": {
-            "quality": 7,
+            "quality": 8,
             "relevancy": {
                 "design": 8,
                 "code": 7,

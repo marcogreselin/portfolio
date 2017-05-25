@@ -3,13 +3,12 @@ import SmallForm from './SmallForm'
 import { ShortWork } from './ShortWork'
 import { LongWork } from './LongWork'
 import '../styles/Work.css'
-// import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup'
-
-
+import {products} from './products'
 
 export class Work extends Component {
-    getRouteState = ()=> {
-        return {
+    constructor(props) {
+        super(props)
+        this.state = {
             minutes: parseInt(this.props.search.substring(6).split("&")[0],10),
             interests: {
                     business: /b/.test(this.props.search.substring(6).split("&")[1].substring(9)),
@@ -21,25 +20,40 @@ export class Work extends Component {
 
     componentDidMount = () => document.title = "Marco's Work"
 
-    orderedArray = ()=> {
-        let share
-        if(this.state.interests.design && this.state.interests.code && this.state.interests.business)
-            share = .33
-        else if((this.state.interests.design && this.state.interests.code) || 
-                (this.state.interests.design && this.state.interests.business) ||
-                (this.state.interests.business && this.state.interests.code))
-            share = .5
-        else 
-            share = 1
-        console.log(share)
+    changeWorkState = (newState) => {
+        // console.log("changeWorkState being called with this state: "+JSON.stringify(newState))
+        this.setState(newState)
+        // console.log(this.orderedArray())
     }
+
+    orderedArray = () => {
+        let sortedArray = products
+        if(this.state.interests.design && this.state.interests.code && this.state.interests.business)
+            sortedArray.sort((a,b)=> (b.scores.quality-a.scores.quality))
+        else if(this.state.interests.design && this.state.interests.code)
+            sortedArray.sort((a,b) => (b.scores.quality*b.scores.relevancy.code*b.scores.relevancy.design/2)-(a.scores.quality*a.scores.relevancy.code*a.scores.relevancy.design/2))
+        else if(this.state.interests.design && this.state.interests.business)
+            sortedArray.sort((a,b) => (b.scores.quality*b.scores.relevancy.business*b.scores.relevancy.design/2)-(a.scores.quality*a.scores.relevancy.business*a.scores.relevancy.design/2))
+        else if(this.state.interests.business && this.state.interests.code)
+            sortedArray.sort((a,b) => (b.scores.quality*b.scores.relevancy.business*b.scores.relevancy.code/2)-(a.scores.quality*a.scores.relevancy.business*a.scores.relevancy.code/2))
+        else if(this.state.interests.business)
+            sortedArray.sort((a,b)=> (b.scores.quality*b.scores.relevancy.business-a.scores.quality*a.scores.relevancy.business))
+        else if(this.state.interests.code)
+            sortedArray.sort((a,b)=> (b.scores.quality*b.scores.relevancy.code-a.scores.quality*a.scores.relevancy.code))
+        else if(this.state.interests.design)
+            sortedArray.sort((a,b)=> (b.scores.quality*b.scores.relevancy.design-a.scores.quality*a.scores.relevancy.design))
+        // console.log(JSON.stringify(sortedArray[1]))
+        return sortedArray
+    }
+
+
   
     render() {
         return(
             <div className="Work">
-                <SmallForm routeState={this.getRouteState()} orderedArray={this.orderedArray}/>
-                {this.getRouteState().minutes<5 && <ShortWork routeState={this.getRouteState()} />}
-                <LongWork key="dasd" routeState={this.getRouteState()} />
+                <SmallForm routeState={this.state} changeWorkState={this.changeWorkState}/>
+                {this.state.minutes<5 && <ShortWork />}
+                <LongWork orderedArray={this.orderedArray()} minutes={this.state.minutes} />
             </div>
         )
     }

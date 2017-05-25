@@ -53,9 +53,8 @@ class SmallForm extends Component {
         
         if(this.validateForm()){
             this.props.history.push("/work?mins="+this.state.minutes+"&interest="+this.interestsInitials())
-            this.props.orderedArray()
-        }
-            
+            this.props.changeWorkState(this.state)
+        }   
         this.setState({pressedEnter: true})
     }
 

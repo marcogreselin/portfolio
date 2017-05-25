@@ -1,23 +1,26 @@
 import React, { Component } from 'react'
-import fitvids from 'fitvids'
-import {products} from './products'
+// import fitvids from 'fitvids'
 
 export class LongWork extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            minutes: this.props.routeState.minutes,
-            interests: {
-                business: this.props.routeState.interests.business,
-                code: this.props.routeState.interests.code,
-                design: this.props.routeState.interests.design
-            }
+            countShown: 0
         }
     }
 
-    componentDidMount = () => {
-        fitvids()
+
+    packageElements = () => {
+        if(this.props.minutes<5)
+            return [this.props.orderedArray[0]]
+        else if(this.props.minutes<=10)
+            return this.props.orderedArray.slice(0,3)
+        else 
+            return this.props.orderedArray.slice(0, 4+parseInt((this.props.minutes-10)/3,10))
+    
     }
+
+
 
     renderContent = (content, l) => {
         switch(content.type){
@@ -39,7 +42,7 @@ export class LongWork extends Component {
                 )
             case "video":
                 return (
-                    <div className="productVideo" key={l}>
+                    <div className="product-video" key={l}>
                         <iframe title={content.title} width='560' height='315' src={content.body} frameBorder='0' allowFullScreen></iframe>
                     </div>
                 )
@@ -51,7 +54,7 @@ export class LongWork extends Component {
     render() {
         return(
             <div className="LongWork">
-                { products.map((product, i) => {
+                { this.packageElements().map((product, i) => {
                     return(<div className="product-wrapper" key={i}>
                         <div className="subtitle"><span className="subtitle-span">{product.subtitle}</span></div>
                         <div className="title"><span className="title-span">{product.title}</span></div>
@@ -76,9 +79,6 @@ export class LongWork extends Component {
                         
                     </div>)
                 } )}
-
-
-
                 <button className="see-more">See some more</button>
             </div>
         )
