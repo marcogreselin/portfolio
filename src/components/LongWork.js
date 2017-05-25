@@ -2,25 +2,6 @@ import React, { Component } from 'react'
 // import fitvids from 'fitvids'
 
 export class LongWork extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            countShown: 0
-        }
-    }
-
-
-    packageElements = () => {
-        if(this.props.minutes<5)
-            return [this.props.orderedArray[0]]
-        else if(this.props.minutes<=10)
-            return this.props.orderedArray.slice(0,3)
-        else 
-            return this.props.orderedArray.slice(0, 4+parseInt((this.props.minutes-10)/3,10))
-    
-    }
-
-
 
     renderContent = (content, l) => {
         switch(content.type){
@@ -51,10 +32,21 @@ export class LongWork extends Component {
         }
     }
 
+    addThree = () => this.props.changeWorkState({addedElements: this.props.addedElements+3})
+
+    initialNumberOfElements = () => {
+        if(this.props.parentState.minutes<5)
+            return 1
+        else if(this.props.parentState.minutes<=10)
+            return 3
+        else 
+            return  4+parseInt((this.props.parentState.minutes-10)/3,10)
+    }
+
     render() {
         return(
             <div className="LongWork">
-                { this.packageElements().map((product, i) => {
+                { this.props.orderedArray.slice(0,this.initialNumberOfElements()+this.props.addedElements).map((product, i) => {
                     return(<div className="product-wrapper" key={i}>
                         <div className="subtitle"><span className="subtitle-span">{product.subtitle}</span></div>
                         <div className="title"><span className="title-span">{product.title}</span></div>
@@ -79,7 +71,7 @@ export class LongWork extends Component {
                         
                     </div>)
                 } )}
-                <button className="see-more">See some more</button>
+                <button onClick={this.addThree} className="see-more">See some more</button>
             </div>
         )
     }

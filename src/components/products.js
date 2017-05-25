@@ -165,7 +165,7 @@ export const products =
     {
         "name":"band",
         "scores": {
-            "quality": 7,
+            "quality": 8,
             "relevancy": {
                 "design": 6,
                 "code": 6,
@@ -580,6 +580,11 @@ export const products =
                 "body": "I decided to engage in an exercise and describe one phenomenon - the growth of pop-up stores - in three languages. One page of writing, one page of drawing and one page of coding."
             },
             {
+                "type":"image",
+                "url":"https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/business_uml.jpg?alt=media&token=7aa43f86-14b4-407f-996e-8df78b113a60",
+                "title":"UML for Business"
+            },
+            {
                 "type": "text",
                 "body": "This project is particularly meaningful to me because it uses all the skills I developed over the last few years in a simple yet meaningful way. Have a look and let me know!"
             }
@@ -597,10 +602,10 @@ export const products =
     {
         "name":"portfolio",
         "scores": {
-            "quality": 8,
+            "quality": 7,
             "relevancy": {
                 "design": 8,
-                "code": 7,
+                "code": 8,
                 "business": 7
             }
         },

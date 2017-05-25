@@ -14,7 +14,8 @@ export class Work extends Component {
                     business: /b/.test(this.props.search.substring(6).split("&")[1].substring(9)),
                     code: /c/.test(this.props.search.substring(6).split("&")[1].substring(9)),
                     design: /d/.test(this.props.search.substring(6).split("&")[1].substring(9))
-            }
+            },
+            addedElements: 0
         }
     }
 
@@ -23,7 +24,11 @@ export class Work extends Component {
     changeWorkState = (newState) => {
         // console.log("changeWorkState being called with this state: "+JSON.stringify(newState))
         this.setState(newState)
-        // console.log(this.orderedArray())
+        this.setState({addedElements: 0})
+    }
+
+    changeWorkStateAddElements = (newState) => {
+        this.setState(newState)
     }
 
     orderedArray = () => {
@@ -47,13 +52,16 @@ export class Work extends Component {
     }
 
 
+
+
   
     render() {
         return(
             <div className="Work">
                 <SmallForm routeState={this.state} changeWorkState={this.changeWorkState}/>
                 {this.state.minutes<5 && <ShortWork />}
-                <LongWork orderedArray={this.orderedArray()} minutes={this.state.minutes} />
+                <LongWork orderedArray={this.orderedArray()} parentState={this.state} 
+                          changeWorkState={this.changeWorkStateAddElements} addedElements={this.state.addedElements} />
             </div>
         )
     }
