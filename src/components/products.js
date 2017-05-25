@@ -1,5 +1,13 @@
-[
+export const products = [
     {
+        "scores": {
+            "quality": 8,
+            "relevancy": {
+                "design": 3,
+                "code": 9,
+                "business": 5
+            }
+        },
         "title": "AdCall: Bringing WebRTC to display ads",
         "subtitle": "The first advertising banner with video calls",
         "content": [
@@ -9,7 +17,8 @@
             },
             {
                 "type": "image",
-                "body": "https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/kitchen.jpg?alt=media&token=36f0c0b4-9507-4330-9683-6a1239daf9f6"
+                "body": "https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/kitchen.jpg?alt=media&token=36f0c0b4-9507-4330-9683-6a1239daf9f6",
+                "alt": "Marco Pitching"
             },
             {
                 "type": "emphasis",
@@ -17,7 +26,8 @@
             },
             {
                 "type": "video",
-                "body": "<iframe title='AdCall' width='560' height='315' src='https://www.youtube.com/embed/3ZDOA5haCeY?rel=0&amp;showinfo=0&amp;start=155' frameBorder='0' allowFullScreen></iframe>"
+                "body": "https://www.youtube.com/embed/3ZDOA5haCeY?rel=0&amp;showinfo=0&amp;start=155",
+                "title": "AdCall"
             },
             {
                 "type": "text",
