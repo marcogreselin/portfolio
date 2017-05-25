@@ -29,7 +29,7 @@ export class LongWork extends Component {
                 )
             case "image":
                 return (
-                    <img key={l} className="productImage" src={content.body} alt={content.alt}/>
+                    <img key={l} className="productImage" src={content.url} alt={content.alt}/>
                 )
             case "emphasis":
                 return (
@@ -69,7 +69,7 @@ export class LongWork extends Component {
                             )}
                             <ul>
                                 {product.links.content.map((link, g)=>{
-                                    return <li key={g}><a href={link.url}>{link.title}</a></li>
+                                    return <li key={g}><a target="_blank" rel="noopener noreferrer" href={link.url}>{link.title}</a></li>
                                 })}
                             </ul>
                         </div>

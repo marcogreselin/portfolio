@@ -88,6 +88,10 @@ button.see-more {
     margin-bottom: 60px;
 }
 
+.product-wrapper+.product-wrapper {
+    margin-top: 80px;
+}
+
 @media (max-width: 480px) {
     .LongWork .title {
         font-size: 1.4em;
@@ -106,9 +110,14 @@ button.see-more {
     .product-wrapper{
         margin-bottom: 40px;
     }
+
+    .product-wrapper+.product-wrapper {
+        margin-top: 55px;
+    }
 }
 @media (max-width: 370px) {
     .LongWork {
         font-size: 0.9em;
     }
+    
 }
