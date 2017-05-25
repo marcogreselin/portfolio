@@ -134,5 +134,8 @@ button.see-more {
     .LongWork {
         font-size: 0.9em;
     }
+    button:hover {
+        
+    }
     
 }

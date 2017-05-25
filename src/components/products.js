@@ -234,7 +234,7 @@ export const products =
                 "business": 6
             }
         },
-        "title": "AuctionBay, a prettier eBay",
+        "title": "AuctionBay, pretty eBay",
         "subtitle": "Built on a LAMP stack with responsive design",
         "content": [
             {

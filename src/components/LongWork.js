@@ -71,7 +71,7 @@ export class LongWork extends Component {
                         
                     </div>)
                 } )}
-                <button onClick={this.addThree} className="see-more">See some more</button>
+                {this.props.orderedArray.length > (this.initialNumberOfElements()+this.props.addedElements) && <button onClick={this.addThree} className="see-more">See some more</button>}
             </div>
         )
     }

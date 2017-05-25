@@ -144,3 +144,11 @@ input[type="number"] {
       margin-bottom: 8px;
   }
 }
+
+/*This is a problem with all iPhones */
+@media(max-width:450px){
+    button:hover{
+        color: #2f2f2f;
+        background: white;
+    }
+}
