@@ -54,7 +54,7 @@ export class LongWork extends Component {
                 { products.map((product, i) => {
                     return(<div className="product-wrapper" key={i}>
                         <div className="subtitle"><span className="subtitle-span">{product.subtitle}</span></div>
-                        <div className="title">{product.title}</div>
+                        <div className="title"><span className="title-span">{product.title}</span></div>
                         {product.content.map((content, l) => {
                             return(
                                 this.renderContent(content, l)

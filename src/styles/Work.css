@@ -91,6 +91,11 @@ button.see-more {
 @media (max-width: 480px) {
     .LongWork .title {
         font-size: 1.4em;
+
+    }
+    .LongWork .title-span {
+        font-weight: bold;
+        border-bottom: 2px solid yellow;
     }
     .LongWork .subtitle{
         display: none;
