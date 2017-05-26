@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-// import fitvids from 'fitvids'
 
 export class LongWork extends Component {
 
@@ -40,7 +39,7 @@ export class LongWork extends Component {
         else if(this.props.parentState.minutes<=10)
             return 3
         else 
-            return  4+parseInt((this.props.parentState.minutes-10)/3,10)
+            return  4+parseInt((this.props.parentState.minutes-10)/4,10)
     }
 
     render() {

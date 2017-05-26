@@ -57,7 +57,6 @@ a {
 @media (max-width: 767px) {
   .who {
     text-align: center;
-    margin-top:15px;
   }
   .back {
     text-align: center;
@@ -71,9 +70,11 @@ a {
     .content {
         padding: 15px;
     }
-    
     .App {
       padding: 17px;
+    }
+    .centered-wrapper {
+      min-height: calc(100vh - 168px + 26px);
     }
 }
 

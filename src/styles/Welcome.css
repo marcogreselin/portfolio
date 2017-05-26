@@ -61,7 +61,6 @@ input[type="checkbox"] {
     display: none;
 }
 
-
 input[type="checkbox"]:checked + label {
     background: #2f2f2f;
     color: white;

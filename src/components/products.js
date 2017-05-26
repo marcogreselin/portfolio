@@ -230,7 +230,7 @@ export const products =
             "quality": 6,
             "relevancy": {
                 "design": 6,
-                "code": 9,
+                "code": 8,
                 "business": 6
             }
         },
@@ -272,7 +272,7 @@ export const products =
     {
         "name":"veneziaincampo",
         "scores": {
-            "quality": 4,
+            "quality": 5,
             "relevancy": {
                 "design": 2,
                 "code": 1,
@@ -573,7 +573,7 @@ export const products =
             },
             {
                 "type": "text",
-                "body": "Today's business requires the use of multiple languages: from being able to articulate ideas and thoughts in writing to sketching relationships to talking to engineers and define implementations."
+                "body": "Today's \n business requires the use of multiple languages: from being able to articulate ideas and thoughts in writing to sketching relationships to talking to engineers and define implementations."
             },
             {
                 "type": "text",
@@ -598,56 +598,57 @@ export const products =
                 }
             ]
         }
-    },
-    {
-        "name":"portfolio",
-        "scores": {
-            "quality": 7,
-            "relevancy": {
-                "design": 8,
-                "code": 8,
-                "business": 7
-            }
-        },
-        "title": "The first user-centric portfolio",
-        "subtitle": "Placing the user at the centre of the experience",
-        "content": [
-            {
-                "type": "image",
-                "url": "https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/three_draw.jpg?alt=media&token=17f689ca-39d5-42d0-973f-54b77c473e87",
-                "title": "Drawing business"
-            },
-            {
-                "type": "text",
-                "body": "A portfolio that becomes a product featured within. We can call this the first user centred portfolio: it builds around the user needs, not what the creator believes the user needs. This is fundamental for two reasons: different users have very different amount of times. Moreover, for product managers like me, there's a need to showcase many skills at the same time whilst users have their own interests."
-            },
-            {
-                "type": "image",
-                "url": "https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/three_draw.jpg?alt=media&token=17f689ca-39d5-42d0-973f-54b77c473e87",
-                "title": "Drawing business"
-            },
-            {
-                "type": "text",
-                "body": "To achieve this, I gave two scores to each product: an overall quality score and one for each of the three interests. The user makes a selection and the application will return a bespoke version of the portfolio."
-            },            
-            {
-                "type": "text",
-                "body": "It's built with React which makes it fast, and designed to look good on any platform and any browser. Have you ever seen a portfolio that talks about itself?"
-            },
-            {
-                "type": "video",
-                "body": "https://www.youtube.com/embed/bodC7oZ2Cnk?rel=0&amp;showinfo=0&amp",
-                "title": "Sanus"
-            }
-        ],
-        "links": {
-            "password": false,
-            "content": [
-                {
-                    "title": "Github",
-                    "url": "https://github.com/marcogreselin/portfolio"
-                }
-            ]
-        }
     }
+    // ,
+    // {
+    //     "name":"portfolio",
+    //     "scores": {
+    //         "quality": 7,
+    //         "relevancy": {
+    //             "design": 8,
+    //             "code": 8,
+    //             "business": 7
+    //         }
+    //     },
+    //     "title": "The first user-centric portfolio",
+    //     "subtitle": "Placing the user at the centre of the experience",
+    //     "content": [
+    //         {
+    //             "type": "image",
+    //             "url": "https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/three_draw.jpg?alt=media&token=17f689ca-39d5-42d0-973f-54b77c473e87",
+    //             "title": "Drawing business"
+    //         },
+    //         {
+    //             "type": "text",
+    //             "body": "A portfolio that becomes a product featured within. We can call this the first user centred portfolio: it builds around the user needs, not what the creator believes the user needs. This is fundamental for two reasons: different users have very different amount of times. Moreover, for product managers like me, there's a need to showcase many skills at the same time whilst users have their own interests."
+    //         },
+    //         {
+    //             "type": "image",
+    //             "url": "https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/three_draw.jpg?alt=media&token=17f689ca-39d5-42d0-973f-54b77c473e87",
+    //             "title": "Drawing business"
+    //         },
+    //         {
+    //             "type": "text",
+    //             "body": "To achieve this, I gave two scores to each product: an overall quality score and one for each of the three interests. The user makes a selection and the application will return a bespoke version of the portfolio."
+    //         },            
+    //         {
+    //             "type": "text",
+    //             "body": "It's built with React which makes it fast, and designed to look good on any platform and any browser. Have you ever seen a portfolio that talks about itself?"
+    //         },
+    //         {
+    //             "type": "video",
+    //             "body": "https://www.youtube.com/embed/bodC7oZ2Cnk?rel=0&amp;showinfo=0&amp",
+    //             "title": "Sanus"
+    //         }
+    //     ],
+    //     "links": {
+    //         "password": false,
+    //         "content": [
+    //             {
+    //                 "title": "Github",
+    //                 "url": "https://github.com/marcogreselin/portfolio"
+    //             }
+    //         ]
+    //     }
+    // }
 ]

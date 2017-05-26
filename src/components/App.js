@@ -6,6 +6,7 @@ import { Welcome } from './Welcome'
 import { Life } from './Life'
 import { Work } from './Work'
 
+
 const sayHello = () => {
   const hellos = ['Hola', 'Salut', 'Hallo', 'Ciao', 'Ahoj', 'Annyeong-haseyo', 'Aloha', 'Howdy', 'Ni Hao', 'Konnichiwa']
   return hellos[Math.floor((Math.random()*hellos.length))];

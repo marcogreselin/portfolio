@@ -22,7 +22,6 @@ export class Work extends Component {
     componentDidMount = () => document.title = "Marco's Work"
 
     changeWorkState = (newState) => {
-        // console.log("changeWorkState being called with this state: "+JSON.stringify(newState))
         this.setState(newState)
         this.setState({addedElements: 0})
     }
@@ -47,14 +46,9 @@ export class Work extends Component {
             sortedArray.sort((a,b)=> (b.scores.quality*b.scores.relevancy.code-a.scores.quality*a.scores.relevancy.code))
         else if(this.state.interests.design)
             sortedArray.sort((a,b)=> (b.scores.quality*b.scores.relevancy.design-a.scores.quality*a.scores.relevancy.design))
-        // console.log(JSON.stringify(sortedArray[1]))
         return sortedArray
     }
 
-
-
-
-  
     render() {
         return(
             <div className="Work">
