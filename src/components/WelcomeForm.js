@@ -110,7 +110,7 @@ class WelcomeForm extends Component {
                         </span>
                     </div>{/* end of .answer*/}
                 </div>{/* end .question-box*/}
-                <button type="submit">Show me magic</button>
+                <button type="submit">Show me your work</button>
                 <div className="errors">
                     {this.state.errors}
                 </div>
@@ -119,4 +119,4 @@ class WelcomeForm extends Component {
     }
 }
 
-export default withRouter(WelcomeForm);    
+export default withRouter(WelcomeForm)

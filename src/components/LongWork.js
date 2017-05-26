@@ -33,19 +33,12 @@ export class LongWork extends Component {
 
     addThree = () => this.props.changeWorkState({addedElements: this.props.addedElements+3})
 
-    initialNumberOfElements = () => {
-        if(this.props.parentState.minutes<5)
-            return 1
-        else if(this.props.parentState.minutes<=10)
-            return 3
-        else 
-            return  4+parseInt((this.props.parentState.minutes-10)/4,10)
-    }
+
 
     render() {
         return(
             <div className="LongWork">
-                { this.props.orderedArray.slice(0,this.initialNumberOfElements()+this.props.addedElements).map((product, i) => {
+                { this.props.orderedArray.slice(0,this.props.initialNumberOfElements()+this.props.addedElements).map((product, i) => {
                     return(<div className="product-wrapper" key={i}>
                         <div className="subtitle"><span className="subtitle-span">{product.subtitle}</span></div>
                         <div className="title"><span className="title-span">{product.title}</span></div>
@@ -70,7 +63,7 @@ export class LongWork extends Component {
                         
                     </div>)
                 } )}
-                {this.props.orderedArray.length > (this.initialNumberOfElements()+this.props.addedElements) && <button onClick={this.addThree} className="see-more">See some more</button>}
+                {this.props.orderedArray.length > (this.props.initialNumberOfElements()+this.props.addedElements) && <button onClick={this.addThree} className="see-more">See some more</button>}
             </div>
         )
     }

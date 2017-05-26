@@ -104,6 +104,10 @@ button.see-more {
 	height:100%;
 }
 
+.Preambole {
+    margin-bottom: 30px;
+}
+
 @media (max-width: 480px) {
     .LongWork .title {
         font-size: 1.4em;

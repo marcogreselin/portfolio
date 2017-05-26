@@ -81,7 +81,7 @@ export const products =
             },
             {
                 "type": "text",
-                "body": "The design sprint started by understanding our client, a UK celebrity chef, their revenue streams and how we could leverage on existing digital platforms to create a new revenue opportunity. It was clear the TV was still gathering most of their audience reach but its potential was underutilises."
+                "body": "The design sprint started by understanding our client, a UK celebrity chef, their revenue streams and how we could leverage on existing digital platforms to create a new revenue opportunity. It was clear the TV was still generating most of their audience but its potential was underutilised."
             },
             {
                 "type":"image",
@@ -113,7 +113,7 @@ export const products =
         "scores": {
             "quality": 8,
             "relevancy": {
-                "design": 7,
+                "design": 9,
                 "code": 2,
                 "business": 8
             }
@@ -203,7 +203,7 @@ export const products =
             },
             {
                 "type": "image",
-                "url": "https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/band_dashboard.jpg?alt=media&token=578f1dac-4edd-4a86-8499-bea6bed588f1"
+                "url": "https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/band_dashboard.jpg?alt=media&token=2cea92e0-0b45-47f9-920d-2e252ad9a635"
             },
             {
                 "type": "text",
@@ -392,7 +392,7 @@ export const products =
             },
             {
                 "type": "text",
-                "body": "Looking ta the numbers, the airlines was very well known for its family oriented clientele. Flying with children is often seen as a stressful operation. We helped them define all key pain points of the journey and designed the ultimate flying app for children."
+                "body": "It was clear from a first analysis that the airline was very well known for its family oriented clientele. Flying with children is often seen as a stressful operation. We helped them define all key pain points of the journey and designed the ultimate flying app for children."
             },
             {
                 "type": "text",
@@ -558,7 +558,7 @@ export const products =
         "scores": {
             "quality": 8,
             "relevancy": {
-                "design": 7,
+                "design": 8,
                 "code": 5,
                 "business": 10
             }
@@ -599,56 +599,57 @@ export const products =
             ]
         }
     }
-    // ,
-    // {
-    //     "name":"portfolio",
-    //     "scores": {
-    //         "quality": 7,
-    //         "relevancy": {
-    //             "design": 8,
-    //             "code": 8,
-    //             "business": 7
-    //         }
-    //     },
-    //     "title": "The first user-centric portfolio",
-    //     "subtitle": "Placing the user at the centre of the experience",
-    //     "content": [
-    //         {
-    //             "type": "image",
-    //             "url": "https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/three_draw.jpg?alt=media&token=17f689ca-39d5-42d0-973f-54b77c473e87",
-    //             "title": "Drawing business"
-    //         },
-    //         {
-    //             "type": "text",
-    //             "body": "A portfolio that becomes a product featured within. We can call this the first user centred portfolio: it builds around the user needs, not what the creator believes the user needs. This is fundamental for two reasons: different users have very different amount of times. Moreover, for product managers like me, there's a need to showcase many skills at the same time whilst users have their own interests."
-    //         },
-    //         {
-    //             "type": "image",
-    //             "url": "https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/three_draw.jpg?alt=media&token=17f689ca-39d5-42d0-973f-54b77c473e87",
-    //             "title": "Drawing business"
-    //         },
-    //         {
-    //             "type": "text",
-    //             "body": "To achieve this, I gave two scores to each product: an overall quality score and one for each of the three interests. The user makes a selection and the application will return a bespoke version of the portfolio."
-    //         },            
-    //         {
-    //             "type": "text",
-    //             "body": "It's built with React which makes it fast, and designed to look good on any platform and any browser. Have you ever seen a portfolio that talks about itself?"
-    //         },
-    //         {
-    //             "type": "video",
-    //             "body": "https://www.youtube.com/embed/bodC7oZ2Cnk?rel=0&amp;showinfo=0&amp",
-    //             "title": "Sanus"
-    //         }
-    //     ],
-    //     "links": {
-    //         "password": false,
-    //         "content": [
-    //             {
-    //                 "title": "Github",
-    //                 "url": "https://github.com/marcogreselin/portfolio"
-    //             }
-    //         ]
-    //     }
-    // }
+    ,
+    {
+        "name":"portfolio",
+        "scores": {
+            "quality": 7,
+            "relevancy": {
+                "design": 8,
+                "code": 8,
+                "business": 7
+            }
+        },
+        "title": "The first user-centric portfolio",
+        "subtitle": "Placing the user at the centre of the experience",
+        "content": [
+            {
+                "type": "image",
+                "url": "https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/portfolio_art.jpg?alt=media&token=2f30d833-bf3a-46fe-9b19-e6bf59753329",
+                "title": "Drawing business"
+            },
+            {
+                "type": "text",
+                "body": "A portfolio that becomes a product featured within. We can call this the first user centred portfolio: it builds around the user needs, not what the creator believes the user needs. This is fundamental for two reasons: different users have very different amount of times. Moreover, for product managers like me, there's a need to showcase many skills at the same time whilst users have their own interests."
+            },
+            {
+                "type": "image",
+                "url": "https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/portfolio_chipp.jpg?alt=media&token=6c3c75d6-96f1-4deb-81f0-e5f8053bc9aa",
+                "title": "Drawing business"
+            },
+            {
+                "type": "text",
+                "body": "To achieve this, I gave two scores to each product: an overall quality score and one for each of the three interests. The user makes a selection and the application will return a bespoke version of the portfolio."
+            },            
+            {
+                "type": "text",
+                "body": "It's built with React which makes it fast, and designed to look good on any platform and any browser. Have you ever seen a portfolio that talks about itself?"
+            }
+            // ,
+            // {
+            //     "type": "video",
+            //     "body": "https://www.youtube.com/embed/bodC7oZ2Cnk?rel=0&amp;showinfo=0&amp",
+            //     "title": "Sanus"
+            // }
+        ],
+        "links": {
+            "password": false,
+            "content": [
+                {
+                    "title": "Github",
+                    "url": "https://github.com/marcogreselin/portfolio"
+                }
+            ]
+        }
+    }
 ]

@@ -109,7 +109,7 @@ class SmallForm extends Component {
                         </span>
                     </div>
 
-                    <button>Update your magic</button>
+                    <button>Show me some products</button>
                 </form>
                 <div className="errors">
                     {this.state.errors}
@@ -119,4 +119,4 @@ class SmallForm extends Component {
     }
 }
 
-export default withRouter(SmallForm);    
+export default withRouter(SmallForm)

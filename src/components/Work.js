@@ -2,8 +2,10 @@ import React, { Component } from 'react'
 import SmallForm from './SmallForm'
 import { ShortWork } from './ShortWork'
 import { LongWork } from './LongWork'
+import Preambole from './Preambole' 
 import '../styles/Work.css'
 import {products} from './products'
+
 
 export class Work extends Component {
     constructor(props) {
@@ -49,13 +51,28 @@ export class Work extends Component {
         return sortedArray
     }
 
+    initialNumberOfElements = () => {
+        
+        if(this.state.minutes<5)
+            return 1
+        else if(this.state.minutes<=10)
+            return 3
+        else 
+            return  Math.min(4+parseInt((this.state.minutes-10)/4,10), products.length)
+    }
+
     render() {
         return(
             <div className="Work">
                 <SmallForm routeState={this.state} changeWorkState={this.changeWorkState}/>
-                {this.state.minutes<5 && <ShortWork />}
-                <LongWork orderedArray={this.orderedArray()} parentState={this.state} 
-                          changeWorkState={this.changeWorkStateAddElements} addedElements={this.state.addedElements} />
+                
+                {this.state.minutes<5 ? <ShortWork /> : <Preambole minutes={this.state.minutes} 
+                                                                   initialNumberOfElements={this.initialNumberOfElements}
+                                                                   interests = {this.state.interests}/>}
+                
+                <LongWork orderedArray={this.orderedArray()} parentState={this.state} initialNumberOfElements={this.initialNumberOfElements}
+                          interests={this.state.interests} changeWorkState={this.changeWorkStateAddElements} 
+                          addedElements={this.state.addedElements} />
             </div>
         )
     }
