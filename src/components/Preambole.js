@@ -22,7 +22,7 @@ class Preambole extends Component {
     render() {
         return (
             <div className="Preambole">
-                I selected {this.props.initialNumberOfElements()} products for you. They are ordered like this since you're into {this.stringifyListOfInterests()}.
+                I selected {this.props.initialNumberOfElements()} products for you. They are prioritised based on your interest in {this.stringifyListOfInterests()}.
                 <div className="checkout">
                     Who's Marco, you may say. You can find a quick intro <Link to={{pathname: "/life", 
                                                                           state: { search: this.props.location.search } }}>here</Link>.
