@@ -8,10 +8,10 @@
 }
 
 .content {
-    background-color: white;
-    flex-direction: column;
-    padding:25px;
-    font-family: 'Roboto', sans-serif;
+  background-color: white;
+  flex-direction: column;
+  padding:25px;
+  font-family: 'Roboto', sans-serif;
 }
 
 footer {
@@ -43,6 +43,10 @@ a {
   text-align: right;
   margin-top: 25px;
   user-select: none;
+}
+
+.who + .back {
+  margin-top: 10px;
 }
 
 .who a, .back a{

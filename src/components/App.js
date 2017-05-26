@@ -22,7 +22,7 @@ export class App extends Component {
       return (<div className="back">[ <Link to={"/work"+location.state.search}>Back to work</Link> ]</div>)
     if(location.pathname==="/work")
       // return (<div className="back">[ <Link to="/">Go Back Home</Link> ]</div>)
-      return (<div className="who">[ <Link to={{pathname: "/life", state: { search: this.props.location.search } }}>Who's Marco</Link> ]</div>)
+      return (<div className="who-back"><div className="who">[ <Link to={{pathname: "/life", state: { search: this.props.location.search } }}>Who's Marco</Link> ]</div><div className="back">[ <Link to="/">Go Back Home</Link> ]</div></div>)
     if(location.pathname === "/life")
       return (<div className="back">[ <Link to="/">Go Back Home</Link> ]</div>)
     else
