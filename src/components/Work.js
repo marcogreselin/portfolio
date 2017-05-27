@@ -69,14 +69,10 @@ export class Work extends Component {
                     {this.state.minutes<5 ? <ShortWork /> : <Preambole minutes={this.state.minutes} 
                                                                     initialNumberOfElements={this.initialNumberOfElements}
                                                                     interests = {this.state.interests}/>}
-                                                                    
                     
                     <LongWork orderedArray={this.orderedArray()} parentState={this.state} initialNumberOfElements={this.initialNumberOfElements}
                             interests={this.state.interests} changeWorkState={this.changeWorkStateAddElements} 
                             addedElements={this.state.addedElements} />
-                
-
-
             </div>
         )
     }

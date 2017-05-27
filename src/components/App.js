@@ -17,7 +17,6 @@ export class App extends Component {
     if(location.pathname === "/life" && location.state && location.state.search)
       return (<div className="back">[ <Link to={"/work"+location.state.search}>Back to work</Link> ]</div>)
     if(location.pathname==="/work")
-      // return (<div className="back">[ <Link to="/">Go Back Home</Link> ]</div>)
       return (<div className="who-back"><div className="who">[ <Link to={{pathname: "/life", state: { search: this.props.location.search } }}>Who's Marco</Link> ]</div><div className="back">[ <Link to={{pathname: "/", state: {form: true} }}>Go Back Home</Link> ]</div></div>)
     if(location.pathname === "/life")
       return (<div className="back">[ <Link to="/">Go Back Home</Link> ]</div>)
@@ -61,7 +60,6 @@ export class App extends Component {
             <a href="https://www.github.com/marcogreselin" target="_blank" className="social" rel="noopener noreferrer">Github</a>
             <a href="https://www.linkedin.com/in/marcogreselin/" target="_blank" className="social" rel="noopener noreferrer">Linkedin</a>
             <a href="mailto:marcogreselin@me.com?subject=Let&#8217;s get a coffee!" className="social" rel="noopener noreferrer">Email</a>
-            {/*<a href="https://www.instagram.com/marcogreselin" target="_blank" className="iphone-hidden social" rel="noopener noreferrer">Instagram</a>*/}
           </footer>
         </div>
     )

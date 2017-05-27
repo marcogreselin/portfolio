@@ -49,7 +49,8 @@ class SmallForm extends Component {
     }
 
     handleSubmit = (e) => {
-        e.preventDefault()
+        if(e)
+            e.preventDefault()
         
         if(this.validateForm()){
             this.props.history.push("/work?mins="+this.state.minutes+"&interest="+this.interestsInitials())
@@ -63,25 +64,43 @@ class SmallForm extends Component {
     handleChanges = (e, changeName) => {
         switch (changeName) {
             case "minutes": 
-                this.setState({minutes: e.target.value}, this.checkErrorsAgain )
+                this.setState({minutes: e.target.value}, this.checkErrorsAgain)
                 break
             case "business":
-                this.setState({interests:{...this.state.interests, business: e.target.checked}}, this.checkErrorsAgain )
+                this.setState({interests:{...this.state.interests, business: e.target.checked}}, () => {
+                    if(this.checkErrorsAgain()){
+                        this.props.history.push("/work?mins="+this.state.minutes+"&interest="+this.interestsInitials())
+            this.props.changeWorkState(this.state)
+                    }
+                })
                 break
             case "code":
-                this.setState({interests:{...this.state.interests, code: e.target.checked}}, this.checkErrorsAgain )
+                this.setState({interests:{...this.state.interests, code: e.target.checked}}, () => {
+                    if(this.checkErrorsAgain()){
+                        this.props.history.push("/work?mins="+this.state.minutes+"&interest="+this.interestsInitials())
+            this.props.changeWorkState(this.state)
+                    }
+                })
                 break
             case "design":
-                this.setState({interests:{...this.state.interests, design: e.target.checked}}, this.checkErrorsAgain )
+                this.setState({interests:{...this.state.interests, design: e.target.checked}}, () => {
+                    if(this.checkErrorsAgain()){
+                        this.props.history.push("/work?mins="+this.state.minutes+"&interest="+this.interestsInitials())
+            this.props.changeWorkState(this.state)
+                    }
+                })
                 break     
             default:
-                console.log("Cannot identify the input")               
+                console.log("Cannot identify the input: "+changeName)               
         }
     }
 
     checkErrorsAgain = () => {
-        if(this.state.pressedEnter)
-            this.validateForm()
+        if(this.validateForm()){
+            
+            return true
+        }
+        return false
     }
 
 
@@ -110,7 +129,7 @@ class SmallForm extends Component {
                         </span>
                     </div>
 
-                    <button>Change my preferences</button>
+                    {/*<button>Change my preferences</button>*/}
                 </form>
                 <div className="errors">
                     {this.state.errors}
