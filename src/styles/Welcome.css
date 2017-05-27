@@ -152,7 +152,7 @@ input[type="number"] {
 }
 
 @media (max-width: 767px) {
-    .SmallForm input[type="checkbox"]:not(:checked):hover + label {
+    .Welcome input[type="checkbox"]:not(:checked):hover + label {
         background: white;
         color: #2f2f2f;
         transition: background-color 0.1s ease;
@@ -164,5 +164,11 @@ input[type="number"] {
     button:hover{
         color: #2f2f2f;
         background: white;
+    }
+    .Welcome {
+        text-align: left;
+    }
+    .Welcome label {
+        margin-left: 0px
     }
 }

@@ -88,7 +88,7 @@ class WelcomeForm extends Component {
                 <div className="question-box">
                     <div className="question"><span className="underline">How much time <span className="dont-break">do you have?</span></span></div>
                     <input className="minutes" type="number" value={this.state.minutes}
-                           onChange={ (e) => this.handleChanges(e, "minutes")}/> minutes. 
+                           onChange={ (e) => this.handleChanges(e, "minutes")} /> minutes. 
                 </div>
                 <div className="question-box">
                     <div className="question"><span className="underline">What do you fancy?</span></div>

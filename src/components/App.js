@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import '../styles/App.css';
 import '../styles/Roboto-Regular.ttf'
 import { Route, Switch, Link, Redirect } from 'react-router-dom'
-import { Welcome } from './Welcome'
+import Welcome  from './Welcome'
 import { Life } from './Life'
 import { Work } from './Work'
 
@@ -18,18 +18,25 @@ export class App extends Component {
       return (<div className="back">[ <Link to={"/work"+location.state.search}>Back to work</Link> ]</div>)
     if(location.pathname==="/work")
       // return (<div className="back">[ <Link to="/">Go Back Home</Link> ]</div>)
-      return (<div className="who-back"><div className="who">[ <Link to={{pathname: "/life", state: { search: this.props.location.search } }}>Who's Marco</Link> ]</div><div className="back">[ <Link to="/">Go Back Home</Link> ]</div></div>)
+      return (<div className="who-back"><div className="who">[ <Link to={{pathname: "/life", state: { search: this.props.location.search } }}>Who's Marco</Link> ]</div><div className="back">[ <Link to={{pathname: "/", state: {form: true} }}>Go Back Home</Link> ]</div></div>)
     if(location.pathname === "/life")
       return (<div className="back">[ <Link to="/">Go Back Home</Link> ]</div>)
     else
       return (<div className="who">[ <Link to="/life">Who's Marco</Link> ]</div>)
   }
 
+  adjustCenteredWrapperHeight = () => {
+    if(this.props.location.pathname==="/work")
+      return {minHeight: "calc(100vh - 168px - 29px)"}
+    else 
+      return {}
+  }
+
   render() {
     return(
       <div className="App">
             <div className="content">
-            <div className="centered-wrapper">
+            <div className="centered-wrapper" style={this.adjustCenteredWrapperHeight()}>
               <Switch>
                 <Route exact path="/" render={props => <Welcome sayHello = { this.sayHello } />} />
                 <Route path="/life"render={props => (!props.location.search) ? <Life sayHello = { this.sayHello } />:<Redirect to="/" />} />

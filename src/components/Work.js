@@ -54,7 +54,7 @@ export class Work extends Component {
     initialNumberOfElements = () => {
         
         if(this.state.minutes<5)
-            return 1
+            return 0
         else if(this.state.minutes<=10)
             return 3
         else 

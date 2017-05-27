@@ -110,7 +110,7 @@ class SmallForm extends Component {
                         </span>
                     </div>
 
-                    <button>Show me some products</button>
+                    <button>Change my preferences</button>
                 </form>
                 <div className="errors">
                     {this.state.errors}

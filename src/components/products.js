@@ -610,7 +610,7 @@ export const products =
                 "business": 7
             }
         },
-        "title": "The first user-centric portfolio",
+        "title": "The first user-centered portfolio",
         "subtitle": "Placing the user at the centre of the experience",
         "content": [
             {
@@ -620,7 +620,7 @@ export const products =
             },
             {
                 "type": "text",
-                "body": "A portfolio that becomes a product featured within. We can call this the first user centred portfolio: it builds around each user's needs, not what the creator believes users need. This is fundamental for two reasons: different users have very different amount of times. Moreover, for product managers like me, there's a need to showcase many skills at the same time whilst users have their own interests."
+                "body": "A portfolio that becomes a product featured within. We can call this the first user centred portfolio: it builds around each user's preferences. This is fundamental for two reasons: different users have very different amount of times. Moreover, for product managers like me, there's a need to showcase many skills at the same time whilst users have their own interests."
             },
             {
                 "type": "image",

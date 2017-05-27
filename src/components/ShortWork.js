@@ -19,7 +19,7 @@ export const ShortWork = () => (
             And my <a href="mailto:marcogreselin@me.com?subject=Let&#8217;s get a coffee!" className="social" rel="noopener noreferrer">email</a>, don't forget my email.
         </div>
 
-        Down below is the top product for your preferences. Check it out and click the button for more!
+        And if you're curious about some of the products I've built, click the button below. They will be prioritised based on your preferences.
 
     </div>
 )
