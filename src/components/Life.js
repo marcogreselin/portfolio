@@ -5,7 +5,10 @@ import profilePic from '../images/marco.jpg'
 
 export class Life extends Component {
 
-    componentDidMount = () => document.title = "Who's Marco?"
+    componentDidMount = () => {
+        document.title = "Who's Marco?"
+        window.scrollTo(0, 0)
+    }
     
     render() {
         return(

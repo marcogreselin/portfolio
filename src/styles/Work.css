@@ -133,7 +133,11 @@ button.see-more {
     }
     .LongWork .title-span {
         font-weight: bold;
-        border-bottom: 2px solid yellow;
+        text-transform: uppercase;
+        /*border-bottom: 2px solid yellow;*/
+    }
+    .LongWork .emphasisTitle {
+        text-transform: none
     }
     .LongWork .subtitle{
         display: none;
