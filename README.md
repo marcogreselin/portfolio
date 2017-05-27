@@ -1,4 +1,4 @@
-# The first user-centric portfolio
+# The first user-centred portfolio
 
 Many different users access portfolios and they all have different expectations. My (new) portfolio is gonna ask you how much time you have and what you're interested in. It will then create a personalised view of my work.
 
