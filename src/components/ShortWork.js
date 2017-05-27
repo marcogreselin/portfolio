@@ -8,7 +8,7 @@ export const ShortWork = () => (
         </div>
 
         <div className="checkout">
-            In so little time <a href="https://www.github.com/marcogreselin" target="_blank" className="social" rel="noopener noreferrer">GitHub</a> will only prove that I can use Git (I know...) and that this cheecky website was <a href="https://github.com/marcogreselin/portfolio" target="_blank" className="social" rel="noopener noreferrer">manually</a> crafted.
+            In so little time <a href="https://www.github.com/marcogreselin" target="_blank" className="social" rel="noopener noreferrer">GitHub</a> will only prove that I can use Git (I know...) and that this cheeky website was <a href="https://github.com/marcogreselin/portfolio" target="_blank" className="social" rel="noopener noreferrer">manually</a> crafted.
         </div>
 
         <div className="checkout">

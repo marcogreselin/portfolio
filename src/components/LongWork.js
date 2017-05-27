@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup'
+
 
 export class LongWork extends Component {
 
@@ -38,8 +40,13 @@ export class LongWork extends Component {
     render() {
         return(
             <div className="LongWork">
+
+
                 { this.props.orderedArray.slice(0,this.props.initialNumberOfElements()+this.props.addedElements).map((product, i) => {
-                    return(<div className="product-wrapper" key={i}>
+                    return(
+
+                                
+                    <div className="product-wrapper" key={i}>
                         <div className="subtitle"><span className="subtitle-span">{product.subtitle}</span></div>
                         <div className="title"><span className="title-span">{product.title}</span></div>
                         {product.content.map((content, l) => {
@@ -61,9 +68,17 @@ export class LongWork extends Component {
                             </ul>
                         </div>
                         
-                    </div>)
+                    </div>
+                )
                 } )}
                 {this.props.orderedArray.length > (this.props.initialNumberOfElements()+this.props.addedElements) && <button onClick={this.addThree} className="see-more">See some more</button>}
+                                <CSSTransitionGroup
+                    transitionName="example"
+                    transitionAppear={true}
+                    transitionAppearTimeout={800}
+                    transitionEnter={true}
+                    transitionEnterTimeout={800}
+                    transitionLeave={false}></CSSTransitionGroup>
             </div>
         )
     }

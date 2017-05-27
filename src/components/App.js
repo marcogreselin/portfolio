@@ -6,11 +6,7 @@ import { Welcome } from './Welcome'
 import { Life } from './Life'
 import { Work } from './Work'
 
-
-
-
 export class App extends Component {
-
 
   sayHello = () => {
     const hellos = ['Hola', 'Salut', 'Hallo', 'Ciao', 'Ahoy', 'Annyeong-haseyo', 'Aloha', 'Howdy', 'Ni Hao', 'Konnichiwa']
@@ -55,10 +51,10 @@ export class App extends Component {
 
           </div>
           <footer>
-            <a href="https://www.github.com/marcogreselin" target="_blank" className="social" rel="noopener noreferrer">G.H.</a>
-            <a href="https://www.linkedin.com/in/marcogreselin/" target="_blank" className="social" rel="noopener noreferrer">L.I.</a>
-            <a href="mailto:marcogreselin@me.com?subject=Let&#8217;s get a coffee!" className="social" rel="noopener noreferrer">E.M.</a>
-            <a href="https://www.instagram.com/marcogreselin" target="_blank" className="social" rel="noopener noreferrer">I.G.</a>
+            <a href="https://www.github.com/marcogreselin" target="_blank" className="social" rel="noopener noreferrer">Github</a>
+            <a href="https://www.linkedin.com/in/marcogreselin/" target="_blank" className="social" rel="noopener noreferrer">Linkedin</a>
+            <a href="mailto:marcogreselin@me.com?subject=Let&#8217;s get a coffee!" className="social" rel="noopener noreferrer">Email</a>
+            {/*<a href="https://www.instagram.com/marcogreselin" target="_blank" className="iphone-hidden social" rel="noopener noreferrer">Instagram</a>*/}
           </footer>
         </div>
     )

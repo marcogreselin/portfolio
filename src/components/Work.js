@@ -66,13 +66,17 @@ export class Work extends Component {
             <div className="Work">
                 <SmallForm routeState={this.state} changeWorkState={this.changeWorkState}/>
                 
-                {this.state.minutes<5 ? <ShortWork /> : <Preambole minutes={this.state.minutes} 
-                                                                   initialNumberOfElements={this.initialNumberOfElements}
-                                                                   interests = {this.state.interests}/>}
+                    {this.state.minutes<5 ? <ShortWork /> : <Preambole minutes={this.state.minutes} 
+                                                                    initialNumberOfElements={this.initialNumberOfElements}
+                                                                    interests = {this.state.interests}/>}
+                                                                    
+                    
+                    <LongWork orderedArray={this.orderedArray()} parentState={this.state} initialNumberOfElements={this.initialNumberOfElements}
+                            interests={this.state.interests} changeWorkState={this.changeWorkStateAddElements} 
+                            addedElements={this.state.addedElements} />
                 
-                <LongWork orderedArray={this.orderedArray()} parentState={this.state} initialNumberOfElements={this.initialNumberOfElements}
-                          interests={this.state.interests} changeWorkState={this.changeWorkStateAddElements} 
-                          addedElements={this.state.addedElements} />
+
+
             </div>
         )
     }

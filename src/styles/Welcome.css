@@ -1,6 +1,6 @@
 .Welcome {
     margin: 0px auto 0px auto;
-    font-size: 2em;
+    font-size: 1.3em;
     text-align: center;
 }
 
@@ -11,6 +11,10 @@
 
 .Welcome .question-box {
     margin-top: 40px;
+}
+
+.Welcome p + p{
+    margin-top:30px;
 }
 
 .Welcome .question .underline {
@@ -44,18 +48,13 @@ input[type=number]:focus{
 
 label {
     user-select: none;
-    /*transition: border 0.2s ease;*/
     padding: 0 4px 0 4px;
     cursor: pointer;
     margin-left: 15px;
     margin-right: 15px;
 }
 
-label:hover {
-    background: #2f2f2f;
-    color: white;
-    transition: background-color 0.1s ease;
-}
+
 
 input[type="checkbox"] {
     display: none;
@@ -64,11 +63,19 @@ input[type="checkbox"] {
 input[type="checkbox"]:checked + label {
     background: #2f2f2f;
     color: white;
+    transition: background-color 0.1s ease;
 }
 
 input[type="checkbox"]:not(:checked) + label {
     background: white;
     color: #2f2f2f;
+    transition: background-color 0.1s ease;
+}
+
+input[type="checkbox"]:not(:checked) + label:hover  {
+    background: #2f2f2f;
+    color: white;
+    transition: background-color 0.1s ease;
 }
 
 button {
@@ -115,7 +122,7 @@ input[type="number"] {
 
 @media (max-width: 767px) {
   .Welcome {
-      font-size: 1.6em!important;
+      font-size: 1.2em;
   }
   .Welcome .hello {
       border-top: 0px;
@@ -142,6 +149,14 @@ input[type="number"] {
       display: block;
       margin-bottom: 8px;
   }
+}
+
+@media (max-width: 767px) {
+    .SmallForm input[type="checkbox"]:not(:checked):hover + label {
+        background: white;
+        color: #2f2f2f;
+        transition: background-color 0.1s ease;
+    }
 }
 
 /*This is a problem with all iPhones */

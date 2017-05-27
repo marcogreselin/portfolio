@@ -21,6 +21,7 @@ footer {
 
 footer .social {
   text-decoration: none;
+  text-transform: uppercase;
   color: inherit;
   border-bottom: solid 2px white;
   color: white;
@@ -70,15 +71,24 @@ a {
   }
 }
 
-@media (max-width: 370px) {
+@media (max-width: 375px) {
     .content {
         padding: 15px;
     }
+  
+    footer {
+      text-align: center;
+    }
     .App {
       padding: 17px;
+      padding-left: 0px;
+      padding-right: 0px;
     }
     .centered-wrapper {
       min-height: calc(100vh - 168px + 26px);
+    }
+    .iphone-hidden {
+      display: none;
     }
 }
 

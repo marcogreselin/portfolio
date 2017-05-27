@@ -56,6 +56,7 @@ class SmallForm extends Component {
             this.props.changeWorkState(this.state)
         }   
         this.setState({pressedEnter: true})
+        document.activeElement.blur()
     }
 
 

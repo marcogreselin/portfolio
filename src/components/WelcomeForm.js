@@ -4,7 +4,7 @@ import { withRouter } from 'react-router-dom'
 
 class WelcomeForm extends Component {
     constructor(props) {
-        super(props);
+        super(props)
         this.state = {
             minutes: "",
                 interests: {

@@ -49,8 +49,19 @@
     background: white;
     color: #7D7E7E;
 }
+.SmallForm input[type="checkbox"]:not(:checked):hover + label {
+    color: white;
+    background: #2f2f2f;
+    transition: background-color 0.1s ease;
+}
+
 
 @media (max-width: 767px) {
+    .SmallForm input[type="checkbox"]:not(:checked):hover + label {
+        background: white;
+        color: #7D7E7E;
+        transition: background-color 0.1s ease;
+    }
     .SmallForm input[type=number]{
         margin-bottom: 5px;
         padding-bottom: 1px;
@@ -59,8 +70,7 @@
         text-align: center;
         display: inline;
     }
-    .SmallForm button {
-    }
+
     .SmallForm .choice-wrapper {
         display: block;
         margin-top: 10px;
