@@ -21,8 +21,6 @@ export class Work extends Component {
         }
     }
 
-
-
     componentDidMount = () => {
         document.title = "Marco's Work"
         window.scrollTo(0, 0)

@@ -17,9 +17,7 @@ class SmallForm extends Component {
             pressedEnter: false
         }
     }
-
-
-
+    
     validateForm = () => {
         let _errors = []
         if(!this.state.interests.design && !this.state.interests.code && !this.state.interests.business)
@@ -99,14 +97,6 @@ class SmallForm extends Component {
         }
     }
 
-    // checkErrorsAgain = () => {
-    //     if(this.validateForm()){
-    //         return true
-    //     }
-    //     return false
-    // }
-
-
     render() {
         return(
             <div className="SmallForm">
@@ -131,8 +121,6 @@ class SmallForm extends Component {
                             <label htmlFor="design">Design</label>
                         </span>
                     </div>
-
-                    {/*<button>Change my preferences</button>*/}
                 </form>
                 <div className="errors">
                     {this.state.errors}

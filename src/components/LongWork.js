@@ -1,17 +1,7 @@
 import React, { Component } from 'react'
-// import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup'
 import {products} from './products'
 
-
-
 export class LongWork extends Component {
-
-    // constructor(props) {
-    //     super(props)
-    //     this.state = {
-    //         interests: this.props.parentState.interests
-    //     }
-    // }
 
     orderedArray = () => {
         let sortedArray = products
@@ -28,16 +18,10 @@ export class LongWork extends Component {
         else if(this.props.parentState.interests.code)
             sortedArray.sort((a,b)=> (b.scores.quality*b.scores.relevancy.code-a.scores.quality*a.scores.relevancy.code))
         else if(this.props.parentState.interests.design)
-            sortedArray.sort((a,b)=> (b.scores.quality*b.scores.relevancy.design-a.scores.quality*a.scores.relevancy.design))
-        // console.log("here"+JSON.stringify(this.state))
-        console.log("props"+JSON.stringify(this.props))
-        
+            sortedArray.sort((a,b)=> (b.scores.quality*b.scores.relevancy.design-a.scores.quality*a.scores.relevancy.design))        
         
         return sortedArray
     }
-
-
-
 
     renderContent = (content, l) => {
         switch(content.type){
@@ -69,8 +53,6 @@ export class LongWork extends Component {
     }
 
     addThree = () => this.props.changeWorkState({addedElements: this.props.addedElements+3})
-
-
 
     render() {
         return(
@@ -105,13 +87,6 @@ export class LongWork extends Component {
                 )
                 } )}
                 {products.length > (this.props.initialNumberOfElements()+this.props.addedElements) && <button onClick={this.addThree} className="see-more">See some more</button>}
-                {/*<CSSTransitionGroup
-                    transitionName="example"
-                    transitionAppear={true}
-                    transitionAppearTimeout={800}
-                    transitionEnter={true}
-                    transitionEnterTimeout={800}
-                    transitionLeave={false}></CSSTransitionGroup>*/}
             </div>
         )
     }

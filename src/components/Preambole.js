@@ -24,13 +24,6 @@ class Preambole extends Component {
         return (
             <div className="Preambole">
                 I selected {this.props.initialNumberOfElements()} products for you. They are prioritised based on your interest in <b>{this.stringifyListOfInterests()}</b>.
-                {/*<div className="checkout">
-                    Who's Marco, you may say. You can find a quick intro <Link to={{pathname: "/life", 
-                                                                          state: { search: this.props.location.search } }}>here</Link>.
-                </div>*/}
-                {/*<div className="checkout">
-                    And if you fancy getting in touch just drop me an <a href="mailto:marcogreselin@me.com?subject=Let&#8217;s get a coffee!" className="social" rel="noopener noreferrer">email</a>.
-                </div>*/}
             </div>
         )
     }
