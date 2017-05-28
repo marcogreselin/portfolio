@@ -71,6 +71,7 @@ button.see-more {
 .productLinks li {
     display: inline;
     margin-right: 20px;
+    font-weight: bold;
 }
 
 .passwordProtected {
