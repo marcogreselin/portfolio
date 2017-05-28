@@ -50,11 +50,11 @@
     background: white;
     color: #7D7E7E;
 }
-.SmallForm input[type="checkbox"]:not(:checked):hover + label {
+/*.SmallForm input[type="checkbox"]:not(:checked):hover + label {
     color: white;
     background: #2f2f2f;
     transition: background-color 0.1s ease;
-}
+}*/
 
 
 @media (max-width: 767px) {
@@ -84,5 +84,20 @@
     #firstLabel {
         margin-top: 15px;
     }
+    /*.Work input[type="checkbox"]:checked:hover + label {
+        background: white;
+        color: #7D7E7E;
+        transition: background-color 0.1s ease;
+    }*/
 }
 
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  { 
+    .Work input[type="checkbox"]:not(:checked):hover + label {
+        background: white;
+        color: #7D7E7E;
+        transition: background-color 0.1s ease;
+    }
+}

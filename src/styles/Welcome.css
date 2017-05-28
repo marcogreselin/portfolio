@@ -89,11 +89,11 @@ input[type="checkbox"] {
     transition: background-color 0.1s ease;
 }
 
-input[type="checkbox"]:not(:checked) + label {
+/*input[type="checkbox"]:not(:checked) + label {
     background: white;
     color: #2f2f2f;
     transition: background-color 0.1s ease;
-}
+}*/
 
 .Work input[type="checkbox"]:not(:checked) + label:hover  {
     background: #2f2f2f;
@@ -183,19 +183,7 @@ input[type="number"] {
         color: #2f2f2f;
         transition: background-color 0.1s ease;
     }
-}
 
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px)  { 
-    input[type="checkbox"]:not(:checked):hover + label {
-        background: white;
-        color: #2f2f2f;
-        transition: background-color 0.1s ease;
-    }
-  .who a, .back a {
-    border-bottom: 2px solid #2F2F2F;
-  }
 }
 
 /*This is a problem with all iPhones */
