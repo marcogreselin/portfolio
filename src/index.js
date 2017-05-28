@@ -18,10 +18,15 @@ history.listen((location, action) => {
     ReactGA.pageview(location.pathname)
 })
 
+function logPageView() {
+  ReactGA.set({ page: window.location.pathname + window.location.search });
+  ReactGA.pageview(window.location.pathname + window.location.search);
+}
+
 ReactDOM.render(
     <Router>
         <Switch>
-            <Route path="/" component={App} />
+            <Route path="/" component={App}  onUpdate={logPageView} />
         </Switch>
     </Router>
     , document.getElementById('root'));
