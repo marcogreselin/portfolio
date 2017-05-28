@@ -17,6 +17,9 @@ class SmallForm extends Component {
             pressedEnter: false
         }
     }
+
+
+
     validateForm = () => {
         let _errors = []
         if(!this.state.interests.design && !this.state.interests.code && !this.state.interests.business)
@@ -48,6 +51,7 @@ class SmallForm extends Component {
         return initials
     }
 
+    //  This is just for the time changes
     handleSubmit = (e) => {
         if(e)
             e.preventDefault()
@@ -60,7 +64,6 @@ class SmallForm extends Component {
         document.activeElement.blur()
     }
 
-
     handleChanges = (e, changeName) => {
         switch (changeName) {
             case "minutes": 
@@ -68,25 +71,26 @@ class SmallForm extends Component {
                 break
             case "business":
                 this.setState({interests:{...this.state.interests, business: e.target.checked}}, () => {
-                    if(this.checkErrorsAgain()){
+                    if(this.validateForm()){
                         this.props.history.push("/work?mins="+this.state.minutes+"&interest="+this.interestsInitials())
-            this.props.changeWorkState(this.state)
+                        this.props.changeWorkState(this.state)
+                        // sortArrayAgain()
                     }
                 })
                 break
             case "code":
                 this.setState({interests:{...this.state.interests, code: e.target.checked}}, () => {
-                    if(this.checkErrorsAgain()){
+                    if(this.validateForm()){
                         this.props.history.push("/work?mins="+this.state.minutes+"&interest="+this.interestsInitials())
-            this.props.changeWorkState(this.state)
+                        this.props.changeWorkState(this.state)
                     }
                 })
                 break
             case "design":
                 this.setState({interests:{...this.state.interests, design: e.target.checked}}, () => {
-                    if(this.checkErrorsAgain()){
+                    if(this.validateForm()){
                         this.props.history.push("/work?mins="+this.state.minutes+"&interest="+this.interestsInitials())
-            this.props.changeWorkState(this.state)
+                        this.props.changeWorkState(this.state)
                     }
                 })
                 break     
@@ -95,13 +99,12 @@ class SmallForm extends Component {
         }
     }
 
-    checkErrorsAgain = () => {
-        if(this.validateForm()){
-            
-            return true
-        }
-        return false
-    }
+    // checkErrorsAgain = () => {
+    //     if(this.validateForm()){
+    //         return true
+    //     }
+    //     return false
+    // }
 
 
     render() {

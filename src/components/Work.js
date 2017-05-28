@@ -21,6 +21,8 @@ export class Work extends Component {
         }
     }
 
+
+
     componentDidMount = () => {
         document.title = "Marco's Work"
         window.scrollTo(0, 0)
@@ -29,29 +31,12 @@ export class Work extends Component {
     changeWorkState = (newState) => {
         this.setState(newState)
         this.setState({addedElements: 0})
+        console.log(JSON.stringify(this.state))
     }
+
 
     changeWorkStateAddElements = (newState) => {
         this.setState(newState)
-    }
-
-    orderedArray = () => {
-        let sortedArray = products
-        if(this.state.interests.design && this.state.interests.code && this.state.interests.business)
-            sortedArray.sort((a,b)=> (b.scores.quality-a.scores.quality))
-        else if(this.state.interests.design && this.state.interests.code)
-            sortedArray.sort((a,b) => (b.scores.quality*b.scores.relevancy.code*b.scores.relevancy.design/2)-(a.scores.quality*a.scores.relevancy.code*a.scores.relevancy.design/2))
-        else if(this.state.interests.design && this.state.interests.business)
-            sortedArray.sort((a,b) => (b.scores.quality*b.scores.relevancy.business*b.scores.relevancy.design/2)-(a.scores.quality*a.scores.relevancy.business*a.scores.relevancy.design/2))
-        else if(this.state.interests.business && this.state.interests.code)
-            sortedArray.sort((a,b) => (b.scores.quality*b.scores.relevancy.business*b.scores.relevancy.code/2)-(a.scores.quality*a.scores.relevancy.business*a.scores.relevancy.code/2))
-        else if(this.state.interests.business)
-            sortedArray.sort((a,b)=> (b.scores.quality*b.scores.relevancy.business-a.scores.quality*a.scores.relevancy.business))
-        else if(this.state.interests.code)
-            sortedArray.sort((a,b)=> (b.scores.quality*b.scores.relevancy.code-a.scores.quality*a.scores.relevancy.code))
-        else if(this.state.interests.design)
-            sortedArray.sort((a,b)=> (b.scores.quality*b.scores.relevancy.design-a.scores.quality*a.scores.relevancy.design))
-        return sortedArray
     }
 
     initialNumberOfElements = () => {
@@ -73,9 +58,10 @@ export class Work extends Component {
                                                                     initialNumberOfElements={this.initialNumberOfElements}
                                                                     interests = {this.state.interests}/>}
                     
-                    <LongWork orderedArray={this.orderedArray()} parentState={this.state} initialNumberOfElements={this.initialNumberOfElements}
-                            interests={this.state.interests} changeWorkState={this.changeWorkStateAddElements} 
-                            addedElements={this.state.addedElements} />
+                    <LongWork parentState={this.state} initialNumberOfElements={this.initialNumberOfElements}
+                              
+                              changeWorkState={this.changeWorkStateAddElements} 
+                              addedElements={this.state.addedElements} />
             </div>
         )
     }

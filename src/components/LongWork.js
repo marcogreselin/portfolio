@@ -1,8 +1,43 @@
 import React, { Component } from 'react'
-import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup'
+// import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup'
+import {products} from './products'
+
 
 
 export class LongWork extends Component {
+
+    // constructor(props) {
+    //     super(props)
+    //     this.state = {
+    //         interests: this.props.parentState.interests
+    //     }
+    // }
+
+    orderedArray = () => {
+        let sortedArray = products
+        if(this.props.parentState.interests.design && this.props.parentState.interests.code && this.props.parentState.interests.business)
+            sortedArray.sort((a,b)=> (b.scores.quality-a.scores.quality))
+        else if(this.props.parentState.interests.design && this.props.parentState.interests.code)
+            sortedArray.sort((a,b) => (b.scores.quality*b.scores.relevancy.code*b.scores.relevancy.design/2)-(a.scores.quality*a.scores.relevancy.code*a.scores.relevancy.design/2))
+        else if(this.props.parentState.interests.design && this.props.parentState.interests.business)
+            sortedArray.sort((a,b) => (b.scores.quality*b.scores.relevancy.business*b.scores.relevancy.design/2)-(a.scores.quality*a.scores.relevancy.business*a.scores.relevancy.design/2))
+        else if(this.props.parentState.interests.business && this.props.parentState.interests.code)
+            sortedArray.sort((a,b) => (b.scores.quality*b.scores.relevancy.business*b.scores.relevancy.code/2)-(a.scores.quality*a.scores.relevancy.business*a.scores.relevancy.code/2))
+        else if(this.props.parentState.interests.business)
+            sortedArray.sort((a,b)=> (b.scores.quality*b.scores.relevancy.business-a.scores.quality*a.scores.relevancy.business))
+        else if(this.props.parentState.interests.code)
+            sortedArray.sort((a,b)=> (b.scores.quality*b.scores.relevancy.code-a.scores.quality*a.scores.relevancy.code))
+        else if(this.props.parentState.interests.design)
+            sortedArray.sort((a,b)=> (b.scores.quality*b.scores.relevancy.design-a.scores.quality*a.scores.relevancy.design))
+        // console.log("here"+JSON.stringify(this.state))
+        console.log("props"+JSON.stringify(this.props))
+        
+        
+        return sortedArray
+    }
+
+
+
 
     renderContent = (content, l) => {
         switch(content.type){
@@ -40,9 +75,7 @@ export class LongWork extends Component {
     render() {
         return(
             <div className="LongWork">
-
-
-                { this.props.orderedArray.slice(0,this.props.initialNumberOfElements()+this.props.addedElements).map((product, i) => {
+                { this.orderedArray().slice(0,this.props.initialNumberOfElements()+this.props.addedElements).map((product, i) => {
                     return(
 
                                 
@@ -71,14 +104,14 @@ export class LongWork extends Component {
                     </div>
                 )
                 } )}
-                {this.props.orderedArray.length > (this.props.initialNumberOfElements()+this.props.addedElements) && <button onClick={this.addThree} className="see-more">See some more</button>}
-                                <CSSTransitionGroup
+                {products.length > (this.props.initialNumberOfElements()+this.props.addedElements) && <button onClick={this.addThree} className="see-more">See some more</button>}
+                {/*<CSSTransitionGroup
                     transitionName="example"
                     transitionAppear={true}
                     transitionAppearTimeout={800}
                     transitionEnter={true}
                     transitionEnterTimeout={800}
-                    transitionLeave={false}></CSSTransitionGroup>
+                    transitionLeave={false}></CSSTransitionGroup>*/}
             </div>
         )
     }

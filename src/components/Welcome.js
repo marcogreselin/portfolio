@@ -5,13 +5,6 @@ import  WelcomeForm from './WelcomeForm'
 
 export default class Welcome extends Component {
 
-    constructor(props) {
-        super(props)
-        this.state = {
-            form: false
-        }
-    }
-
     componentDidMount = () => {
         document.title = "Marco Greselin"
         window.scrollTo(0, 0)

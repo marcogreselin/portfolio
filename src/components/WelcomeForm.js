@@ -51,9 +51,7 @@ class WelcomeForm extends Component {
 
     handleSubmit = (e) => {
         e.preventDefault()
-
         this.refs.minutesRef.blur()
-        
         if(this.validateForm())
             this.props.history.push("/work?mins="+this.state.minutes+"&interest="+this.interestsInitials())
         this.setState({pressedEnter: true})
