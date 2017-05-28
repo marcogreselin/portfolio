@@ -25,7 +25,7 @@ export default class Welcome extends Component {
                          { this.props.sayHello() } I'm <Link to="/life">Marco</Link>! <span className="dont-break">Welcome to my hood.</span>
                         </p>
                         <p>
-                            This is the first user centred portfolio, built just for you. <br/>Let me ask you two questions:
+                            This is the first user centred portfolio, built <span className="dont-break">just for you.</span> <br/>Let me ask you two questions:
                         </p>
                         <WelcomeForm />
                     </div>

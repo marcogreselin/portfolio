@@ -59,13 +59,17 @@ a {
   border-bottom: 2px solid #2F2F2F;
 }
 
+
+
 @media (max-width: 767px) {
-  .who {
+  .who, .back {
     text-align: center;
   }
-  .back {
-    text-align: center;
+
+  .who a, .back a {
+    border-bottom: 2px solid #2F2F2F;
   }
+
   footer .social {
     border-bottom: solid 1px white;
   }

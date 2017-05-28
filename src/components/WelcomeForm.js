@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
+import '../styles/font-awesome/css/font-awesome.min.css'
 
 
 class WelcomeForm extends Component {
@@ -50,6 +51,8 @@ class WelcomeForm extends Component {
 
     handleSubmit = (e) => {
         e.preventDefault()
+
+        this.refs.minutesRef.blur()
         
         if(this.validateForm())
             this.props.history.push("/work?mins="+this.state.minutes+"&interest="+this.interestsInitials())
@@ -87,8 +90,8 @@ class WelcomeForm extends Component {
             <form className="WelcomeForm" onSubmit={this.handleSubmit}>
                 <div className="question-box">
                     <div className="question"><span className="underline">How much time <span className="dont-break">do you have?</span></span></div>
-                    <input className="minutes" type="number" value={this.state.minutes}
-                           onChange={ (e) => this.handleChanges(e, "minutes")} /> minutes. 
+                    <input ref="minutesRef" className="minutes" type="number" value={this.state.minutes}
+                           onChange={ (e) => this.handleChanges(e, "minutes")}  /> minutes. 
                 </div>
                 <div className="question-box">
                     <div className="question"><span className="underline">What do you fancy?</span></div>
@@ -96,17 +99,17 @@ class WelcomeForm extends Component {
                         <span className="choice">
                             <input type="checkbox" id="business" checked={ this.state.interests.business }
                                    onChange={ (e) => this.handleChanges(e, "business") }/>
-                            <label htmlFor="business">Business</label>
+                            <label htmlFor="business"><span className="label-item">Business</span></label>
                         </span>
                         <span className="choice">
                             <input type="checkbox" id="code" checked={ this.state.interests.code }
                                    onChange={ (e) => this.handleChanges(e, "code") }/>
-                            <label htmlFor="code">Code</label>
+                            <label htmlFor="code"><span className="label-item">Code</span></label>
                         </span>
                         <span className="choice">
                             <input type="checkbox" id="design" checked={ this.state.interests.design } 
                                    onChange={ (e) => this.handleChanges(e, "design") }/>
-                            <label htmlFor="design">Design</label>
+                            <label htmlFor="design"><span className="label-item">Design</span></label>
                         </span>
                     </div>{/* end of .answer*/}
                 </div>{/* end .question-box*/}

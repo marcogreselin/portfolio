@@ -51,7 +51,7 @@ class SmallForm extends Component {
     handleSubmit = (e) => {
         if(e)
             e.preventDefault()
-        
+        this.refs.minutesRef.blur()
         if(this.validateForm()){
             this.props.history.push("/work?mins="+this.state.minutes+"&interest="+this.interestsInitials())
             this.props.changeWorkState(this.state)
@@ -109,7 +109,7 @@ class SmallForm extends Component {
             <div className="SmallForm">
                 <form onSubmit={this.handleSubmit}>
                     I have 
-                    <input type="number" value={this.state.minutes} onChange={ (e) => this.handleChanges(e, "minutes")} /> 
+                    <input ref="minutesRef" type="number" value={this.state.minutes} onChange={ (e) => this.handleChanges(e, "minutes")} /> 
                     minutes and I am <span className="dont-break">interested in</span>
                     <div className="choice-wrapper">
                         <span className="choice" id="firstLabel" >

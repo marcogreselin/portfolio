@@ -9,7 +9,7 @@ import { Work } from './Work'
 export class App extends Component {
 
   sayHello = () => {
-    const hellos = ['Hola', 'Salut', 'Hallo', 'Ciao', 'Ahoy', 'Annyeong-haseyo', 'Aloha', 'Howdy', 'Ni Hao', 'Konnichiwa']
+    const hellos = ['Hola', 'Salut', 'Hallo', 'Ciao', 'Ahoy', 'Aloha', 'Howdy', 'Ni Hao', 'Konnichiwa']
     return hellos[Math.floor((Math.random()*hellos.length))];
   }
 
