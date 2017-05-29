@@ -142,6 +142,15 @@ input[type="number"] {
     height: 20px;
 }
 
+.example-appear {
+  opacity: 0.01;
+}
+
+.example-appear.example-appear-active {
+  opacity: 1;
+  transition: opacity .4s ease-in;
+}
+
 @media (max-width: 767px) {
   .Welcome {
       font-size: 1.2em;

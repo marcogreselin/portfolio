@@ -29,7 +29,6 @@ export class Work extends Component {
     changeWorkState = (newState) => {
         this.setState(newState)
         this.setState({addedElements: 0})
-        console.log(JSON.stringify(this.state))
     }
 
 

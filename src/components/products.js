@@ -3,11 +3,11 @@ export const products =
     {
         "name":"adcall",
         "scores": {
-            "quality": 8,
+            "quality": 15,
             "relevancy": {
                 "design": 3,
-                "code": 8,
-                "business": 7
+                "code": 15,
+                "business": 6
             }
         },
         "title": "AdCall: Bringing WebRTC to display ads",
@@ -554,58 +554,11 @@ export const products =
         }
     },
     {
-        "name":"thinking",
+        "name":"portfolio",
         "scores": {
             "quality": 8,
             "relevancy": {
-                "design": 8,
-                "code": 5,
-                "business": 10
-            }
-        },
-        "title": "Three languages of business",
-        "subtitle": "One phenomenon explained in three languages to account for today's business world",
-        "content": [
-            {
-                "type": "image",
-                "url": "https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/three_draw.jpg?alt=media&token=17f689ca-39d5-42d0-973f-54b77c473e87",
-                "title": "Drawing business"
-            },
-            {
-                "type": "text",
-                "body": "Today's \n business requires the use of multiple languages: from being able to articulate ideas and thoughts in writing to sketching relationships to talking to engineers and define implementations."
-            },
-            {
-                "type": "text",
-                "body": "I decided to engage in an exercise and describe one phenomenon - the growth of pop-up stores - in three languages. One page of writing, one page of drawing and one page of coding."
-            },
-            {
-                "type":"image",
-                "url":"https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/business_uml.jpg?alt=media&token=7aa43f86-14b4-407f-996e-8df78b113a60",
-                "title":"UML for Business"
-            },
-            {
-                "type": "text",
-                "body": "This project is particularly meaningful to me because it uses all the skills I developed over the last few years in a simple yet meaningful way. Have a look and let me know!"
-            }
-        ],
-        "links": {
-            "password": false,
-            "content": [
-                {
-                    "title": "Report",
-                    "url": "https://s3-eu-west-1.amazonaws.com/marcogreselin/three_languages.pdf"
-                }
-            ]
-        }
-    }
-    ,
-    {
-        "name":"portfolio",
-        "scores": {
-            "quality": 7,
-            "relevancy": {
-                "design": 8,
+                "design": 9,
                 "code": 8,
                 "business": 7
             }
@@ -648,6 +601,52 @@ export const products =
                 {
                     "title": "Github",
                     "url": "https://github.com/marcogreselin/portfolio"
+                }
+            ]
+        }
+    },
+    {
+        "name":"thinking",
+        "scores": {
+            "quality": 8,
+            "relevancy": {
+                "design": 8,
+                "code": 5,
+                "business": 12
+            }
+        },
+        "title": "Three languages of business",
+        "subtitle": "One phenomenon explained in three languages to account for today's business world",
+        "content": [
+            {
+                "type": "image",
+                "url": "https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/three_draw.jpg?alt=media&token=17f689ca-39d5-42d0-973f-54b77c473e87",
+                "title": "Drawing business"
+            },
+            {
+                "type": "text",
+                "body": "Today's \n business requires the use of multiple languages: from being able to articulate ideas and thoughts in writing to sketching relationships to talking to engineers and define implementations."
+            },
+            {
+                "type": "text",
+                "body": "I decided to engage in an exercise and describe one phenomenon - the growth of pop-up stores - in three languages. One page of writing, one page of drawing and one page of coding."
+            },
+            {
+                "type":"image",
+                "url":"https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/business_uml.jpg?alt=media&token=7aa43f86-14b4-407f-996e-8df78b113a60",
+                "title":"UML for Business"
+            },
+            {
+                "type": "text",
+                "body": "This project is particularly meaningful to me because it uses all the skills I developed over the last few years in a simple yet meaningful way. Have a look and let me know!"
+            }
+        ],
+        "links": {
+            "password": false,
+            "content": [
+                {
+                    "title": "Report",
+                    "url": "https://s3-eu-west-1.amazonaws.com/marcogreselin/three_languages.pdf"
                 }
             ]
         }
