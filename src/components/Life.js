@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import '../styles/Life.css'
-import profilePic from '../images/marco.jpg'
+import '../styles/About.css'
+import profilePic from '../images/marco.JPG'
+import TypeWriter from 'react-typewriter'
 // import App from './App'
 
 export class Life extends Component {
@@ -12,15 +13,16 @@ export class Life extends Component {
     
     render() {
         return(
-            <div className="Life">
-                <div className="title">Make. Break. Repeat.</div>
+            <div className="About">
+                <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=Il3RtJ1DfE4"><img src={profilePic} alt="Profile"/></a>
+                <div className="title"><TypeWriter fixed={true} delayMap={[{at: 5, delay: 700}, {at: 11, delay: 700}]} initDelay={100} typing={1}>Make. <br/>Break. <br/>Repeat.<br/></TypeWriter></div>
                 <div className="image-description">
-                    <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=Il3RtJ1DfE4"><img src={profilePic} alt="Profile"/></a>
+                    
                     <div className="story">
-                        <p>{ this.props.sayHello() }! I’m Marco and I love to build products that help people in their everyday lives. They call this the art of Product Management in the realm of tech companies.</p> 
+                        <p>{ this.props.sayHello() }! I’m Marco and I love to build products that help people in their everyday lives. They call this the art of Product Management in the <span className="dont-break">realm of tech companies.</span></p> 
                         <p>Coding used to be a hobby when I was studying Economics in undergraduate and became my primary occupation when I converted to CS at <a target="_blank" rel="noopener noreferrer" href="http://www.ucl.ac.uk/">UCL</a>. 
-                        So while I look for a new hobby, I spend my time <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/marcogreselin/videos/vb.1424364048/10211475287784227/">traveling</a>, finding <a target="_blank" rel="noopener noreferrer" href="http://99u.com/articles">inspirations</a> and (design) <a  target="_blank" rel="noopener noreferrer" href="https://vimeo.com/5189134">thinking</a>.</p>
-                        <p>Oh, and like any good Italian I also love coffee. So if you are in London, <a href="mailto:marcogreselin@me.com?subject=Let&#8217;s get a coffee!">email</a> me and let's meet!</p>
+                        So while I look for a new hobby, I spend my time <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/marcogreselin/videos/vb.1424364048/10211475287784227/">traveling</a>, finding <a target="_blank" rel="noopener noreferrer" href="http://99u.com/articles">inspirations</a><span className="dont-break"> and (design) <a  target="_blank" rel="noopener noreferrer" href="https://vimeo.com/5189134">thinking</a>.</span></p>
+                        <p>Oh, and like any good Italian I also love coffee. So if you are in London, <a href="mailto:marcogreselin@me.com?subject=Let&#8217;s get a coffee!">email</a> me <span className="dont-break">and let's meet!</span></p>
                         <div className="row">
                             <div className="two take">
                                 <div className="title">Some of the people I worked with</div>

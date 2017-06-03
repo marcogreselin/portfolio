@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import '../styles/App.css';
-import '../styles/Roboto-Regular.ttf'
-import { Route, Switch, Link, Redirect } from 'react-router-dom'
+import { Route, Switch, Link, Redirect, NavLink } from 'react-router-dom'
 import Welcome  from './Welcome'
 import { Life } from './Life'
 import {Portfolio} from './Portfolio'
@@ -12,35 +11,31 @@ import Product from './Product'
 export class App extends Component {
 
   sayHello = () => {
-    const hellos = ['Hola', 'Salut', 'Hallo', 'Ciao', 'Ahoy', 'Aloha', 'Howdy', 'Ni Hao', 'Konnichiwa']
+    const hellos = ['Hola', 'Salut', 'Hallo', 'Ciao', 'Ahoy', 'Aloha', 'Howdy', 'Ni Hao']
     return hellos[Math.floor((Math.random()*hellos.length))];
   }
 
   backButton = (location) => {
-    if(location.pathname === "/life" && location.state && location.state.search && location.state.product)
-      return (<div className="back">[ <Link to={{pathname: "/work"+location.state.product, state:{search:location.state.search}}}>Back to work</Link> ]</div>)
-    else if(location.pathname === "/life" && location.state && location.state.product)
-      return (<div className="back">[ <Link to={{pathname: "/work"+location.state.product}}>Back to work</Link> ]</div>)
-    else if(location.pathname === "/life" && location.state && location.state.search)
-      return (<div className="back">[ <Link to={"/work"+location.state.search}>Back to work</Link> ]</div>)
-    else if(location.pathname==="/work")
-      return (<div className="who-back"><div className="who">[ <Link to={{pathname: "/life", state: { search: this.props.location.search } }}>Who's Marco</Link> ]</div><div className="back">[ <Link to={{pathname: "/", state: {form: true} }}>Go Back Home</Link> ]</div></div>)
-    else if(location.pathname === "/life")
-      return (<div className="back">[ <Link to="/">Go Back Home</Link> ]</div>)
-    else if(location.pathname.startsWith("/work/") && location.state && location.state.search)
-      return (<div className="who-back"><div className="who">[ <Link to={{pathname: "/life", state: { product: location.pathname.substring(5), search: location.state.search} }}>Who's Marco</Link> ]</div></div>)
-    else if(location.pathname.startsWith("/work/"))
-      return (<div className="who-back"><div className="who">[ <Link to={{pathname: "/life", state: { product: location.pathname.substring(5)} }}>Who's Marco</Link> ]</div></div>)
-    else
-      return (<div className="who">[ <Link to="/life">Who's Marco</Link> ]</div>)
+    // if(location.pathname === "/life" && location.state && location.state.search && location.state.product)
+    //   return (<div className="back">[ <Link to={{pathname: "/work"+location.state.product, state:{search:location.state.search}}}>Back to work</Link> ]</div>)
+    // else if(location.pathname === "/life" && location.state && location.state.product)
+    //   return (<div className="back">[ <Link to={{pathname: "/work"+location.state.product}}>Back to work</Link> ]</div>)
+    // else if(location.pathname === "/life" && location.state && location.state.search)
+    //   return (<div className="back">[ <Link to={"/work"+location.state.search}>Back to work</Link> ]</div>)
+    // else if(location.pathname==="/work")
+    //   return (<div className="who-back"><div className="who">[ <Link to={{pathname: "/life", state: { search: this.props.location.search } }}>Who's Marco</Link> ]</div><div className="back">[ <Link to={{pathname: "/", state: {form: true} }}>Go Back Home</Link> ]</div></div>)
+    // else if(location.pathname === "/life")
+    //   return (<div className="back">[ <Link to="/">Go Back Home</Link> ]</div>)
+    // else if(location.pathname.startsWith("/work/") && location.state && location.state.search)
+    //   return (<div className="who-back"><div className="who">[ <Link to={{pathname: "/life", state: { product: location.pathname.substring(5), search: location.state.search} }}>Who's Marco</Link> ]</div></div>)
+    // else if(location.pathname.startsWith("/work/"))
+    //   return (<div className="who-back"><div className="who">[ <Link to={{pathname: "/life", state: { product: location.pathname.substring(5)} }}>Who's Marco</Link> ]</div></div>)
+    // else
+    //   return (<div className="who">[ <Link to="/life">Who's Marco</Link> ]</div>)
+    return null
   }
 
-  adjustCenteredWrapperHeight = () => {
-    if(this.props.location.pathname==="/work")
-      return {minHeight: "calc(100vh - 168px - 29px)"}
-    else 
-      return {}
-  }
+
 
   checkProduct = (props) => {
     for(let i=0;i<products.length;i++){
@@ -61,7 +56,16 @@ export class App extends Component {
     return(
       <div className="App">
             <div className="content">
-            <div className="centered-wrapper" style={this.adjustCenteredWrapperHeight()}>
+              <nav>
+                <Link className="logo" to={"/"}>mg.</Link>
+                <div className="items">
+                  <NavLink className="hoverable" to={"/work"} activeClassName="selected">Work</NavLink>
+                  <NavLink className="hoverable" to={"/life"} activeClassName="selected">About</NavLink>
+                  <a href="https://www.linkedin.com/in/marcogreselin/" rel="noopener noreferrer" target="_blank" ><i className="fa fa-linkedin" aria-hidden="true"></i><span className="hidden">Linkedin</span></a>
+                  <a href="https://www.github.com/marcogreselin" rel="noopener noreferrer" target="_blank"><i className="fa fa-github" aria-hidden="true"></i><span className="hidden">GitHub</span></a>
+                </div>
+              </nav>
+            <div className="centered-wrapper">
               <Switch>
                 <Route exact path="/" render={props => <Welcome sayHello = { this.sayHello } />} />
                 <Route path="/life"render={props => (!props.location.search) ? <Life sayHello = { this.sayHello } />:<Redirect to="/" />} />
@@ -85,11 +89,11 @@ export class App extends Component {
             { this.backButton(this.props.location) }
 
           </div>
-          <footer>
+          {/*<footer>
             <a href="https://www.github.com/marcogreselin" target="_blank" className="social" rel="noopener noreferrer">Github</a>
             <a href="https://www.linkedin.com/in/marcogreselin/" target="_blank" className="social" rel="noopener noreferrer">Linkedin</a>
             <a href="mailto:marcogreselin@me.com?subject=Let&#8217;s get a coffee!" className="social" rel="noopener noreferrer">Email</a>
-          </footer>
+          </footer>*/}
         </div>
     )
   }

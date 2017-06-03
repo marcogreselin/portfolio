@@ -1,4 +1,69 @@
-.Life {
+.About .title {
+    font-size: 3em;
+    margin-top: 20px;
+}
+
+.About {
+    width: 100%
+}
+
+.About img {
+    height: calc(100vh - 110px);
+    float:right;
+    margin-left: 30px;
+    /*border-radius: 50%;*/
+}
+
+.About .story {
+    max-width: 1000px;
+    font-size: 0.7em;
+}
+
+.About p {
+    margin-top:10px;
+}
+
+.About .two .title {
+    margin-top:30px;
+    margin-bottom:5px;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.About .row {
+    display: flex;
+    color: #696969
+}
+
+.About .take {
+    width: 300px
+}
+
+.About a {
+    border-bottom: 1px solid #2f2f2f;
+}
+
+@media (max-width: 992px) { 
+    .About img {
+        display: none;
+    }
+
+}
+
+@media (max-width: 576px) { 
+    .About .row {
+        display: block
+    }
+    .About .two .title {
+        margin-top:15px;
+        margin-bottom:3px;
+    }
+    .About {
+        font-size: 1.3em;
+    }
+}
+/*.Life {
     margin-left: auto;
     margin-right: auto;
 }
@@ -86,4 +151,4 @@
     .row {
         display: block;
     }
-}
+}*/

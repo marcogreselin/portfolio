@@ -1,6 +1,5 @@
-.SmallForm{
+/*.SmallForm{
     font-size: 1.3em;
-    /*border-bottom: 3px solid #2f2f2f;*/
     margin-bottom: 20px;
     text-align: center;
 }
@@ -17,7 +16,6 @@
     padding-right: 3px;
     text-align: center;
     border-radius: 0;
-    /*margin: 5px;*/
 }
 
 .SmallForm label{
@@ -50,11 +48,7 @@
     background: white;
     color: #7D7E7E;
 }
-/*.SmallForm input[type="checkbox"]:not(:checked):hover + label {
-    color: white;
-    background: #2f2f2f;
-    transition: background-color 0.1s ease;
-}*/
+
 
 
 @media (max-width: 767px) {
@@ -79,16 +73,11 @@
     .SmallForm {
         text-align: center;
         margin-bottom: 7px;
-        /*line-height: 1.4;*/
     }
     #firstLabel {
         margin-top: 15px;
     }
-    /*.Work input[type="checkbox"]:checked:hover + label {
-        background: white;
-        color: #7D7E7E;
-        transition: background-color 0.1s ease;
-    }*/
+
 }
 
 
@@ -100,4 +89,4 @@ and (max-device-width : 1024px)  {
         color: #7D7E7E;
         transition: background-color 0.1s ease;
     }
-}
+}*/

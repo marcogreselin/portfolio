@@ -1,5 +1,4 @@
-.Work {
-    /*min-height: calc(100vh - 168px);*/
+/*.Work {
     display: block;
     width: 670px;
     margin-left: auto;
@@ -64,7 +63,6 @@ button.see-more {
 
 .productImage{
     width: 100%;
-    /*margin-top: 20px;*/
     margin-bottom: 20px;
 }
 
@@ -135,7 +133,6 @@ button.see-more {
     .LongWork .title-span {
         font-weight: bold;
         text-transform: uppercase;
-        /*border-bottom: 2px solid yellow;*/
     }
     .LongWork .emphasisTitle {
         text-transform: none
@@ -158,4 +155,4 @@ button.see-more {
     .LongWork {
         font-size: 0.9em;
     }
-}
+}*/
