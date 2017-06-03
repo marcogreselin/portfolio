@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const ShortWork = () => (
+export const PortfolioResultsShort = () => (
     <div className="ShortWork">
         Looks like someone is in a hurry! That's fine. Here is a bunch of things to <span className="dont-break">check out:</span>
         <div className="checkout">

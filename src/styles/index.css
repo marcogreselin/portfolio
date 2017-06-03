@@ -8,18 +8,7 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td {margin: 0;padding: 0;border: 0;outline: 0;font-size: 100%}
 
-::selection {
-  background: #DBEDF4;  /*WebKit/Blink Browsers */
-}
 
-img {
-    pointer-events: none;
-    user-select: none;
-}
-
-li {
-  list-style-type: none;
-}
 
 /*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
 
@@ -121,3 +110,15 @@ textarea {
     white-space:nowrap;
 }
 
+::selection {
+  background: #DBEDF4;  /*WebKit/Blink Browsers */
+}
+
+img {
+    pointer-events: none;
+    user-select: none;
+}
+
+li {
+  list-style-type: none;
+}
