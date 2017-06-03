@@ -26,7 +26,7 @@ export class App extends Component {
 
   adjustCenteredWrapperHeight = () => {
     if(this.props.location.pathname==="/work")
-      return {minHeight: "calc(100vh - 168px - 29px)"}
+      return {minHeight: "calc(100vh - 165px - 29px)"}
     else 
       return {}
   }
