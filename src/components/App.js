@@ -4,7 +4,7 @@ import { Route, Switch, Link, Redirect, NavLink } from 'react-router-dom'
 import Welcome  from './Welcome'
 import { Life } from './Life'
 import {Portfolio} from './Portfolio'
-import { Work } from './Work'
+import Work from './Work'
 import {products} from './products'
 import Product from './Product'
 

@@ -48,7 +48,7 @@ export class Portfolio extends Component {
 
     render() {
         return(
-            <div className="Work">
+            <div className="Portfolio">
                 <SmallForm routeState={this.state} changeWorkState={this.changeWorkState}/>
                 
                     {this.state.minutes<5 ? <PortfolioResultsShort /> : <Preambole minutes={this.state.minutes} 
