@@ -35,14 +35,13 @@ export class App extends Component {
     return null
   }
 
-
-
   checkProduct = (props) => {
     for(let i=0;i<products.length;i++){
       if(products[i].name===props.match.params.productparam)
         return true
     }
     return false
+
   }
 
   productData = (props)=> {
