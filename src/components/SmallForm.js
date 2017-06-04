@@ -100,31 +100,35 @@ class SmallForm extends Component {
     render() {
         return(
             <div className="SmallForm">
+                {/*<p className="right">
+                    <span className="chatbox">*/}
+                                
                 <form onSubmit={this.handleSubmit}>
                     I have 
                     <input ref="minutesRef" type="number" value={this.state.minutes} onChange={ (e) => this.handleChanges(e, "minutes")} /> 
-                    minutes and I am <span className="dont-break">interested in</span>
+                    minutes and <span className="dont-break">I am interested in</span>
                     <div className="choice-wrapper">
                         <span className="choice" id="firstLabel" >
                             <input type="checkbox" id="business" checked={ this.state.interests.business }
                                     onChange={ (e) => this.handleChanges(e, "business") }/>
-                            <label htmlFor="business">Business</label>
+                            <label htmlFor="business"><span className="label-item">Business</span></label>
                         </span>
                         <span className="choice">
                             <input type="checkbox" id="code" checked={ this.state.interests.code }
                                     onChange={ (e) => this.handleChanges(e, "code") }/>
-                            <label htmlFor="code">Code</label>
+                            <label htmlFor="code"><span className="label-item">Code</span></label>
                         </span>
                         <span className="choice">
                             <input type="checkbox" id="design" checked={ this.state.interests.design } 
                                     onChange={ (e) => this.handleChanges(e, "design") }/>
-                            <label htmlFor="design">Design</label>
+                            <label htmlFor="design"><span className="label-item">Design</span></label>
                         </span>
                     </div>
                 </form>
                 <div className="errors">
                     {this.state.errors}
                 </div>
+                
             </div>
         )
     }

@@ -1,0 +1,168 @@
+.Product {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 800px;
+    margin-left:auto;
+    margin-right:auto;
+    font-size: 0.9em;
+}
+
+.Product img {
+    width: 100%
+}
+
+.Product .subtitle {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    margin-bottom: 10px;
+    margin-top:50px
+}
+
+.Product .title {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.Product .link {
+    background-color: aquamarine;
+    padding:20px;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 1.5em;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+
+
+.Product .X {
+    position:absolute;
+    top: 77px;
+    left: 30px;
+    padding: 30px;
+    background-color: aquamarine;
+    color:#2f2f2f;
+    font-size: 3em;
+    width: 1em;
+    text-align: center;
+}
+
+.Product .X:hover, .Product .link:hover {
+
+    background-color: #2f2f2f;
+    transition: background-color 0.2s ease;
+    color: aquamarine;
+
+}
+
+
+/*.Product .link:before {
+    font-family: 'FontAwesome';
+    content:"\f0ed";
+    margin-right: 20px;
+
+}*/
+
+.Product .emphasisTitle {
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    border-bottom: 3px solid aquamarine;
+    display: inline-block
+}
+
+.Product .productText, .Product .productImage {
+    margin-bottom: 20px; 
+}
+
+.Product .passwordProtected{
+    margin-bottom: 20px;
+}
+
+.Product .passwordProtected a {
+    border-bottom: 1px solid #2f2f2f
+}
+
+
+
+.product-video {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:0px;
+	height:0;
+	overflow:hidden;
+    margin-bottom: 20px;
+}
+
+.product-video iframe, .product-video object, .product-video embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+/*.Product .subtitle, .Product .title, .Product .productText, .Product .productImage, .Product .emphasisTitleSpan, .Product .product-video, .Product .product-link {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: fadeInDown;
+}*/
+
+
+/*
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}*/
+
+@media (max-width: 1200px) { 
+    .Product .X {
+        top:0px;
+        left: 80px;
+        padding: 20px;
+        font-size: 1.5em;
+    }
+
+ }
+
+ @media (max-width: 576px) { 
+    .Product .X {
+        left: 15px;
+        top: 52px;
+        padding: 12px;
+    }
+    .Product {
+        margin-top: 20px;
+    }
+    .Product .title {
+        margin-bottom: 0px
+    }
+    .Product .link {
+        font-size: 1.2em;
+        padding: 10px;
+        margin-top: 10px;
+    }
+}
+
+@media only screen 
+and (max-device-width : 1024px)  { 
+
+
+    .Product .X:hover, .Product .link:hover {
+
+        background-color: aquamarine;
+        transition: background-color 0.2s ease;
+        color: #2f2f2f;
+
+    }
+}

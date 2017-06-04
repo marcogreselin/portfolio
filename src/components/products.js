@@ -2,12 +2,13 @@ export const products =
 [
     {
         "name":"adcall",
+        "portfolio_image":"https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/acall.jpeg?alt=media&token=35eb79d3-ac5a-4dc3-ab95-b49017851b11",
         "scores": {
-            "quality": 8,
+            "quality": 15,
             "relevancy": {
                 "design": 3,
-                "code": 8,
-                "business": 7
+                "code": 15,
+                "business": 6
             }
         },
         "title": "AdCall: Bringing WebRTC to display ads",
@@ -51,6 +52,7 @@ export const products =
     },
     {
         "name":"amazon",
+        "portfolio_image":"https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/kitchen.jpg?alt=media&token=36f0c0b4-9507-4330-9683-6a1239daf9f6",
         "scores": {
             "quality": 7,
             "relevancy": {
@@ -110,6 +112,7 @@ export const products =
     },
     {
         "name":"snicket",
+        "portfolio_image":"https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/snicket_ui.jpg?alt=media&token=4448a8af-944b-47e8-bc1b-10241d3456d4",
         "scores": {
             "quality": 8,
             "relevancy": {
@@ -164,6 +167,7 @@ export const products =
     },
     {
         "name":"band",
+        "portfolio_image":"https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/band_pole.jpg?alt=media&token=ab3932b4-64ef-4d04-a614-5623efd96421",
         "scores": {
             "quality": 8,
             "relevancy": {
@@ -226,6 +230,7 @@ export const products =
     },
     {
         "name":"auctionbay",
+        "portfolio_image":"https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/auctionbay%20portfolio.png?alt=media&token=0ea86b28-bccb-431d-8ef1-784cd5f8401a",
         "scores": {
             "quality": 6,
             "relevancy": {
@@ -271,6 +276,7 @@ export const products =
     },
     {
         "name":"veneziaincampo",
+        "portfolio_image":"https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/vic.png?alt=media&token=326033ce-067a-45ae-bd0c-7e8b53f4ef0f",
         "scores": {
             "quality": 5,
             "relevancy": {
@@ -316,6 +322,7 @@ export const products =
     },
     {
         "name":"commit",
+        "portfolio_image":"https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/bank_proto.jpg?alt=media&token=a7519939-1979-4f9c-aa57-f0e5c57516b6",
         "scores": {
             "quality": 4,
             "relevancy": {
@@ -366,6 +373,7 @@ export const products =
     },
     {
         "name":"fly",
+        "portfolio_image":"https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/fly.jpg?alt=media&token=9f29e09e-f7d6-4fd9-90e9-3bc14cef81bf",
         "scores": {
             "quality": 6,
             "relevancy": {
@@ -420,6 +428,7 @@ export const products =
     },
     {
         "name":"peerwise",
+        "portfolio_image":"https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/peerwise.jpg?alt=media&token=2af0a2df-eb54-4494-924a-bf5bcd19a4e9",
         "scores": {
             "quality": 4,
             "relevancy": {
@@ -470,6 +479,7 @@ export const products =
     },
     {
         "name":"uml",
+        "portfolio_image":"https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/uml.jpg?alt=media&token=dabc3a65-a005-4c4d-be25-ee9fd3644034",
         "scores": {
             "quality": 2,
             "relevancy": {
@@ -518,6 +528,7 @@ export const products =
     },
     {
         "name":"sanus",
+        "portfolio_image":"https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/sanus.png?alt=media&token=50160b0e-0bec-448f-aa0f-fee8e265665a",
         "scores": {
             "quality": 2,
             "relevancy": {
@@ -554,58 +565,12 @@ export const products =
         }
     },
     {
-        "name":"thinking",
+        "name":"portfolio",
+        "portfolio_image":"https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/portfolio_art.jpg?alt=media&token=2f30d833-bf3a-46fe-9b19-e6bf59753329",
         "scores": {
             "quality": 8,
             "relevancy": {
-                "design": 8,
-                "code": 5,
-                "business": 10
-            }
-        },
-        "title": "Three languages of business",
-        "subtitle": "One phenomenon explained in three languages to account for today's business world",
-        "content": [
-            {
-                "type": "image",
-                "url": "https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/three_draw.jpg?alt=media&token=17f689ca-39d5-42d0-973f-54b77c473e87",
-                "title": "Drawing business"
-            },
-            {
-                "type": "text",
-                "body": "Today's \n business requires the use of multiple languages: from being able to articulate ideas and thoughts in writing to sketching relationships to talking to engineers and define implementations."
-            },
-            {
-                "type": "text",
-                "body": "I decided to engage in an exercise and describe one phenomenon - the growth of pop-up stores - in three languages. One page of writing, one page of drawing and one page of coding."
-            },
-            {
-                "type":"image",
-                "url":"https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/business_uml.jpg?alt=media&token=7aa43f86-14b4-407f-996e-8df78b113a60",
-                "title":"UML for Business"
-            },
-            {
-                "type": "text",
-                "body": "This project is particularly meaningful to me because it uses all the skills I developed over the last few years in a simple yet meaningful way. Have a look and let me know!"
-            }
-        ],
-        "links": {
-            "password": false,
-            "content": [
-                {
-                    "title": "Report",
-                    "url": "https://s3-eu-west-1.amazonaws.com/marcogreselin/three_languages.pdf"
-                }
-            ]
-        }
-    }
-    ,
-    {
-        "name":"portfolio",
-        "scores": {
-            "quality": 7,
-            "relevancy": {
-                "design": 8,
+                "design": 9,
                 "code": 8,
                 "business": 7
             }
@@ -648,6 +613,53 @@ export const products =
                 {
                     "title": "Github",
                     "url": "https://github.com/marcogreselin/portfolio"
+                }
+            ]
+        }
+    },
+    {
+        "name":"thinking",
+        "portfolio_image":"https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/three_draw.jpg?alt=media&token=17f689ca-39d5-42d0-973f-54b77c473e87",
+        "scores": {
+            "quality": 8,
+            "relevancy": {
+                "design": 8,
+                "code": 5,
+                "business": 12
+            }
+        },
+        "title": "Three languages of business",
+        "subtitle": "One phenomenon explained in three languages to account for today's business world",
+        "content": [
+            {
+                "type": "image",
+                "url": "https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/three_draw.jpg?alt=media&token=17f689ca-39d5-42d0-973f-54b77c473e87",
+                "title": "Drawing business"
+            },
+            {
+                "type": "text",
+                "body": "Today's \n business requires the use of multiple languages: from being able to articulate ideas and thoughts in writing to sketching relationships to talking to engineers and define implementations."
+            },
+            {
+                "type": "text",
+                "body": "I decided to engage in an exercise and describe one phenomenon - the growth of pop-up stores - in three languages. One page of writing, one page of drawing and one page of coding."
+            },
+            {
+                "type":"image",
+                "url":"https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/business_uml.jpg?alt=media&token=7aa43f86-14b4-407f-996e-8df78b113a60",
+                "title":"UML for Business"
+            },
+            {
+                "type": "text",
+                "body": "This project is particularly meaningful to me because it uses all the skills I developed over the last few years in a simple yet meaningful way. Have a look and let me know!"
+            }
+        ],
+        "links": {
+            "password": false,
+            "content": [
+                {
+                    "title": "Report",
+                    "url": "https://s3-eu-west-1.amazonaws.com/marcogreselin/three_languages.pdf"
                 }
             ]
         }

@@ -1,66 +1,129 @@
 import React, { Component } from 'react'
-import SmallForm from './SmallForm'
-import { ShortWork } from './ShortWork'
-import { LongWork } from './LongWork'
-import Preambole from './Preambole' 
+import { withRouter } from 'react-router-dom'
+import '../styles/font-awesome/css/font-awesome.min.css'
 import '../styles/Work.css'
-import {products} from './products'
 
 
-export class Work extends Component {
+class Work extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            minutes: parseInt(this.props.search.substring(6).split("&")[0],10),
-            interests: {
-                    business: /b/.test(this.props.search.substring(6).split("&")[1].substring(9)),
-                    code: /c/.test(this.props.search.substring(6).split("&")[1].substring(9)),
-                    design: /d/.test(this.props.search.substring(6).split("&")[1].substring(9))
-            },
-            addedElements: 0
+            minutes: "",
+                interests: {
+                business: false,
+                code: false,
+                design: false
+                },
+            errors: "",
+            pressedEnter: false
         }
     }
 
-    componentDidMount = () => {
-        document.title = "Marco's Work"
-        window.scrollTo(0, 0)
+    validateForm = () => {
+        let _errors = []
+        if(!this.state.interests.design && !this.state.interests.code && !this.state.interests.business)
+            _errors.push("Select something you fancy")
+        if(this.state.minutes==="" || this.state.minutes <1 || this.state.minutes>120)
+            _errors.push("Enter a reasonable amount of time")
+        if(_errors.length===0){
+            this.setState({errors: ""})
+            return true
+        }
+        else{
+            if(_errors.length===2){
+                this.setState({errors: "Make your selection above"})
+            } else {
+                 this.setState({errors: _errors[0]})
+            }
+            return false
+        }
     }
 
-    changeWorkState = (newState) => {
-        this.setState(newState)
-        this.setState({addedElements: 0})
-        console.log(JSON.stringify(this.state))
+    interestsInitials = () => {
+        let initials=""
+        if(this.state.interests.design)
+            initials+="d"
+        if(this.state.interests.code)
+            initials+="c"
+        if(this.state.interests.business)
+            initials+="b"
+        return initials
+    }
+
+    handleSubmit = (e) => {
+        e.preventDefault()
+        this.refs.minutesRef.blur()
+        if(this.validateForm())
+            this.props.history.push("/work?mins="+this.state.minutes+"&interest="+this.interestsInitials())
+        this.setState({pressedEnter: true})
     }
 
 
-    changeWorkStateAddElements = (newState) => {
-        this.setState(newState)
+    handleChanges = (e, changeName) => {
+        switch (changeName) {
+            case "minutes": 
+                this.setState({minutes: e.target.value}, this.checkErrorsAgain )
+                break
+            case "business":
+                this.setState({interests:{...this.state.interests, business: e.target.checked}}, this.checkErrorsAgain )
+                break
+            case "code":
+                this.setState({interests:{...this.state.interests, code: e.target.checked}}, this.checkErrorsAgain )
+                break
+            case "design":
+                this.setState({interests:{...this.state.interests, design: e.target.checked}}, this.checkErrorsAgain )
+                break     
+            default:
+                console.log("Cannot identify the input")               
+        }
     }
 
-    initialNumberOfElements = () => {
-        
-        if(this.state.minutes<5)
-            return 0
-        else if(this.state.minutes<=10)
-            return 3
-        else 
-            return  Math.min(4+parseInt((this.state.minutes-10)/4,10), products.length)
+    checkErrorsAgain = () => {
+        if(this.state.pressedEnter)
+            this.validateForm()
     }
+
 
     render() {
-        return(
-            <div className="Work">
-                <SmallForm routeState={this.state} changeWorkState={this.changeWorkState}/>
-                
-                    {this.state.minutes<5 ? <ShortWork /> : <Preambole minutes={this.state.minutes} 
-                                                                    initialNumberOfElements={this.initialNumberOfElements}
-                                                                    interests = {this.state.interests}/>}
-                    
-                    <LongWork parentState={this.state} initialNumberOfElements={this.initialNumberOfElements}
-                              
-                              changeWorkState={this.changeWorkStateAddElements} 
-                              addedElements={this.state.addedElements} />
-            </div>
+        return (
+            <form className="Work" onSubmit={this.handleSubmit}>
+                <p className="left">
+                    <span className="chatbox">This is the first user centred portfolio, <span className="dont-break">built just for you.</span> <br/>Let me ask you two questions:</span>
+                </p>
+
+                <p className="left">
+                    <span className="chatbox">How much time do you have?</span>
+                </p>
+                <p className="right after">
+                    <span className="chatbox"><input  ref="minutesRef" className="minutes" type="number" value={this.state.minutes}
+                           onChange={ (e) => this.handleChanges(e, "minutes")} /> minutes. </span>
+                </p>
+                <p className="left after">
+                    <span className="chatbox">What do you fancy?</span>
+                </p>
+                <p className="right after">
+                    <span className="chatbox">
+                        <input type="checkbox" id="business" checked={ this.state.interests.business }
+                            onChange={ (e) => this.handleChanges(e, "business") }/>
+                        <label htmlFor="business"><span className="label-item">Business</span></label>
+                        <input type="checkbox" id="code" checked={ this.state.interests.code }
+                            onChange={ (e) => this.handleChanges(e, "code") }/>
+                        <label htmlFor="code"><span className="label-item">Code</span></label>
+                        <input type="checkbox" id="design" checked={ this.state.interests.design }
+                            onChange={ (e) => this.handleChanges(e, "design") }/>
+                        <label htmlFor="design"><span className="label-item">Design</span></label>
+                    </span>
+                </p>
+
+                <button type="submit after">Show me your work</button>
+                <div className="errors">
+                    {this.state.errors}
+                </div>
+
+
+            </form>  
         )
     }
 }
+
+export default withRouter(Work)

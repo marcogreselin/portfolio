@@ -1,6 +1,127 @@
-.SmallForm{
+.SmallForm  form{
+    /*border: 3px aquamarine solid;*/
+    /*color: white;
+    background-color: #2f2f2f;
+    text-align: right;
+    border-radius: 10px;
+    padding:20px;
+    text-align:right;
+    display:inline-block;*/
+    background-color: aquamarine;
+    display: inline-block;
+    padding:7px;
+    border-radius:5px;
+}
+
+.SmallForm {
+    /*margin-right:auto;*/
+    text-align: right;
+    user-select: none;
+}
+
+.SmallForm input[type="number"] {
+    border: 3px transparent solid;
+    font-size: inherit;
+    border-radius: 7px;
+    text-align: center;
+    width:40px;
+    -moz-appearance: textfield;
+    margin-left:10px;
+    margin-right: 10px;
+}
+
+.Portfolio .choice-wrapper {
+    margin-top:10px;
+}
+
+.SmallForm .errors {
+    text-align: right
+}
+
+/*Checkbox*/
+
+
+
+
+
+/*.SmallForm .label-item:before {
+    font-family: 'FontAwesome'; 
+    margin-right: 5px;   
+    display: inline-block;
+    width: 1em;
+    margin-left: 15px;
+}*/
+
+/*.SmallForm input[type="checkbox"]:not(checked) + label .label-item:before {
+    font-family: 'FontAwesome';
+    content:"\f096";
+}*/
+
+/*.SmallForm input[type="checkbox"]:checked + label .label-item:before {
+    content: "\f14a";
+    animation-name: tick;
+    animation-duration: 90ms;
+    animation-timing-function: ease-in;
+}*/
+
+.SmallForm input[type="checkbox"] {
+    display: none;
+}
+
+.SmallForm input[type="checkbox"]:not(:checked) + label {
+    background: transparent;
+    color: #2f2f2f;
+    border: 0px transparent solid;
+    padding:1px 3px 1px 3px;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.SmallForm input[type="checkbox"]:checked + label {
+    background: #2f2f2f;
+    color: white;
+    border: 0px transparent solid;
+    padding:1px 3px 1px 3px;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 576px) { 
+    .SmallForm form {
+        max-width: 88%;
+        font-size: 20px
+    }
+    .SmallForm input[type=number] {
+        font-size: 20px;
+        border: 0px transparent solid;
+        padding:2px;
+        
+    }
+
+
+
+
+
+    .SmallForm .right {
+        font-size: 20px
+    }
+    .SmallForm button:hover {
+        color: white;
+        background-color: #2f2f2f;
+    }
+}
+
+@media only screen 
+and (max-device-width : 1024px)  { 
+    .Portfolio button:hover {
+        color: white;
+        background-color: #2f2f2f;
+    }
+}
+
+/*.SmallForm{
     font-size: 1.3em;
-    /*border-bottom: 3px solid #2f2f2f;*/
     margin-bottom: 20px;
     text-align: center;
 }
@@ -17,7 +138,6 @@
     padding-right: 3px;
     text-align: center;
     border-radius: 0;
-    /*margin: 5px;*/
 }
 
 .SmallForm label{
@@ -50,11 +170,7 @@
     background: white;
     color: #7D7E7E;
 }
-/*.SmallForm input[type="checkbox"]:not(:checked):hover + label {
-    color: white;
-    background: #2f2f2f;
-    transition: background-color 0.1s ease;
-}*/
+
 
 
 @media (max-width: 767px) {
@@ -79,16 +195,11 @@
     .SmallForm {
         text-align: center;
         margin-bottom: 7px;
-        /*line-height: 1.4;*/
     }
     #firstLabel {
         margin-top: 15px;
     }
-    /*.Work input[type="checkbox"]:checked:hover + label {
-        background: white;
-        color: #7D7E7E;
-        transition: background-color 0.1s ease;
-    }*/
+
 }
 
 
@@ -100,4 +211,4 @@ and (max-device-width : 1024px)  {
         color: #7D7E7E;
         transition: background-color 0.1s ease;
     }
-}
+}*/
