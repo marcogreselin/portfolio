@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
 import '../styles/font-awesome/css/font-awesome.min.css'
+import '../styles/Work.css'
 
 
 class Work extends Component {
@@ -93,14 +94,14 @@ class Work extends Component {
                 <p className="left">
                     <span className="chatbox">How much time do you have?</span>
                 </p>
-                <p className="right">
+                <p className="right after">
                     <span className="chatbox"><input  ref="minutesRef" className="minutes" type="number" value={this.state.minutes}
                            onChange={ (e) => this.handleChanges(e, "minutes")} /> minutes. </span>
                 </p>
-                <p className="left">
+                <p className="left after">
                     <span className="chatbox">What do you fancy?</span>
                 </p>
-                <p className="right">
+                <p className="right after">
                     <span className="chatbox">
                         <input type="checkbox" id="business" checked={ this.state.interests.business }
                             onChange={ (e) => this.handleChanges(e, "business") }/>
@@ -114,7 +115,7 @@ class Work extends Component {
                     </span>
                 </p>
 
-                <button type="submit">Show me your work</button>
+                <button type="submit after">Show me your work</button>
                 <div className="errors">
                     {this.state.errors}
                 </div>

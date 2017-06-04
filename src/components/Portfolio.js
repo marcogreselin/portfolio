@@ -3,7 +3,7 @@ import SmallForm from './SmallForm'
 import { PortfolioResultsShort } from './PortfolioResultsShort'
 import { PortfolioResultsLong } from './PortfolioResultsLong'
 import Preambole from './Preambole' 
-import '../styles/Work.css'
+import '../styles/Portfolio.css'
 import {products} from './products'
 
 

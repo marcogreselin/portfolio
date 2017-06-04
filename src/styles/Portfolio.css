@@ -1,0 +1,56 @@
+.Portfolio {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 800px;
+    margin-left:auto;
+    margin-right:auto
+}
+
+.PortfolioResultsShort .left {
+    margin-top:15px;
+    background-color: #2f2f2f;
+    display: inline-block;
+    color:white;
+    padding:7px;
+    border-radius:5px;
+    max-width: 88%
+}
+
+.PortfolioResultsShort .left .chat-link {
+    border-bottom:1px white solid;
+}
+
+.PortfolioResultsShort i {
+    margin-right: 10px;
+}
+
+.PortfolioResultsShort .left, .Portfolio button {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: fadeInDown;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.Portfolio .after, .Portfolio button {
+    animation-delay: 2s
+}
+
+.see-more {
+    animation-delay: 1s
+}
+
+@media (max-width: 576px) { 
+    .Portfolio {
+        font-size: 20px
+    }
+}

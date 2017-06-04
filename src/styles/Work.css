@@ -49,13 +49,13 @@
 
 /*Input number*/
 
-.Work input[type=number]:focus{
+input[type=number]:focus{
     outline-width: 0;
     outline:none;
 }
 
-.Work input[type=number]::-webkit-inner-spin-button, 
-.Work input[type=number]::-webkit-outer-spin-button { 
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -109,7 +109,9 @@
     display: none;
 }
 
-.Work button {
+/*button*/
+
+button {
     background-color: #2f2f2f;
     color:white;
     padding:7px;
@@ -125,11 +127,11 @@
     border: 1px transparent solid;
 }
 
-.Work button:focus {
+button:focus {
     outline-width: 0;
 }
 
-.Work button:hover {
+button:hover {
     background-color: aquamarine;
     color:#2f2f2f;
     transition: background-color 0.3s ease;
@@ -150,11 +152,38 @@
 
 @media only screen 
 and (max-device-width : 1024px)  { 
-    .Work button:hover {
+    button:hover {
         color: white;
         background-color: #2f2f2f;
     }
 }
+
+/*Animations*/
+.Work p, .Work button {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: fadeInDown;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*.Work .after {
+    animation-delay: 2s
+}*/
+
+.Work button {
+    animation-delay: 2s
+}
+
 
 /*.Work {
     display: block;
