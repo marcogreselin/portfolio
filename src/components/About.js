@@ -4,7 +4,7 @@ import profilePic from '../images/marco.JPG'
 import TypeWriter from 'react-typewriter'
 // import App from './App'
 
-export class Life extends Component {
+export class About extends Component {
 
     componentDidMount = () => {
         document.title = "Who's Marco?"

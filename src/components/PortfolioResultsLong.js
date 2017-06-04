@@ -28,7 +28,7 @@ export class PortfolioResultsLong extends Component {
 
     render() {
         return(
-            <div className="LongWork">
+            <div className="PortfolioResultsLong">
                 { this.orderedArray().slice(0,this.props.initialNumberOfElements()+this.props.addedElements).map((product, i) => 
                                  <PortfolioElement parentProps={this.props} product={product} key={i} />
                 )}

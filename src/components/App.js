@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import '../styles/App.css';
 import { Route, Switch, Link, Redirect, NavLink } from 'react-router-dom'
 import Welcome  from './Welcome'
-import { Life } from './Life'
+import { About } from './About'
 import {Portfolio} from './Portfolio'
 import Work from './Work'
 import {products} from './products'
@@ -60,7 +60,7 @@ export class App extends Component {
                 <Link className="logo" to={"/"}>mg.</Link>
                 <div className="items">
                   <NavLink className="hoverable" to={"/work"} activeClassName="selected">Work</NavLink>
-                  <NavLink className="hoverable" to={"/life"} activeClassName="selected">About</NavLink>
+                  <NavLink className="hoverable" to={"/me"} activeClassName="selected">About</NavLink>
                   <a href="https://www.linkedin.com/in/marcogreselin/" rel="noopener noreferrer" target="_blank" ><i className="fa fa-linkedin" aria-hidden="true"></i><span className="hidden">Linkedin</span></a>
                   <a href="https://www.github.com/marcogreselin" rel="noopener noreferrer" target="_blank"><i className="fa fa-github" aria-hidden="true"></i><span className="hidden">GitHub</span></a>
                 </div>
@@ -68,7 +68,7 @@ export class App extends Component {
             <div className="centered-wrapper">
               <Switch>
                 <Route exact path="/" render={props => <Welcome sayHello = { this.sayHello } />} />
-                <Route path="/life"render={props => (!props.location.search) ? <Life sayHello = { this.sayHello } />:<Redirect to="/" />} />
+                <Route path="/me"render={props => (!props.location.search) ? <About sayHello = { this.sayHello } />:<Redirect to="/" />} />
                 <Route exact path="/work" render={props => {
                   let re = /^\?mins=0*([1-9]|[1-9][0-9]|1[0-1][0-9]|120)(\.[0-9]*)?&interest=(b|c|d|bc|cb|bd|db|cd|dc|bcd|bdc|cbd|cdb|dcb|dbc)$/
                   let dottedRe = /^\?mins=0*([1-9]|[1-9][0-9]|1[0-1][0-9]|120)\.[0-9]*&interest=(b|c|d|bc|cb|bd|db|cd|dc|bcd|bdc|cbd|cdb|dcb|dbc)$/
