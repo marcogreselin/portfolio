@@ -51,12 +51,12 @@ export class Product extends Component {
                 <div className="productLinks">
                     {this.props.productData.links.password && (
                     <div className="passwordProtected">
-                        Some files are password protected. <span className="dont-break"><a href="mailto:marcogreselin@me.com?subject=Unlock the magic" className="social" rel="noopener noreferrer">Email</a> me to unlock them.</span>
+                        <i className="fa fa-lock" aria-hidden="true"></i>Some files are password protected. <span className="dont-break"><a href="mailto:marcogreselin@me.com?subject=Unlock the magic" className="social" rel="noopener noreferrer">Email</a> me to unlock them.</span>
                     </div>
                     )}
                     <ul>
                         {this.props.productData.links.content.map((link, g)=>{
-                            return <a target="_blank" rel="noopener noreferrer" href={link.url}><li className="link" key={g}>{link.title}</li></a>
+                            return <a className="product-link" target="_blank" rel="noopener noreferrer" href={link.url}><li className="link" key={g}>{link.title}</li></a>
                         })}
                     </ul>
                 </div>

@@ -51,7 +51,7 @@
 
 }
 
-.PortfolioResultsShort .left, .Portfolio button, .Portfolio .Preambole, Portfolio .PortfolioElement {
+.PortfolioResultsShort .left, .Portfolio button, .Portfolio .Preambole, .PortfolioElement {
     animation-duration: 1s;
     animation-fill-mode: both;
     animation-name: fadeInDown;
