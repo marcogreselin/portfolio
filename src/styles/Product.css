@@ -36,14 +36,28 @@
     border-radius: 5px;
 }
 
+
+
 .Product .X {
     position:absolute;
     top: 77px;
     left: 30px;
     padding: 30px;
     background-color: aquamarine;
+    color:#2f2f2f;
     font-size: 3em;
+    width: 1em;
+    text-align: center;
 }
+
+.Product .X:hover, .Product .link:hover {
+
+    background-color: #2f2f2f;
+    transition: background-color 0.2s ease;
+    color: aquamarine;
+
+}
+
 
 /*.Product .link:before {
     font-family: 'FontAwesome';
@@ -137,5 +151,18 @@
         font-size: 1.2em;
         padding: 10px;
         margin-top: 10px;
+    }
+}
+
+@media only screen 
+and (max-device-width : 1024px)  { 
+
+
+    .Product .X:hover, .Product .link:hover {
+
+        background-color: aquamarine;
+        transition: background-color 0.2s ease;
+        color: #2f2f2f;
+
     }
 }

@@ -19,7 +19,7 @@ export class Product extends Component {
                 )
             case "image":
                 return (
-                    <img key={l} className="productImage" src={content.url} alt={content.alt}/>
+                    <img className="productImage" src={content.url} alt={content.alt} key={l}/>
                 )
             case "emphasis":
                 return (
@@ -56,11 +56,11 @@ export class Product extends Component {
                     )}
                     <ul>
                         {this.props.productData.links.content.map((link, g)=>{
-                            return <a className="product-link" target="_blank" rel="noopener noreferrer" href={link.url}><li className="link" key={g}>{link.title}</li></a>
+                            return <a key={g} className="product-link" target="_blank" rel="noopener noreferrer" href={link.url}><li className="link">{link.title}</li></a>
                         })}
                     </ul>
                 </div>
-                {(this.props.location.state && this.props.location.state.search) && <Link className="X" to={"/work"+this.props.location.state.search}>X</Link>}
+                {(this.props.location.state && this.props.location.state.search) && <Link className="X" to={"/work"+this.props.location.state.search}><i className="fa fa-times fa-1x" aria-hidden="true"></i></Link>}
             </div>
         )
     } 

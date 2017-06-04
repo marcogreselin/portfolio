@@ -36,6 +36,10 @@
     color: #696969
 }
 
+.About .row a {
+    border-bottom: 1px solid #696969;
+}
+
 .About .take {
     width: 300px
 }

@@ -26,7 +26,7 @@ export const PortfolioResultsShort = () => (
         </div>
 
         <div className="left after">
-            Now, if you're curious about some of the products I've built, click the button below. They will be prioritised based on your preferences.
+            Now, if you're curious about some of the products I've built, click on the button below. They will be prioritised based on your preferences.
         </div>
 
     </div>
