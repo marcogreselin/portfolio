@@ -56,9 +56,9 @@ export class Portfolio extends Component {
                                                                     interests = {this.state.interests}/>}
                     
                     <PortfolioResultsLong parentState={this.state} initialNumberOfElements={this.initialNumberOfElements}
-                              workProps={this.props}
-                              changeWorkState={this.changeWorkStateAddElements} 
-                              addedElements={this.state.addedElements} />
+                                          workProps={this.props}
+                                          changeWorkState={this.changeWorkStateAddElements} 
+                                          addedElements={this.state.addedElements} />
             </div>
         )
     }
