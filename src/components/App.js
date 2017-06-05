@@ -15,26 +15,6 @@ export class App extends Component {
     return hellos[Math.floor((Math.random()*hellos.length))];
   }
 
-  backButton = (location) => {
-    // if(location.pathname === "/life" && location.state && location.state.search && location.state.product)
-    //   return (<div className="back">[ <Link to={{pathname: "/work"+location.state.product, state:{search:location.state.search}}}>Back to work</Link> ]</div>)
-    // else if(location.pathname === "/life" && location.state && location.state.product)
-    //   return (<div className="back">[ <Link to={{pathname: "/work"+location.state.product}}>Back to work</Link> ]</div>)
-    // else if(location.pathname === "/life" && location.state && location.state.search)
-    //   return (<div className="back">[ <Link to={"/work"+location.state.search}>Back to work</Link> ]</div>)
-    // else if(location.pathname==="/work")
-    //   return (<div className="who-back"><div className="who">[ <Link to={{pathname: "/life", state: { search: this.props.location.search } }}>Who's Marco</Link> ]</div><div className="back">[ <Link to={{pathname: "/", state: {form: true} }}>Go Back Home</Link> ]</div></div>)
-    // else if(location.pathname === "/life")
-    //   return (<div className="back">[ <Link to="/">Go Back Home</Link> ]</div>)
-    // else if(location.pathname.startsWith("/work/") && location.state && location.state.search)
-    //   return (<div className="who-back"><div className="who">[ <Link to={{pathname: "/life", state: { product: location.pathname.substring(5), search: location.state.search} }}>Who's Marco</Link> ]</div></div>)
-    // else if(location.pathname.startsWith("/work/"))
-    //   return (<div className="who-back"><div className="who">[ <Link to={{pathname: "/life", state: { product: location.pathname.substring(5)} }}>Who's Marco</Link> ]</div></div>)
-    // else
-    //   return (<div className="who">[ <Link to="/life">Who's Marco</Link> ]</div>)
-    return null
-  }
-
   checkProduct = (props) => {
     for(let i=0;i<products.length;i++){
       if(products[i].name===props.match.params.productparam)
@@ -49,7 +29,7 @@ export class App extends Component {
         if(products[i].name===props.match.params.productparam)
           return products[i]
     }
-}
+  }
 
   render() {
     return(
@@ -85,14 +65,7 @@ export class App extends Component {
                 <Route path="*" render={ props=> <Redirect to="/"/>} />
               </Switch>
             </div>                
-            { this.backButton(this.props.location) }
-
           </div>
-          {/*<footer>
-            <a href="https://www.github.com/marcogreselin" target="_blank" className="social" rel="noopener noreferrer">Github</a>
-            <a href="https://www.linkedin.com/in/marcogreselin/" target="_blank" className="social" rel="noopener noreferrer">Linkedin</a>
-            <a href="mailto:marcogreselin@me.com?subject=Let&#8217;s get a coffee!" className="social" rel="noopener noreferrer">Email</a>
-          </footer>*/}
         </div>
     )
   }

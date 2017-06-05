@@ -8,7 +8,6 @@ export class Product extends Component {
         window.scrollTo(0, 0)
     }
 
-
     renderContent = (content, l) => {
         switch(content.type){
             case "text":

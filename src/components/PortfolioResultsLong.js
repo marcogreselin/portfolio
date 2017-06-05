@@ -23,7 +23,6 @@ export class PortfolioResultsLong extends Component {
         return sortedArray
     }
 
-
     addThree = () => this.props.changeWorkState({addedElements: this.props.addedElements+3})
 
     render() {

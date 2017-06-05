@@ -3,7 +3,6 @@ import { withRouter } from 'react-router-dom'
 import '../styles/font-awesome/css/font-awesome.min.css'
 import '../styles/Work.css'
 
-
 class Work extends Component {
     constructor(props) {
         super(props)
@@ -58,7 +57,6 @@ class Work extends Component {
         this.setState({pressedEnter: true})
     }
 
-
     handleChanges = (e, changeName) => {
         switch (changeName) {
             case "minutes": 
@@ -82,7 +80,6 @@ class Work extends Component {
         if(this.state.pressedEnter)
             this.validateForm()
     }
-
 
     render() {
         return (
@@ -119,8 +116,6 @@ class Work extends Component {
                 <div className="errors">
                     {this.state.errors}
                 </div>
-
-
             </form>  
         )
     }

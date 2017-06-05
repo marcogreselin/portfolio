@@ -2,10 +2,9 @@ import React, { Component } from 'react'
 import SmallForm from './SmallForm'
 import { PortfolioResultsShort } from './PortfolioResultsShort'
 import { PortfolioResultsLong } from './PortfolioResultsLong'
-import Preambole from './Preambole' 
+import {Preambole} from './Preambole' 
 import '../styles/Portfolio.css'
 import {products} from './products'
-
 
 export class Portfolio extends Component {
     constructor(props) {
@@ -52,8 +51,8 @@ export class Portfolio extends Component {
                 <SmallForm routeState={this.state} changeWorkState={this.changeWorkState}/>
                 
                     {this.state.minutes<5 ? <PortfolioResultsShort /> : <Preambole minutes={this.state.minutes} 
-                                                                    initialNumberOfElements={this.initialNumberOfElements}
-                                                                    interests = {this.state.interests}/>}
+                                                                                   initialNumberOfElements={this.initialNumberOfElements}
+                                                                                   interests = {this.state.interests}/>}
                     
                     <PortfolioResultsLong parentState={this.state} initialNumberOfElements={this.initialNumberOfElements}
                                           workProps={this.props}

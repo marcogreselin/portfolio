@@ -1,7 +1,6 @@
 import React, {Component} from 'react'
-import {  withRouter } from 'react-router-dom'
 
-class Preambole extends Component {
+export class Preambole extends Component {
     stringifyListOfInterests = () => {
         let arr = []
         if (this.props.interests.business)
@@ -26,5 +25,3 @@ class Preambole extends Component {
         )
     }
 }
-
-export default withRouter(Preambole)

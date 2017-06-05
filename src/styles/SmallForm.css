@@ -39,31 +39,6 @@
 }
 
 /*Checkbox*/
-
-
-
-
-
-/*.SmallForm .label-item:before {
-    font-family: 'FontAwesome'; 
-    margin-right: 5px;   
-    display: inline-block;
-    width: 1em;
-    margin-left: 15px;
-}*/
-
-/*.SmallForm input[type="checkbox"]:not(checked) + label .label-item:before {
-    font-family: 'FontAwesome';
-    content:"\f096";
-}*/
-
-/*.SmallForm input[type="checkbox"]:checked + label .label-item:before {
-    content: "\f14a";
-    animation-name: tick;
-    animation-duration: 90ms;
-    animation-timing-function: ease-in;
-}*/
-
 .SmallForm input[type="checkbox"] {
     display: none;
 }
@@ -77,6 +52,7 @@
     margin-left: 10px;
     cursor: pointer;
 }
+
 .SmallForm input[type="checkbox"]:checked + label {
     background: #2f2f2f;
     color: white;
@@ -98,11 +74,6 @@
         padding:2px;
         
     }
-
-
-
-
-
     .SmallForm .right {
         font-size: 20px
     }
@@ -119,96 +90,3 @@ and (max-device-width : 1024px)  {
         background-color: #2f2f2f;
     }
 }
-
-/*.SmallForm{
-    font-size: 1.3em;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.SmallForm input {
-    width: 40px;
-    border: none;
-    border-bottom: 2px solid #2f2f2f;
-    margin-left: 3px;
-    margin-right: 5px;
-    font-size: inherit;
-    outline-width: 0;
-    padding-left: 3px;
-    padding-right: 3px;
-    text-align: center;
-    border-radius: 0;
-}
-
-.SmallForm label{
-    margin-left: 5px;
-    margin-right: 5px;
-    padding: 0 4px 0 4px;
-}
-
-
-.SmallForm .errors {
-    text-align: center;
-}
-
-.SmallForm button {
-    font-size: .7em;
-    display: block;
-    margin-top: 20px;
-    margin-left: auto;
-    border: 2px solid #2f2f2f;
-    margin-right: auto;
-    padding-top: 3px;
-    padding-bottom: 3px;
-}
-
-.SmallForm .choice-wrapper {
-    display: inline;
-}
-
-.SmallForm input[type="checkbox"]:not(:checked) + label {
-    background: white;
-    color: #7D7E7E;
-}
-
-
-
-@media (max-width: 767px) {
-    .SmallForm input[type="checkbox"]:not(:checked):hover + label {
-        background: white;
-        color: #7D7E7E;
-        transition: background-color 0.1s ease;
-    }
-    .SmallForm input[type=number]{
-        margin-bottom: 5px;
-        padding-bottom: 1px;
-    }
-    .SmallForm .choice{
-        text-align: center;
-        display: inline;
-    }
-
-    .SmallForm .choice-wrapper {
-        display: block;
-        margin-top: 10px;
-    }
-    .SmallForm {
-        text-align: center;
-        margin-bottom: 7px;
-    }
-    #firstLabel {
-        margin-top: 15px;
-    }
-
-}
-
-
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px)  { 
-    .Work input[type="checkbox"]:not(:checked):hover + label {
-        background: white;
-        color: #7D7E7E;
-        transition: background-color 0.1s ease;
-    }
-}*/

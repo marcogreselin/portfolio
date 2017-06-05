@@ -2,7 +2,7 @@ export const products =
 [
     {
         "name":"adcall",
-        "portfolio_image":"https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/acall.jpeg?alt=media&token=35eb79d3-ac5a-4dc3-ab95-b49017851b11",
+        "portfolio_image":"https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/adcall%20thumb%20small.jpg?alt=media&token=14ade548-f74e-4ddf-ae22-70b7cc521363",
         "scores": {
             "quality": 15,
             "relevancy": {
@@ -19,12 +19,36 @@ export const products =
                 "body": "AdCall is a concept for a new kind of online advertising banner. Using WebRTC, it allows for a click to call action with the aim of increasing conversions. It's built with a Node backend and deployed on Heroku."
             },
             {
+                "type": "image",
+                "url": "https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/adcall%20slide%20small.jpg?alt=media&token=71893096-6dbd-4324-a6ea-6c72fdfa8df0",
+                "title": "AdCall ERD"
+            },
+            {
                 "type": "emphasis",
                 "body": "The problem"
             },
             {
                 "type": "text",
                 "body": "Display advertising is threatened both by lower CPMs and ad blockers. Over the last ten years there has been no innovation on media used for online banners: they are still images, clickable texts or videos. AdCall leverages on modern browsers APIs such as getUserMedia() to create a new enriching advertising experience."
+            },
+            {
+                "type": "image",
+                "url": "https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/adcall%20sequence.png?alt=media&token=92a30190-6d6b-40f4-88f0-d85ba5d87bd2",
+                "title": "AdCall Sequence"
+            },
+            {
+                "type": "text",
+                "body": "The codebase, available on Github, is based on a normalised database that accounts for the differentuser types: publishers, advertisers and agencies. With AdCall, publishers receive a small snippet of code to include in their ad server instead of static assets and advertiserers access a calling system through the AdCall website to receive calls made by users."
+            },
+            {
+                "type": "image",
+                "url": "https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/adcall%20mvc.png?alt=media&token=e1a5eab4-c133-4a83-a171-cc75e56f06da",
+                "title": "AdCall MVC"
+            },
+            {
+                "type": "image",
+                "url": "https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/adcall%20erd.png?alt=media&token=1a6f542d-10d0-42cb-a9e6-3e817fca8fd4",
+                "title": "AdCall MVC"
             },
             {
                 "type": "video",
@@ -112,7 +136,7 @@ export const products =
     },
     {
         "name":"snicket",
-        "portfolio_image":"https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/snicket_ui.jpg?alt=media&token=4448a8af-944b-47e8-bc1b-10241d3456d4",
+        "portfolio_image":"https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/snicket%20large.png?alt=media&token=a2bba5ca-4312-444f-ac67-8a94887fcc5d",
         "scores": {
             "quality": 8,
             "relevancy": {
@@ -121,7 +145,7 @@ export const products =
                 "business": 8
             }
         },
-        "title": "Snicket: an app to discover and live pop-up shops",
+        "title": "Snicket: an app to discover hidden pop-up shops",
         "subtitle": "The future of retail is about temporary experiences",
         "content": [
             {
@@ -138,8 +162,13 @@ export const products =
             },
             {
                 "type": "image",
-                "url": "https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/snicket_ui.jpg?alt=media&token=4448a8af-944b-47e8-bc1b-10241d3456d4",
-                "title": "Marco Pitching"
+                "url": "https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/snicket%20large.png?alt=media&token=a2bba5ca-4312-444f-ac67-8a94887fcc5d",
+                "title": "Snicket UI"
+            },
+            {
+                "type": "image",
+                "url": "https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/snicket%20onboarding.png?alt=media&token=f26dea9d-272a-42c2-87e0-c83d30d5b71f",
+                "title": "Snicket Onboarding"
             },
             {
                 "type": "text",
@@ -149,6 +178,10 @@ export const products =
                 "type":"video",
                 "body": "https://www.youtube.com/embed/m6ftS0u3e_8?rel=0&amp;showinfo=0",
                 "title": "Snicket"
+            },
+            {
+                "type": "text",
+                "body": "The whole experience is built around the products rather than the shops. Users can look for a product (e.g. a pair of shoes) and Snicket provides inspirations from local pop-up stores. You can consider it a localised version of Pintrest."
             },
             {
                 "type": "text",
@@ -184,6 +217,11 @@ export const products =
                 "body": "Explorer James Redden went to the North Pole in May 2016. At UCL, we partnered with Microsoft to create a unique web experience allowing everyone to follow his expedition."
             },
             {
+                "type": "image",
+                "url": "https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/band%20phone.JPG?alt=media&token=77cf51dc-ad36-4601-8a52-34f5be14196c",
+                "title": "Band on iPhone"
+            },
+            {
                 "type": "emphasis",
                 "body": "The idea"
             },
@@ -207,7 +245,13 @@ export const products =
             },
             {
                 "type": "image",
-                "url": "https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/band_dashboard.jpg?alt=media&token=2cea92e0-0b45-47f9-920d-2e252ad9a635"
+                "url": "https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/band_dashboard.jpg?alt=media&token=2cea92e0-0b45-47f9-920d-2e252ad9a635",
+                "title": "The Band UI 2"
+            },
+            {
+                "type": "image",
+                "url": "https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/band%20prize.JPG?alt=media&token=e9fb7b3c-6d2c-46c8-92fa-577a7940abd9",
+                "title": "Microsoft Prize"
             },
             {
                 "type": "text",
@@ -230,7 +274,7 @@ export const products =
     },
     {
         "name":"auctionbay",
-        "portfolio_image":"https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/auctionbay%20portfolio.png?alt=media&token=0ea86b28-bccb-431d-8ef1-784cd5f8401a",
+        "portfolio_image":"https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/auctionbay%20ipad.JPG?alt=media&token=ac2680b2-597a-4c6e-83a8-a9c27759a696",
         "scores": {
             "quality": 6,
             "relevancy": {
@@ -239,7 +283,7 @@ export const products =
                 "business": 6
             }
         },
-        "title": "AuctionBay, pretty eBay",
+        "title": "Auctionbay, an auction site",
         "subtitle": "Built on a LAMP stack with responsive design",
         "content": [
             {
@@ -247,14 +291,30 @@ export const products =
                 "body": "As part of the course on Databases and Information Management Systems at UCL, we created a replica of eBay."
             },
             {
-                "type": "video",
-                "body": "https://www.youtube.com/embed/eVZXFArkstQ?rel=0&amp;showinfo=0",
-                "title": "AuctionBay"
+                "type":"image",
+                "url": "https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/auctionbay%20ipad.JPG?alt=media&token=ac2680b2-597a-4c6e-83a8-a9c27759a696",
+                "title": "Auctionbay iPad"
+            },
+            {
+                "type":"image",
+                "url": "https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/auctionbay%20query.png?alt=media&token=b40b2790-7875-4c35-bb4b-7a559b15c0f9",
+                "title": "Auctionbay Query"
             },
             {
                 "type": "text",
-                "body": "AuctionBay is an auction website similar to eBay. But better looking. We built everything from the ground up using a PHP backend. The purpose was to design a database in third normal form at least. It features some complex queries: check the links below to have a look. The project was then deployed on an EC2 instance that was running a LAMP stack created with Bitnami."
-            }
+                "body": "Auctionbay is an auction website similar to eBay. But better looking. We built everything from the ground up using a PHP backend. The purpose was to design a database in third normal form at least. It features some complex queries: check the links below to have a look. The project was then deployed on an EC2 instance that was running a LAMP stack created with Bitnami."
+            },
+            {
+                "type":"image",
+                "url": "https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/auctionbay%20erd.png?alt=media&token=b52c4756-852b-4c71-a7e5-f8d07c0ad938",
+                "title": "Auctionbay ERD"
+            },
+            {
+                "type": "video",
+                "body": "https://www.youtube.com/embed/eVZXFArkstQ?rel=0&amp;showinfo=0",
+                "title": "Auctionbay"
+            },
+
         ],
         "links": {
             "password": false,
@@ -276,7 +336,7 @@ export const products =
     },
     {
         "name":"veneziaincampo",
-        "portfolio_image":"https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/vic.png?alt=media&token=326033ce-067a-45ae-bd0c-7e8b53f4ef0f",
+        "portfolio_image":"https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/vic.jpg?alt=media&token=d01e1bf6-b084-4acb-8726-0a181cf8c528",
         "scores": {
             "quality": 5,
             "relevancy": {
@@ -566,7 +626,7 @@ export const products =
     },
     {
         "name":"portfolio",
-        "portfolio_image":"https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/portfolio_art.jpg?alt=media&token=2f30d833-bf3a-46fe-9b19-e6bf59753329",
+        "portfolio_image":"https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/portfolio%20macbook.JPG?alt=media&token=68e07092-9023-4e4b-8b80-16b3a026ee5c",
         "scores": {
             "quality": 8,
             "relevancy": {
@@ -580,22 +640,27 @@ export const products =
         "content": [
             {
                 "type": "image",
-                "url": "https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/portfolio_art.jpg?alt=media&token=2f30d833-bf3a-46fe-9b19-e6bf59753329",
-                "title": "Drawing business"
+                "url": "https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/portfolio%20macbook.JPG?alt=media&token=68e07092-9023-4e4b-8b80-16b3a026ee5c",
+                "title": "Portfolio on Macbook"
             },
             {
                 "type": "text",
-                "body": "A portfolio that becomes a product featured within. We can call this the first user centred portfolio: it builds around each user's preferences. This is fundamental for two reasons: different users have very different amount of times. Moreover, for product managers like me, there's a need to showcase many skills at the same time whilst users have their own interests."
+                "body": "A portfolio that becomes a product featured within. We can call this the first user centred portfolio: it builds around each user's preferences. This is important for two reasons: different users have very different amount of times and, for product managers like me, there's a need to showcase many skills at the same time whilst users have their own interests."
             },
             {
                 "type": "image",
-                "url": "https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/portfolio_chipp.jpg?alt=media&token=6c3c75d6-96f1-4deb-81f0-e5f8053bc9aa",
-                "title": "Drawing business"
+                "url": "https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/portfolio%20ipad.JPG?alt=media&token=ed1de6d7-e562-4e0e-9d08-fc3320d74409",
+                "title": "Portfolio on iPad"
             },
             {
                 "type": "text",
-                "body": "To achieve this, I gave two scores to each product: an overall quality score and one for each of the three interests. The user makes a selection and the application will return a bespoke version of the portfolio."
-            },            
+                "body": "To achieve this, I gave two scores to each product: an overall quality score and one for each of the three interests. The user makes a selection in a chat-like UI and the application will return a personalised version of the portfolio."
+            },  
+            {
+                "type": "image",
+                "url": "https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/portfolio%20phone.JPG?alt=media&token=7154f99a-55ab-4aa1-b1a4-87b3a33e4a66",
+                "title": "Portfolio on iPhone"
+            },          
             {
                 "type": "text",
                 "body": "It's built with React which makes it fast, and designed to look good on any platform and any browser. Have you ever seen a portfolio that talks about itself?"
@@ -641,17 +706,27 @@ export const products =
                 "body": "Today's \n business requires the use of multiple languages: from being able to articulate ideas and thoughts in writing to sketching relationships to talking to engineers and define implementations."
             },
             {
+                "type": "image",
+                "url": "https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/ideo1.png?alt=media&token=b33a76b0-9b42-4e93-90f3-140c0338f33b",
+                "title": "Business UML"
+            },
+            {
                 "type": "text",
                 "body": "I decided to engage in an exercise and describe one phenomenon - the growth of pop-up stores - in three languages. One page of writing, one page of drawing and one page of coding."
             },
             {
                 "type":"image",
-                "url":"https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/business_uml.jpg?alt=media&token=7aa43f86-14b4-407f-996e-8df78b113a60",
-                "title":"UML for Business"
+                "url":"https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/ideo2.png?alt=media&token=2e14f9e7-7427-4892-a889-d9fcb46a5395",
+                "title":"Sequence Diagram"
             },
             {
                 "type": "text",
-                "body": "This project is particularly meaningful to me because it uses all the skills I developed over the last few years in a simple yet meaningful way. Have a look and let me know!"
+                "body": "This project is particularly meaningful to me because it uses the different skills I developed over the last few years. Download the slides and read the full article."
+            },
+            {
+                "type": "image",
+                "url": "https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/ideo3.png?alt=media&token=69eca8a2-8722-4dcb-b220-ac4333bcca3a",
+                "title": "Business SQL"
             }
         ],
         "links": {

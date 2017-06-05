@@ -100,8 +100,6 @@ class SmallForm extends Component {
     render() {
         return(
             <div className="SmallForm">
-                {/*<p className="right">
-                    <span className="chatbox">*/}
                                 
                 <form onSubmit={this.handleSubmit}>
                     I have 
@@ -128,7 +126,6 @@ class SmallForm extends Component {
                 <div className="errors">
                     {this.state.errors}
                 </div>
-                
             </div>
         )
     }

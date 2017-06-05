@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import '../styles/About.css'
-import profilePic from '../images/marco.JPG'
+import profilePic from '../images/marco.jpg'
 import TypeWriter from 'react-typewriter'
-// import App from './App'
 
 export class About extends Component {
 

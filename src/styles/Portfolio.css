@@ -57,8 +57,6 @@
     animation-name: fadeInDown;
 }
 
-
-
 @keyframes fadeInDown {
     0% {
         opacity: 0;

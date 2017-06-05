@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import '../styles/Welcome.css';
 import { Link } from 'react-router-dom'
 import TypeWriter from 'react-typewriter'
-// import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup' 
 
 export default class Welcome extends Component {
 

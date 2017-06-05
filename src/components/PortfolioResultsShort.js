@@ -5,13 +5,11 @@ export const PortfolioResultsShort = () => (
         <p className="left">
             Looks like someone is in a hurry! <span className="dont-break">That's fine. Check these out:</span>
         </p>
-        
-        
+         
         <div className="left after">
             <a href="https://www.linkedin.com/in/marcogreselin/" rel="noopener noreferrer" target="_blank" ><i className="fa fa-linkedin fa-2x" aria-hidden="true"></i><span className="hidden">Linkedin</span></a><a href="https://www.linkedin.com/in/marcogreselin/" target="_blank" className="social chat-link" rel="noopener noreferrer">LinkedIn</a> has all my professional experience in a nutshell.
         </div>
 
-        
         <div className="left after">
             <a className="" href="https://www.github.com/marcogreselin" rel="noopener noreferrer" target="_blank"><i className="fa fa-github fa-2x" aria-hidden="true"></i><span className="hidden">GitHub</span></a>
             In so little time <a href="https://www.github.com/marcogreselin" target="_blank" className="social chat-link" rel="noopener noreferrer">GitHub</a> will only prove that I can use Git (I know...) and that this cheeky website was <a href="https://github.com/marcogreselin/portfolio" target="_blank" className="social chat-link" rel="noopener noreferrer">manually</a> crafted.
@@ -28,6 +26,5 @@ export const PortfolioResultsShort = () => (
         <div className="left after">
             Now, if you're curious about some of the products I've built, click on the button below. They will be prioritised based on your preferences.
         </div>
-
     </div>
 )
