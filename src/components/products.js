@@ -588,7 +588,7 @@ export const products =
     },
     {
         "name":"sanus",
-        "portfolio_image":"https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/sanus.png?alt=media&token=50160b0e-0bec-448f-aa0f-fee8e265665a",
+        "portfolio_image":"https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/new%20sanus.png?alt=media&token=a32d3ecd-11c7-4b6e-b993-e0389fec4fc0",
         "scores": {
             "quality": 2,
             "relevancy": {
@@ -645,7 +645,7 @@ export const products =
             },
             {
                 "type": "text",
-                "body": "A portfolio that becomes a product featured within. We can call this the first user centred portfolio: it builds around each user's preferences. This is important for two reasons: different users have very different amount of times and, for product managers like me, there's a need to showcase many skills at the same time whilst users have their own interests."
+                "body": "A portfolio that becomes a product featured within. We can call this the first user centred portfolio: it builds around each user's preferences. This is important for two reasons: different users have very different amounts of time and, for product managers like me, there's a need to showcase many skills at the same time whilst users have their own interests."
             },
             {
                 "type": "image",
@@ -664,13 +664,12 @@ export const products =
             {
                 "type": "text",
                 "body": "It's built with React which makes it fast, and designed to look good on any platform and any browser. Have you ever seen a portfolio that talks about itself?"
+            },
+            {
+                "type": "video",
+                "body": "https://www.youtube.com/embed/Qca93_LQTD0?rel=0&amp;showinfo=0&amp",
+                "title": "Portfolio"
             }
-            // ,
-            // {
-            //     "type": "video",
-            //     "body": "https://www.youtube.com/embed/bodC7oZ2Cnk?rel=0&amp;showinfo=0&amp",
-            //     "title": "Sanus"
-            // }
         ],
         "links": {
             "password": false,
