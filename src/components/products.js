@@ -645,7 +645,7 @@ export const products =
             },
             {
                 "type": "text",
-                "body": "A portfolio that becomes a product featured within. We can call this the first user centred portfolio: it builds around each user's preferences. This is important for two reasons: different users have very different amounts of time and, for product managers like me, there's a need to showcase many skills at the same time whilst users have their own interests."
+                "body": "We can call this the first user centred portfolio: it builds around each user's preferences. This was important for two reasons: every user has different availabilities and interests. This was initially conflicting with the multidisciplinary nature of my work."
             },
             {
                 "type": "image",
@@ -654,7 +654,7 @@ export const products =
             },
             {
                 "type": "text",
-                "body": "To achieve this, I gave two scores to each product: an overall quality score and one for each of the three interests. The user makes a selection in a chat-like UI and the application will return a personalised version of the portfolio."
+                "body": "To overcome this problem, I gave two scores to each product: an overall quality score and one for each of the three interests. The user makes a selection in a chat-like UI and the application will return a personalised version of the portfolio."
             },  
             {
                 "type": "image",
@@ -739,3 +739,5 @@ export const products =
         }
     }
 ]
+
+ 
