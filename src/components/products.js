@@ -636,7 +636,7 @@ export const products =
             }
         },
         "title": "The first user-centered portfolio",
-        "subtitle": "Placing the user at the centre of the experience",
+        "subtitle": "A bot to create a conversational portfolio experience",
         "content": [
             {
                 "type": "image",
@@ -654,16 +654,20 @@ export const products =
             },
             {
                 "type": "text",
-                "body": "To overcome this problem, I gave two scores to each product: an overall quality score and one for each of the three interests. The user makes a selection in a chat-like UI and the application will return a personalised version of the portfolio."
+                "body": "To overcome this problem, I gave two scores to each product: an overall quality score and one for each of the three interests. The user makes a selection in a chat-like UI and the application will return a personalised version of the portfolio. It's built with React which makes it fast, and designed to look good on any platform and any browser. Have you ever seen a portfolio that talks about itself?"
+            },  
+            {
+                "type": "emphasis",
+                "body": "The Messenger Bot"
             },  
             {
                 "type": "image",
-                "url": "https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/portfolio%20phone.JPG?alt=media&token=7154f99a-55ab-4aa1-b1a4-87b3a33e4a66",
+                "url": "https://firebasestorage.googleapis.com/v0/b/portfolio-4c18e.appspot.com/o/portfolio_bot.JPG?alt=media&token=4a82509e-93c3-43f4-ac08-b15bb2a436cb",
                 "title": "Portfolio on iPhone"
-            },          
+            },        
             {
                 "type": "text",
-                "body": "It's built with React which makes it fast, and designed to look good on any platform and any browser. Have you ever seen a portfolio that talks about itself?"
+                "body": "To complete the product, I created a Messenger Bot. This was made to reflect the experience users receive from the website in an even more conversational environment. The bot, running on a Node backend, is compatible with Facebook Messenger. It's built using an MVC framework I developed for bots. The code is available on Glitch. More about it in my Medium article."
             },
             {
                 "type": "video",
@@ -677,6 +681,14 @@ export const products =
                 {
                     "title": "Github",
                     "url": "https://github.com/marcogreselin/portfolio"
+                },
+                {
+                    "title": "Medium",
+                    "url": "https://medium.com/@marcogreselin/bots-a55a727c7183"
+                },
+                {
+                    "title": "Bot Code",
+                    "url": "https://glitch.com/edit/#!/botting-marco?path=bot.js:1:0"
                 }
             ]
         }

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="47px" viewBox="0 0 46 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" fill-rule="nonzero" fill="#FFFFFF">
+            <g id="icons8-Facebook-Messenger">
+                <path d="M23,0 C10.346406,0 0,9.598008 0,21.5 C0,28.006279 3.1321774,33.786204 8,37.71875 L8,45 L8,46.65625 L9.46875,45.875 L16.6875,42.125 C18.703106,42.664209 20.801527,43 23,43 C35.653594,43 46,33.401992 46,21.5 C46,9.598008 35.653594,0 23,0 Z M23,2 C34.646406,2 44,10.757992 44,21.5 C44,32.242008 34.646406,41 23,41 C20.83693,41 18.742743,40.687614 16.78125,40.125 L16.40625,40.03125 L16.0625,40.21875 L10,43.375 L10,37.3125 L10,36.8125 L9.625,36.53125 C4.9625477,32.94328 2,27.539893 2,21.5 C2,10.757992 11.353594,2 23,2 Z M20.71875,15.71875 L8.6875,28.46875 L19.5,22.40625 L25.28125,28.59375 L37.15625,15.71875 L26.625,21.625 L20.71875,15.71875 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

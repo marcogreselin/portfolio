@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
 import '../styles/font-awesome/css/font-awesome.min.css'
 import '../styles/Work.css'
+import messengerBlue from '../images/messengerBlue.svg'
 
 class Work extends Component {
     constructor(props) {
@@ -112,10 +113,12 @@ class Work extends Component {
                     </span>
                 </p>
 
-                <button type="submit after">Show me your work</button>
                 <div className="errors">
                     {this.state.errors}
                 </div>
+                <button type="submit after">Show me your work</button>
+
+                <div className="messengerButtonWrapper"><a target="_blank" rel="noopener noreferrer" href="https://www.messenger.com/t/bottingmarco"><span className="messengerButton"><img src={messengerBlue} alt="Messenger Logo"/>Chat with Botting Marco</span></a></div>
             </form>  
         )
     }
