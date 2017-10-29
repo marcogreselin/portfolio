@@ -27,6 +27,7 @@ export class About extends Component {
                                 <div className="title">Some of the people I worked with</div>
                                 <div className="list">
                                     <ul>
+                                        <li>Jul 17 - Present: Product @ Improbable</li>
                                         <li>Jan - May 17: Resident @ AKQA</li>
                                         <li>Sept - Dec 16: Resident @ EF</li>
                                         <li>Jun - Sept 15: Intern @ YouTube</li>

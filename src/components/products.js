@@ -236,7 +236,7 @@ export const products =
             },
             {
                 "type": "text",
-                "body": "The project was completely black paper at the beginning and we had to investigate the reasons why James decided to take the decision of touring the north pole. The product that resulted from our work served that very purpose."
+                "body": "The project started as a an empty piece of paper and we had to investigate the reasons why James decided to take the decision of touring the north pole. The product that resulted from our work served that very purpose."
             },
             {
                 "type":"image",
